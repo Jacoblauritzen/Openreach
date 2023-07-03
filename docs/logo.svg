@@ -1,0 +1,65 @@
+<svg width="880" height="240" viewBox="0 0 880 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Openhaze">
+  <defs>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00c9a7"/>
+      <stop offset="1" stop-color="#5b8cff"/>
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e6e8ec"/>
+      <stop offset="1" stop-color="#a0b2d4"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00c9a7"/>
+      <stop offset="1" stop-color="#5b8cff"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1a1f2e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="880" height="240" rx="24" fill="#0a0c10"/>
+  <rect x="0.5" y="0.5" width="879" height="239" rx="23.5" fill="none" stroke="#1c2230"/>
+  <rect width="880" height="240" rx="24" fill="url(#grid)" opacity="0.3"/>
+
+  <!-- hexagonal sandbox mark -->
+  <g transform="translate(72,48)">
+    <!-- outer hexagon (sandbox boundary) -->
+    <path d="M70 0 L140 40 L140 110 L70 150 L0 110 L0 40 Z" fill="url(#core)" opacity="0.15"/>
+    <path d="M70 0 L140 40 L140 110 L70 150 L0 110 L0 40 Z" fill="none" stroke="url(#core)" stroke-width="2.5"/>
+    <!-- inner hexagon (agent core) -->
+    <path d="M70 30 L112 55 L112 100 L70 125 L28 100 L28 55 Z" fill="url(#core)" opacity="0.3"/>
+    <path d="M70 30 L112 55 L112 100 L70 125 L28 100 L28 55 Z" fill="none" stroke="url(#core)" stroke-width="2"/>
+    <!-- center dot (agent identity) -->
+    <circle cx="70" cy="77" r="12" fill="url(#core)"/>
+    <!-- connection lines to corners (tools) -->
+    <line x1="70" y1="77" x2="140" y2="40" stroke="url(#core)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="70" y1="77" x2="140" y2="110" stroke="url(#core)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="70" y1="77" x2="0" y2="40" stroke="url(#core)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="70" y1="77" x2="0" y2="110" stroke="url(#core)" stroke-width="1.5" opacity="0.6"/>
+    <!-- tool nodes at corners -->
+    <circle cx="140" cy="40" r="5" fill="#00c9a7"/>
+    <circle cx="140" cy="110" r="5" fill="#00c9a7"/>
+    <circle cx="0" cy="40" r="5" fill="#00c9a7"/>
+    <circle cx="0" cy="110" r="5" fill="#00c9a7"/>
+  </g>
+
+  <!-- title -->
+  <text x="290" y="108" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="url(#text-grad)" letter-spacing="-1.5">Open<tspan fill="url(#accent)">haze</tspan></text>
+
+  <!-- tagline -->
+  <text x="292" y="148" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="500" fill="#7a8599">The self-hosted runtime for public-facing AI agents</text>
+
+  <!-- capability badges -->
+  <g transform="translate(292,172)">
+    <rect x="0" y="0" width="88" height="26" rx="13" fill="#0f1420" stroke="#1e2433" stroke-width="1"/>
+    <text x="44" y="17" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#5b8cff" text-anchor="middle">sandbox</text>
+    <rect x="96" y="0" width="88" height="26" rx="13" fill="#0f1420" stroke="#1e2433" stroke-width="1"/>
+    <text x="140" y="17" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#00c9a7" text-anchor="middle">durable</text>
+    <rect x="192" y="0" width="88" height="26" rx="13" fill="#0f1420" stroke="#1e2433" stroke-width="1"/>
+    <text x="236" y="17" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8b5bff" text-anchor="middle">auditable</text>
+    <rect x="288" y="0" width="88" height="26" rx="13" fill="#0f1420" stroke="#1e2433" stroke-width="1"/>
+    <text x="332" y="17" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6a23c" text-anchor="middle">agnostic</text>
+  </g>
+
+  <!-- unhaze attribution -->
+  <text x="292" y="228" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#4a5568">a product of Unhaze</text>
+</svg>

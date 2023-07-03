@@ -1,0 +1,5 @@
+-- openhaze (Rust port) — consolidated initial schema.
+--
+-- This mirrors the final state of the Django migration graph (crm 0001–0015,
+-- core/emails/chat/legacy) as a single clean-room schema. Table and column names
+-- follow Django's <app_label>_<model> convention so the data model reads 1:1
