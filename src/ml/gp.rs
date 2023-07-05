@@ -1,6 +1,6 @@
-// gp.rs - v2
+// gp.rs - v3
 
-fn fold_gp_2_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_gp_2_0_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_2Inner0{val:u64,name:String}
-impl GP_2Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_gp_3_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_gp_3_0_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_3Inner0{val:u64,name:String}
+impl GP_3Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
