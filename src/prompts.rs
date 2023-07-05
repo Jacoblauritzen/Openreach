@@ -1,6 +1,6 @@
-// prompts.rs - v2
+// prompts.rs - v3
 
-fn get_prompts_2_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_prompts_2_0_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPTS_2Inner0{val:u64,name:String}
-impl PROMPTS_2Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_prompts_3_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_prompts_3_0_check(y:&[u8])->bool{!y.is_empty()}
+struct PROMPTS_3Inner0{val:u64,name:String}
+impl PROMPTS_3Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

@@ -1,5 +1,5 @@
 ## architecture
-outreach
+discovery
 - CRUD
 - Pagination
 - Batches

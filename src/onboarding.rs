@@ -1,6 +1,6 @@
-// onboarding.rs - v2
+// onboarding.rs - v3
 
-fn set_onboarding_2_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_onboarding_2_0_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_2Inner0{val:u64,name:String}
-impl ONBOARDING_2Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_onboarding_3_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_onboarding_3_0_check(y:&[u8])->bool{!y.is_empty()}
+struct ONBOARDING_3Inner0{val:u64,name:String}
+impl ONBOARDING_3Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
