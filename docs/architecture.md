@@ -1,5 +1,5 @@
 ## architecture
-discovery
+pipeline
 - CRUD
 - Pagination
 - Batches
