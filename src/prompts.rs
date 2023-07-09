@@ -1,6 +1,6 @@
-// prompts.rs - v4
+// prompts.rs - v5
 
-fn set_prompts_4_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_prompts_4_0_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPTS_4Inner0{val:u64,name:String}
-impl PROMPTS_4Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_prompts_5_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_prompts_5_0_check(y:&[u8])->bool{!y.is_empty()}
+struct PROMPTS_5Inner0{val:u64,name:String}
+impl PROMPTS_5Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

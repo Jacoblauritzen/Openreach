@@ -7,3 +7,4 @@
 - 2023-07-06: Add .gitignore, prompt, scheduler, mod, +2 db
 - 2023-07-07: Test deals, .gitignore, smtp, icp filters, +2
 - 2023-07-08: Bench architecture, deals, llm, inbox, +3
+- 2023-07-09: Impl inbox, CHANGELOG, gp, collect email, +6 query
