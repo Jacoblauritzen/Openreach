@@ -9,3 +9,4 @@
 - 2023-07-08: Bench architecture, deals, llm, inbox, +3
 - 2023-07-09: Impl inbox, CHANGELOG, gp, collect email, +6 query
 - 2023-07-09: Retry gp, mod, scheduler, collect email, +5
+- 2023-07-10: Metrics prompts, mod, mod, CHANGELOG, +5
