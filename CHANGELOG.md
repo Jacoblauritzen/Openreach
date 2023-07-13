@@ -11,3 +11,4 @@
 - 2023-07-09: Retry gp, mod, scheduler, collect email, +5
 - 2023-07-10: Metrics prompts, mod, mod, CHANGELOG, +5
 - 2023-07-11: Rate mod, scheduler, collect email, smtp, +4
+- 2023-07-12: Add smtp, gp, .gitignore, session, +3 cfg
