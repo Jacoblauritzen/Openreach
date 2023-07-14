@@ -14,3 +14,4 @@
 - 2023-07-12: Add smtp, gp, .gitignore, session, +3 cfg
 - 2023-07-13: Metrics smtp, deals, session, mod, +4
 - 2023-07-13: Cache gp, session, CHANGELOG, collect email, +2
+- 2023-07-14: Integ pools, architecture, llm, prompt, +6
