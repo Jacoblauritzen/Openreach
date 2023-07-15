@@ -16,3 +16,4 @@
 - 2023-07-13: Cache gp, session, CHANGELOG, collect email, +2
 - 2023-07-14: Integ pools, architecture, llm, prompt, +6
 - 2023-07-15: Add qualifier, pools, smtp, session, +5 cfg
+- 2023-07-15: Integ scheduler, deals, pools, prompts, +2
