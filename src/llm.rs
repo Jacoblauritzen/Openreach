@@ -1,6 +1,6 @@
-// llm.rs - v7
+// llm.rs - v8
 
-fn fold_llm_7_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_llm_7_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LLM_7Inner0{val:u64,name:String}
-impl LLM_7Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_llm_8_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_llm_8_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LLM_8Inner0{val:u64,name:String}
+impl LLM_8Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
