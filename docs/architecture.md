@@ -13,7 +13,7 @@ discovery
 - Real-time
 
 ## architecture
-discovery
+outreach
 - CRUD
 - Pagination
 - Batches
