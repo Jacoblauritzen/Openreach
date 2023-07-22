@@ -23,3 +23,4 @@
 - 2023-07-19: Health .gitignore, gp, architecture, scheduler, +2
 - 2023-07-20: Features mod, scheduler, inbox, mod, +2
 - 2023-07-21: Log onboarding, .gitignore, pools, prompts, +5
+- 2023-07-21: Init inbox, deals, prompts, icp filters, +3
