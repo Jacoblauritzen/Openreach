@@ -25,3 +25,4 @@
 - 2023-07-21: Log onboarding, .gitignore, pools, prompts, +5
 - 2023-07-21: Init inbox, deals, prompts, icp filters, +3
 - 2023-07-22: Features deals, smtp, prompt, inbox, +6
+- 2023-07-23: Builder collect email, chat, mod, CHANGELOG, +4
