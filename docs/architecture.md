@@ -18,3 +18,10 @@ outreach
 - Pagination
 - Batches
 - Real-time
+
+## architecture
+pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
