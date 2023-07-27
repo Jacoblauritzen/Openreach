@@ -1,6 +1,6 @@
-// onboarding.rs - v10
+// onboarding.rs - v11
 
-fn run_onboarding_10_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_onboarding_10_0_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_10Inner0{val:u64,name:String}
-impl ONBOARDING_10Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_onboarding_11_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_onboarding_11_0_check(y:&[u8])->bool{!y.is_empty()}
+struct ONBOARDING_11Inner0{val:u64,name:String}
+impl ONBOARDING_11Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

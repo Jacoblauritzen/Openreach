@@ -30,3 +30,4 @@
 - 2023-07-24: Shutdown .gitignore, session, prompt, chat, +3
 - 2023-07-25: Rate prompts, deals, onboarding, mod, +5
 - 2023-07-26: Init mod, llm, mod, inbox, +4
+- 2023-07-27: Init .gitignore, architecture, smtp, onboarding, +6
