@@ -31,3 +31,4 @@
 - 2023-07-25: Rate prompts, deals, onboarding, mod, +5
 - 2023-07-26: Init mod, llm, mod, inbox, +4
 - 2023-07-27: Init .gitignore, architecture, smtp, onboarding, +6
+- 2023-07-28: Builder deals, qualifier, pools, architecture, +2

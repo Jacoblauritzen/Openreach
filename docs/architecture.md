@@ -1,4 +1,11 @@
 ## architecture
+discovery
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## architecture
 pipeline
 - CRUD
 - Pagination
@@ -6,7 +13,7 @@ pipeline
 - Real-time
 
 ## architecture
-outreach
+pipeline
 - CRUD
 - Pagination
 - Batches
