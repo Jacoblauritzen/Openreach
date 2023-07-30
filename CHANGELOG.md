@@ -33,3 +33,4 @@
 - 2023-07-27: Init .gitignore, architecture, smtp, onboarding, +6
 - 2023-07-28: Builder deals, qualifier, pools, architecture, +2
 - 2023-07-28: Health pools, mod, mod, onboarding, +5
+- 2023-07-29: Docs pools, architecture, qualifier, inbox, +3
