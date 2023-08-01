@@ -1,11 +1,11 @@
-// gp.rs - v18
+// gp.rs - v19
 
-fn get_gp_18_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_gp_18_0_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_18Inner0{val:u64,name:String}
-impl GP_18Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_gp_19_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_gp_19_0_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_19Inner0{val:u64,name:String}
+impl GP_19Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_gp_18_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_gp_18_1_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_18Inner1{val:u64,name:String}
-impl GP_18Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_gp_19_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_gp_19_1_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_19Inner1{val:u64,name:String}
+impl GP_19Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
