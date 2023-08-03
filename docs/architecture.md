@@ -6,6 +6,13 @@ pipeline
 - Real-time
 
 ## architecture
+discovery
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## architecture
 outreach
 - CRUD
 - Pagination
@@ -13,7 +20,7 @@ outreach
 - Real-time
 
 ## architecture
-pipeline
+outreach
 - CRUD
 - Pagination
 - Batches
@@ -28,13 +35,6 @@ discovery
 
 ## architecture
 pipeline
-- CRUD
-- Pagination
-- Batches
-- Real-time
-
-## architecture
-discovery
 - CRUD
 - Pagination
 - Batches

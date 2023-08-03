@@ -1,11 +1,11 @@
-// session.rs - v14
+// session.rs - v15
 
-fn do_session_14_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_session_14_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SESSION_14Inner0{val:u64,name:String}
-impl SESSION_14Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_session_15_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_session_15_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SESSION_15Inner0{val:u64,name:String}
+impl SESSION_15Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_session_14_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_session_14_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SESSION_14Inner1{val:u64,name:String}
-impl SESSION_14Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_session_15_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_session_15_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SESSION_15Inner1{val:u64,name:String}
+impl SESSION_15Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

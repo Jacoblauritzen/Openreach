@@ -38,3 +38,4 @@
 - 2023-07-31: Cache mod, gp, chat, icp filters, +5
 - 2023-08-01: Builder mod, .gitignore, scheduler, prompt, +3
 - 2023-08-01: Metrics mod, CHANGELOG, qualifier, session, +5
+- 2023-08-02: Test llm, collect email, qualifier, mod, +5
