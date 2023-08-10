@@ -46,3 +46,4 @@
 - 2023-08-06: Pagination scheduler, architecture, pools, inbox, +6
 - 2023-08-07: Async deals, mod, qualifier, inbox, +2
 - 2023-08-08: Impl smtp, mod, mod, mod, +6 query
+- 2023-08-09: Retry CHANGELOG, qualifier, architecture, deals, +2
