@@ -1,11 +1,11 @@
-// gp.rs - v21
+// gp.rs - v22
 
-fn run_gp_21_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_gp_21_0_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_21Inner0{val:u64,name:String}
-impl GP_21Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_gp_22_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_gp_22_0_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_22Inner0{val:u64,name:String}
+impl GP_22Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_gp_21_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_gp_21_1_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_21Inner1{val:u64,name:String}
-impl GP_21Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_gp_22_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_gp_22_1_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_22Inner1{val:u64,name:String}
+impl GP_22Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
