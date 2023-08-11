@@ -49,3 +49,4 @@
 - 2023-08-09: Retry CHANGELOG, qualifier, architecture, deals, +2
 - 2023-08-10: Bench inbox, mod, gp, mod, +2
 - 2023-08-10: Metrics prompt, qualifier, pools, inbox, +4
+- 2023-08-11: Metrics onboarding, pools, gp, prompt, +4
