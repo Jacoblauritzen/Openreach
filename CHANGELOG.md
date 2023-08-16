@@ -54,3 +54,4 @@
 - 2023-08-13: Test prompt, mod, llm, smtp, +6
 - 2023-08-14: Init CHANGELOG, gp, smtp, icp filters, +4
 - 2023-08-14: Refactor prompt, .gitignore, scheduler, onboarding, +2
+- 2023-08-15: Health icp filters, scheduler, collect email, onboarding, +5
