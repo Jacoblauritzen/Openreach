@@ -55,3 +55,4 @@
 - 2023-08-14: Init CHANGELOG, gp, smtp, icp filters, +4
 - 2023-08-14: Refactor prompt, .gitignore, scheduler, onboarding, +2
 - 2023-08-15: Health icp filters, scheduler, collect email, onboarding, +5
+- 2023-08-16: Add deals, inbox, chat, architecture, +2 types
