@@ -56,3 +56,4 @@
 - 2023-08-14: Refactor prompt, .gitignore, scheduler, onboarding, +2
 - 2023-08-15: Health icp filters, scheduler, collect email, onboarding, +5
 - 2023-08-16: Add deals, inbox, chat, architecture, +2 types
+- 2023-08-17: Builder prompts, scheduler, pools, mod, +6
