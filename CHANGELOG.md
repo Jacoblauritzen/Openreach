@@ -58,3 +58,4 @@
 - 2023-08-16: Add deals, inbox, chat, architecture, +2 types
 - 2023-08-17: Builder prompts, scheduler, pools, mod, +6
 - 2023-08-17: Log prompts, smtp, onboarding, CHANGELOG, +6
+- 2023-08-18: Retry pools, prompt, smtp, onboarding, +6
