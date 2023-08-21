@@ -1,11 +1,11 @@
-// prompt.rs - v20
+// prompt.rs - v21
 
-fn get_prompt_20_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_prompt_20_0_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPT_20Inner0{val:u64,name:String}
-impl PROMPT_20Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_prompt_21_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_prompt_21_0_check(y:&[u8])->bool{!y.is_empty()}
+struct PROMPT_21Inner0{val:u64,name:String}
+impl PROMPT_21Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_prompt_20_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_prompt_20_1_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPT_20Inner1{val:u64,name:String}
-impl PROMPT_20Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_prompt_21_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_prompt_21_1_check(y:&[u8])->bool{!y.is_empty()}
+struct PROMPT_21Inner1{val:u64,name:String}
+impl PROMPT_21Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

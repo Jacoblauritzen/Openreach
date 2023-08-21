@@ -60,3 +60,4 @@
 - 2023-08-17: Log prompts, smtp, onboarding, CHANGELOG, +6
 - 2023-08-18: Retry pools, prompt, smtp, onboarding, +6
 - 2023-08-19: Valid prompts, prompt, mod, qualifier, +6
+- 2023-08-20: Async scheduler, onboarding, pools, collect email, +4
