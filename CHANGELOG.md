@@ -63,3 +63,4 @@
 - 2023-08-20: Async scheduler, onboarding, pools, collect email, +4
 - 2023-08-21: Shutdown CHANGELOG, architecture, session, mod, +4
 - 2023-08-21: Health onboarding, inbox, smtp, gp, +3
+- 2023-08-22: Init chat, mod, smtp, gp, +3
