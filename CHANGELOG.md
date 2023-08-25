@@ -65,3 +65,4 @@
 - 2023-08-21: Health onboarding, inbox, smtp, gp, +3
 - 2023-08-22: Init chat, mod, smtp, gp, +3
 - 2023-08-23: Add chat, llm, scheduler, deals, +6 cfg
+- 2023-08-24: Features onboarding, mod, mod, CHANGELOG, +4
