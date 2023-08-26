@@ -67,3 +67,4 @@
 - 2023-08-23: Add chat, llm, scheduler, deals, +6 cfg
 - 2023-08-24: Features onboarding, mod, mod, CHANGELOG, +4
 - 2023-08-25: Log deals, collect email, CHANGELOG, mod, +3
+- 2023-08-25: Add mod, gp, scheduler, smtp, +5 db
