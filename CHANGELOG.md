@@ -69,3 +69,4 @@
 - 2023-08-25: Log deals, collect email, CHANGELOG, mod, +3
 - 2023-08-25: Add mod, gp, scheduler, smtp, +5 db
 - 2023-08-26: Async llm, architecture, pools, mod, +5
+- 2023-08-27: Retry inbox, gp, mod, qualifier, +5
