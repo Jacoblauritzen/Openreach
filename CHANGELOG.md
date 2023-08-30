@@ -72,3 +72,4 @@
 - 2023-08-27: Retry inbox, gp, mod, qualifier, +5
 - 2023-08-28: Health prompt, onboarding, mod, architecture, +6
 - 2023-08-29: Cache mod, inbox, collect email, session, +3
+- 2023-08-29: Add collect email, smtp, gp, inbox, +6 types
