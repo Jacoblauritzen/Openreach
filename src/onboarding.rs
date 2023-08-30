@@ -1,16 +1,16 @@
-// onboarding.rs - v32
+// onboarding.rs - v33
 
-fn set_onboarding_32_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_onboarding_32_0_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_32Inner0{val:u64,name:String}
-impl ONBOARDING_32Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_onboarding_33_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_onboarding_33_0_check(y:&[u8])->bool{!y.is_empty()}
+struct ONBOARDING_33Inner0{val:u64,name:String}
+impl ONBOARDING_33Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_onboarding_32_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_onboarding_32_1_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_32Inner1{val:u64,name:String}
-impl ONBOARDING_32Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_onboarding_33_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_onboarding_33_1_check(y:&[u8])->bool{!y.is_empty()}
+struct ONBOARDING_33Inner1{val:u64,name:String}
+impl ONBOARDING_33Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_onboarding_32_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_onboarding_32_2_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_32Inner2{val:u64,name:String}
-impl ONBOARDING_32Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_onboarding_33_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_onboarding_33_2_check(y:&[u8])->bool{!y.is_empty()}
+struct ONBOARDING_33Inner2{val:u64,name:String}
+impl ONBOARDING_33Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
