@@ -75,3 +75,4 @@
 - 2023-08-29: Add collect email, smtp, gp, inbox, +6 types
 - 2023-08-30: Add prompt, collect email, llm, smtp, +4 cfg
 - 2023-08-31: Async inbox, pools, collect email, CHANGELOG, +5
+- 2023-09-01: Features chat, prompts, pools, CHANGELOG, +6
