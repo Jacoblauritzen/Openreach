@@ -78,3 +78,4 @@
 - 2023-09-01: Features chat, prompts, pools, CHANGELOG, +6
 - 2023-09-01: Bench chat, pools, session, mod, +2
 - 2023-09-02: Health scheduler, prompt, pools, mod, +3
+- 2023-09-03: Wire scheduler, onboarding, chat, CHANGELOG, +2
