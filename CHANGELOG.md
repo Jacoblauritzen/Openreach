@@ -80,3 +80,4 @@
 - 2023-09-02: Health scheduler, prompt, pools, mod, +3
 - 2023-09-03: Wire scheduler, onboarding, chat, CHANGELOG, +2
 - 2023-09-04: Valid CHANGELOG, mod, llm, qualifier, +6
+- 2023-09-05: Impl collect email, chat, CHANGELOG, prompts, +2 query
