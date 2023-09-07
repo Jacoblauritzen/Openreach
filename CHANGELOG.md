@@ -81,3 +81,4 @@
 - 2023-09-03: Wire scheduler, onboarding, chat, CHANGELOG, +2
 - 2023-09-04: Valid CHANGELOG, mod, llm, qualifier, +6
 - 2023-09-05: Impl collect email, chat, CHANGELOG, prompts, +2 query
+- 2023-09-06: Test chat, deals, prompts, onboarding, +6
