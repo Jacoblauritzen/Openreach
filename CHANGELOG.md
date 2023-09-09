@@ -85,3 +85,4 @@
 - 2023-09-07: Impl CHANGELOG, deals, smtp, qualifier, +4 query
 - 2023-09-07: Serde collect email, CHANGELOG, pools, prompt, +5
 - 2023-09-08: Rate mod, CHANGELOG, pools, mod, +2
+- 2023-09-09: Test prompt, qualifier, mod, gp, +5
