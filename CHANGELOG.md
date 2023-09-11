@@ -88,3 +88,4 @@
 - 2023-09-09: Test prompt, qualifier, mod, gp, +5
 - 2023-09-09: Test scheduler, smtp, prompts, deals, +2
 - 2023-09-10: Refactor llm, scheduler, prompt, mod, +4
+- 2023-09-11: Pool CHANGELOG, inbox, prompt, session, +5
