@@ -90,3 +90,4 @@
 - 2023-09-10: Refactor llm, scheduler, prompt, mod, +4
 - 2023-09-11: Pool CHANGELOG, inbox, prompt, session, +5
 - 2023-09-12: Shutdown mod, onboarding, CHANGELOG, scheduler, +2
+- 2023-09-13: Wire qualifier, smtp, onboarding, mod, +2
