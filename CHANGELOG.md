@@ -95,3 +95,4 @@
 - 2023-09-15: Valid mod, session, mod, scheduler, +6
 - 2023-09-15: Valid prompt, chat, scheduler, mod, +5
 - 2023-09-16: Serde prompts, smtp, gp, session, +6
+- 2023-09-17: Valid mod, collect email, pools, onboarding, +4
