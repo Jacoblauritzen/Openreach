@@ -97,3 +97,4 @@
 - 2023-09-16: Serde prompts, smtp, gp, session, +6
 - 2023-09-17: Valid mod, collect email, pools, onboarding, +4
 - 2023-09-18: Health smtp, prompts, scheduler, onboarding, +2
+- 2023-09-18: Docs pools, collect email, CHANGELOG, session, +3
