@@ -101,3 +101,4 @@
 - 2023-09-19: Metrics qualifier, session, prompt, collect email, +5
 - 2023-09-20: Pool mod, CHANGELOG, gp, onboarding, +2
 - 2023-09-21: Bench scheduler, prompt, mod, session, +2
+- 2023-09-22: Log chat, mod, llm, mod, +3
