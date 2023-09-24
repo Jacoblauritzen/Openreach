@@ -104,3 +104,4 @@
 - 2023-09-22: Log chat, mod, llm, mod, +3
 - 2023-09-22: Log smtp, qualifier, prompt, gp, +3
 - 2023-09-23: Err qualifier, onboarding, deals, collect email, +5
+- 2023-09-24: Cache collect email, llm, qualifier, gp, +5
