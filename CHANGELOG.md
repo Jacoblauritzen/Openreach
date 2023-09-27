@@ -108,3 +108,4 @@
 - 2023-09-25: Add session, collect email, scheduler, qualifier, +4 cfg
 - 2023-09-25: Err qualifier, prompt, chat, deals, +5
 - 2023-09-27: Metrics mod, gp, deals, mod, +2
+- 2023-09-27: Wire gp, prompt, inbox, chat, +6
