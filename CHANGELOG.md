@@ -107,3 +107,4 @@
 - 2023-09-24: Cache collect email, llm, qualifier, gp, +5
 - 2023-09-25: Add session, collect email, scheduler, qualifier, +4 cfg
 - 2023-09-25: Err qualifier, prompt, chat, deals, +5
+- 2023-09-27: Metrics mod, gp, deals, mod, +2
