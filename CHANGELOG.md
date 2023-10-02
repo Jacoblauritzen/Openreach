@@ -113,3 +113,4 @@
 - 2023-09-29: Wire mod, scheduler, llm, gp, +2
 - 2023-09-30: Wire session, llm, deals, inbox, +6
 - 2023-09-30: Valid session, llm, scheduler, deals, +5
+- 2023-10-02: Add inbox, session, scheduler, chat, +4 db
