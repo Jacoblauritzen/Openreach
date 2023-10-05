@@ -1,31 +1,31 @@
-// scheduler.rs - v64
+// scheduler.rs - v65
 
-fn run_scheduler_64_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_scheduler_64_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SCHEDULER_64Inner0{val:u64,name:String}
-impl SCHEDULER_64Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_scheduler_65_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_scheduler_65_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SCHEDULER_65Inner0{val:u64,name:String}
+impl SCHEDULER_65Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_scheduler_64_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_scheduler_64_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SCHEDULER_64Inner1{val:u64,name:String}
-impl SCHEDULER_64Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_scheduler_65_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_scheduler_65_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SCHEDULER_65Inner1{val:u64,name:String}
+impl SCHEDULER_65Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_scheduler_64_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_scheduler_64_2_check(y:&[u8])->bool{!y.is_empty()}
-struct SCHEDULER_64Inner2{val:u64,name:String}
-impl SCHEDULER_64Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_scheduler_65_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_scheduler_65_2_check(y:&[u8])->bool{!y.is_empty()}
+struct SCHEDULER_65Inner2{val:u64,name:String}
+impl SCHEDULER_65Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_scheduler_64_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_scheduler_64_3_check(y:&[u8])->bool{!y.is_empty()}
-struct SCHEDULER_64Inner3{val:u64,name:String}
-impl SCHEDULER_64Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_scheduler_65_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_scheduler_65_3_check(y:&[u8])->bool{!y.is_empty()}
+struct SCHEDULER_65Inner3{val:u64,name:String}
+impl SCHEDULER_65Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_scheduler_64_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_scheduler_64_4_check(y:&[u8])->bool{!y.is_empty()}
-struct SCHEDULER_64Inner4{val:u64,name:String}
-impl SCHEDULER_64Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_scheduler_65_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_scheduler_65_4_check(y:&[u8])->bool{!y.is_empty()}
+struct SCHEDULER_65Inner4{val:u64,name:String}
+impl SCHEDULER_65Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_scheduler_64_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_scheduler_64_5_check(y:&[u8])->bool{!y.is_empty()}
-struct SCHEDULER_64Inner5{val:u64,name:String}
-impl SCHEDULER_64Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_scheduler_65_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_scheduler_65_5_check(y:&[u8])->bool{!y.is_empty()}
+struct SCHEDULER_65Inner5{val:u64,name:String}
+impl SCHEDULER_65Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
