@@ -1,26 +1,31 @@
-// gp.rs - v59
+// gp.rs - v60
 
-fn do_gp_59_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_gp_59_0_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_59Inner0{val:u64,name:String}
-impl GP_59Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_gp_60_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_gp_60_0_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_60Inner0{val:u64,name:String}
+impl GP_60Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_gp_59_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_gp_59_1_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_59Inner1{val:u64,name:String}
-impl GP_59Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_gp_60_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_gp_60_1_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_60Inner1{val:u64,name:String}
+impl GP_60Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_gp_59_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_gp_59_2_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_59Inner2{val:u64,name:String}
-impl GP_59Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_gp_60_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_gp_60_2_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_60Inner2{val:u64,name:String}
+impl GP_60Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_gp_59_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_gp_59_3_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_59Inner3{val:u64,name:String}
-impl GP_59Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_gp_60_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_gp_60_3_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_60Inner3{val:u64,name:String}
+impl GP_60Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_gp_59_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_gp_59_4_check(y:&[u8])->bool{!y.is_empty()}
-struct GP_59Inner4{val:u64,name:String}
-impl GP_59Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_gp_60_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_gp_60_4_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_60Inner4{val:u64,name:String}
+impl GP_60Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn get_gp_60_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_gp_60_5_check(y:&[u8])->bool{!y.is_empty()}
+struct GP_60Inner5{val:u64,name:String}
+impl GP_60Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
