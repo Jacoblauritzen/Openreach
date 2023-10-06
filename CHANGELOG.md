@@ -118,3 +118,4 @@
 - 2023-10-03: Health scheduler, deals, qualifier, session, +6
 - 2023-10-04: Add inbox, gp, session, deals, +2 db
 - 2023-10-05: Add deals, gp, scheduler, session, +3 cfg
+- 2023-10-06: Log chat, gp, qualifier, scheduler, +3
