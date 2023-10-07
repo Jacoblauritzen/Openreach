@@ -1,26 +1,5 @@
-// collect_email.rs - v49
+//! COLLECT_EMAIL task — the poll leg of the paid email lookup.
+//! (`emails/tasks/collect_email.py`)
 
-fn fold_collect_email_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_collect_email_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct COLLECT_EMAIL_49Inner0{val:u64,name:String}
-impl COLLECT_EMAIL_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_collect_email_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_collect_email_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct COLLECT_EMAIL_49Inner1{val:u64,name:String}
-impl COLLECT_EMAIL_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn set_collect_email_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_collect_email_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct COLLECT_EMAIL_49Inner2{val:u64,name:String}
-impl COLLECT_EMAIL_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_collect_email_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_collect_email_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct COLLECT_EMAIL_49Inner3{val:u64,name:String}
-impl COLLECT_EMAIL_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn run_collect_email_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_collect_email_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct COLLECT_EMAIL_49Inner4{val:u64,name:String}
-impl COLLECT_EMAIL_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::Result;\n// revival 2026 touch: src/emails/tasks/collect_email.rs\n\n// revival 2026 touch: src/emails/tasks/collect_email.rs\n
+// revival 2026 update: src/emails/tasks/collect_email.rs
