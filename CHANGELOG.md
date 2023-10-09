@@ -122,3 +122,4 @@
 - 2023-10-06: Add qualifier, scheduler, gp, deals, +2 cfg
 - 2023-10-07: Pagination gp, session, deals, scheduler, +3
 - 2023-10-07: Impl session, scheduler, deals, qualifier, +5 query
+- 2023-10-08: Metrics gp, qualifier, scheduler, session, +5
