@@ -1,26 +1,53 @@
-// prompts.rs - v55
+//! Prompt template rendering — a port of the Jinja2 templates under
+//! `core/templates/prompts/`, using `minijinja` (which supports the same
+//! `{% extends %}` / `{% block %}` inheritance the outreach prompts rely on).
+//!
+//! Templates are embedded at compile time so the binary is self-contained.
 
-fn get_prompts_55_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_prompts_55_0_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPTS_55Inner0{val:u64,name:String}
-impl PROMPTS_55Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::{Context, Result};
+use minijinja::Environment;
+use serde::Serialize;
+use std::sync::OnceLock;
 
-fn fold_prompts_55_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_prompts_55_1_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPTS_55Inner1{val:u64,name:String}
-impl PROMPTS_55Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn env() -> &'static Environment<'static> {
+    static ENV: OnceLock<Environment<'static>> = OnceLock::new();
+    ENV.get_or_init(|| {
+        let mut e = Environment::new();
+        macro_rules! add {
+            ($name:literal) => {
+                e.add_template(
+                    $name,
+                    include_str!(concat!("../templates/prompts/", $name)),
+                )
+                .expect(concat!("template ", $name));
+            };
+        }
+        add!("_outreach_base.j2");
+        add!("icp_filters.j2");
+        add!("mutate_queries.j2");
+        add!("qualify_lead.j2");
+        add!("email_opener.j2");
+        add!("follow_up_agent.j2");
+        e
+    })
+}
 
-fn map_prompts_55_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_prompts_55_2_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPTS_55Inner2{val:u64,name:String}
-impl PROMPTS_55Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Render a named prompt template with a serializable context.
+pub fn render<S: Serialize>(name: &str, ctx: S) -> Result<String> {
+    let tmpl = env()
+        .get_template(name)
+        .with_context(|| format!("prompt template {name} not found"))?;
+    tmpl.render(ctx)
+        .with_context(|| format!("rendering prompt {name}"))
+}
 
-fn do_prompts_55_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_prompts_55_3_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPTS_55Inner3{val:u64,name:String}
-impl PROMPTS_55Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use serde_json::json;
 
-fn set_prompts_55_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_prompts_55_4_check(y:&[u8])->bool{!y.is_empty()}
-struct PROMPTS_55Inner4{val:u64,name:String}
-impl PROMPTS_55Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    #[test]
+    fn renders_icp_prompt_with_seniorities() {
+        let out = render(
+            "icp_filters.j2",\n// revival 2026 touch: src/prompts.rs\n\n// revival 2026 touch: src/prompts.rs\n
+// revival 2026 update: src/prompts.rs
