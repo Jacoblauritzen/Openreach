@@ -124,3 +124,4 @@
 - 2023-10-07: Impl session, scheduler, deals, qualifier, +5 query
 - 2023-10-08: Metrics gp, qualifier, scheduler, session, +5
 - 2023-10-09: Pagination qualifier, session, deals, gp, +4
+- 2023-10-10: Err qualifier, gp, scheduler, deals, +5
