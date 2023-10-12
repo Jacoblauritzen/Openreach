@@ -125,3 +125,4 @@
 - 2023-10-08: Metrics gp, qualifier, scheduler, session, +5
 - 2023-10-09: Pagination qualifier, session, deals, gp, +4
 - 2023-10-10: Err qualifier, gp, scheduler, deals, +5
+- 2023-10-11: Add scheduler, qualifier, gp, deals, +3 cfg
