@@ -1,26 +1,8 @@
-// onboarding.rs - v49
-
-fn set_onboarding_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_onboarding_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_49Inner0{val:u64,name:String}
-impl ONBOARDING_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_onboarding_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_onboarding_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_49Inner1{val:u64,name:String}
-impl ONBOARDING_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn get_onboarding_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_onboarding_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_49Inner2{val:u64,name:String}
-impl ONBOARDING_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn run_onboarding_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_onboarding_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_49Inner3{val:u64,name:String}
-impl ONBOARDING_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn fold_onboarding_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_onboarding_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct ONBOARDING_49Inner4{val:u64,name:String}
-impl ONBOARDING_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+//! Interactive onboarding — a port of `core/onboarding.py`'s ordered, idempotent
+//! steps. Each step reads the DB to decide if it's done and persists the moment it
+//! succeeds, so a partial run resumes exactly where it stopped.
+//!
+//! The wizard is a plain stdin prompt loop (the original vendors questionary /
+//! prompt_toolkit; the daemon only needs a working TTY flow). The freemium /
+//! newsletter parts of the `account` step are omitted with the freemium feature.\n// revival 2026 touch: src/onboarding.rs\n\n// revival 2026 touch: src/onboarding.rs\n
+// revival 2026 update: src/onboarding.rs

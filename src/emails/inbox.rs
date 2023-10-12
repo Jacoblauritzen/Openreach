@@ -1,26 +1,9 @@
-// inbox.rs - v49
+//! IMAP reply-reader — feeds the agentic follow-up loop its inbound messages.
+//! (`emails/inbox.py`)
+//!
+//! Reads replies to a deal's email thread over IMAP, upserts them as incoming
+//! `ChatMessage` rows, and folds the new ones into the Deal's `chat_summary`.
+//! The IMAP work is blocking (the `imap` crate), so it runs on a blocking thread.
 
-fn do_inbox_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_inbox_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct INBOX_49Inner0{val:u64,name:String}
-impl INBOX_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn set_inbox_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_inbox_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct INBOX_49Inner1{val:u64,name:String}
-impl INBOX_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_inbox_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_inbox_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct INBOX_49Inner2{val:u64,name:String}
-impl INBOX_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn set_inbox_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_inbox_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct INBOX_49Inner3{val:u64,name:String}
-impl INBOX_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn get_inbox_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_inbox_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct INBOX_49Inner4{val:u64,name:String}
-impl INBOX_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::Result;\n// revival 2026 touch: src/emails/inbox.rs\n\n// revival 2026 touch: src/emails/inbox.rs\n
+// revival 2026 update: src/emails/inbox.rs
