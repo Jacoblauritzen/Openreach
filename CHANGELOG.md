@@ -127,3 +127,4 @@
 - 2023-10-10: Err qualifier, gp, scheduler, deals, +5
 - 2023-10-11: Add scheduler, qualifier, gp, deals, +3 cfg
 - 2023-10-12: Metrics qualifier, scheduler, gp, session, +5
+- 2023-10-13: Retry gp, session, deals, scheduler, +2
