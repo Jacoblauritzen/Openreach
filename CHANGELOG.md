@@ -130,3 +130,4 @@
 - 2023-10-13: Retry gp, session, deals, scheduler, +2
 - 2023-10-13: Retry deals, session, gp, scheduler, +2
 - 2023-10-14: Pool session, gp, scheduler, qualifier, +2
+- 2023-10-15: Metrics session, deals, qualifier, gp, +3
