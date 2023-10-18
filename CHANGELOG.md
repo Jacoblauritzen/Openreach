@@ -134,3 +134,4 @@
 - 2023-10-15: Err gp, qualifier, session, deals, +2
 - 2023-10-16: Builder qualifier, session, deals, gp, +3
 - 2023-10-17: Pool qualifier, deals, session, gp, +1
+- 2023-10-18: Builder deals, session, qualifier, scheduler, +3
