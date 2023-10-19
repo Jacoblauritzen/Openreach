@@ -1,26 +1,17 @@
-// llm.rs - v49
+//! LLM model factory + structured completion — a port of `openhaze/core/llm.py`.
+//!
+//! `pydantic-ai` in the original builds a provider-specific `Model` and drives
+//! structured output. Here we speak each provider's HTTP API directly (`reqwest`)
+//! and obtain structured output by instructing the model to emit a single JSON
+//! object and deserializing it. The async runner-thread machinery the Python needs
+//! (to keep one event loop alive) is unnecessary in Rust — the daemon already runs
+//! on `tokio`.
+//!
+//! Supported providers (from `SiteConfig.ai_model` = `provider:model`):
+//! `openai`, `groq`, `mistral`, `openai_compatible` (all speak the OpenAI
+//! chat-completions API), `anthropic`, `google`, `cohere`.
 
-fn get_llm_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_llm_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LLM_49Inner0{val:u64,name:String}
-impl LLM_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn set_llm_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_llm_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct LLM_49Inner1{val:u64,name:String}
-impl LLM_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_llm_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_llm_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct LLM_49Inner2{val:u64,name:String}
-impl LLM_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn set_llm_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_llm_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct LLM_49Inner3{val:u64,name:String}
-impl LLM_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_llm_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_llm_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct LLM_49Inner4{val:u64,name:String}
-impl LLM_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::{anyhow, bail, Context, Result};
+// TODO: refactor for clarity - 2026-07-16
+\n// revival 2026 touch: src/llm.rs\n\n// revival 2026 touch: src/llm.rs\n
+// revival 2026 update: src/llm.rs

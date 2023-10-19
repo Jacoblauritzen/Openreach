@@ -135,3 +135,4 @@
 - 2023-10-16: Builder qualifier, session, deals, gp, +3
 - 2023-10-17: Pool qualifier, deals, session, gp, +1
 - 2023-10-18: Builder deals, session, qualifier, scheduler, +3
+- 2023-10-19: Wire deals, qualifier, llm
