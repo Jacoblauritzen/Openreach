@@ -138,3 +138,4 @@
 - 2023-10-19: Wire deals, qualifier, llm
 - 2023-10-20: Features qualifier, deals
 - 2023-10-20: Shutdown deals, qualifier, .gitignore, scheduler
+- 2023-10-21: Pool qualifier, deals, session
