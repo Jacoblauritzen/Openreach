@@ -140,3 +140,4 @@
 - 2023-10-20: Shutdown deals, qualifier, .gitignore, scheduler
 - 2023-10-21: Pool qualifier, deals, session
 - 2023-10-22: Builder qualifier, deals
+- 2023-10-23: Test deals, qualifier

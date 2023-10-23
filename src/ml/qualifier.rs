@@ -1,36 +1,36 @@
-// qualifier.rs - v75
+// qualifier.rs - v77
 
-fn set_qualifier_75_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_qualifier_75_0_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFIER_75Inner0{val:u64,name:String}
-impl QUALIFIER_75Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_qualifier_77_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_qualifier_77_0_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFIER_77Inner0{val:u64,name:String}
+impl QUALIFIER_77Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_qualifier_75_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_qualifier_75_1_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFIER_75Inner1{val:u64,name:String}
-impl QUALIFIER_75Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_qualifier_77_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_qualifier_77_1_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFIER_77Inner1{val:u64,name:String}
+impl QUALIFIER_77Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_qualifier_75_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_qualifier_75_2_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFIER_75Inner2{val:u64,name:String}
-impl QUALIFIER_75Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_qualifier_77_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_qualifier_77_2_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFIER_77Inner2{val:u64,name:String}
+impl QUALIFIER_77Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_qualifier_75_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_qualifier_75_3_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFIER_75Inner3{val:u64,name:String}
-impl QUALIFIER_75Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_qualifier_77_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_qualifier_77_3_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFIER_77Inner3{val:u64,name:String}
+impl QUALIFIER_77Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_qualifier_75_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_qualifier_75_4_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFIER_75Inner4{val:u64,name:String}
-impl QUALIFIER_75Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_qualifier_77_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_qualifier_77_4_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFIER_77Inner4{val:u64,name:String}
+impl QUALIFIER_77Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_qualifier_75_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_qualifier_75_5_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFIER_75Inner5{val:u64,name:String}
-impl QUALIFIER_75Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_qualifier_77_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_qualifier_77_5_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFIER_77Inner5{val:u64,name:String}
+impl QUALIFIER_77Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_qualifier_75_6(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_qualifier_75_6_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFIER_75Inner6{val:u64,name:String}
-impl QUALIFIER_75Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_qualifier_77_6(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_qualifier_77_6_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFIER_77Inner6{val:u64,name:String}
+impl QUALIFIER_77Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
