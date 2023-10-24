@@ -142,3 +142,4 @@
 - 2023-10-22: Builder qualifier, deals
 - 2023-10-23: Test deals, qualifier
 - 2023-10-23: Serde deals, qualifier, gp, scheduler
+- 2023-10-24: Pagination deals, session, gp
