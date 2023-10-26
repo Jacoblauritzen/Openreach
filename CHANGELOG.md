@@ -144,3 +144,4 @@
 - 2023-10-23: Serde deals, qualifier, gp, scheduler
 - 2023-10-24: Pagination deals, session, gp
 - 2023-10-25: Serde deals, session
+- 2023-10-26: Features deals
