@@ -147,3 +147,4 @@
 - 2023-10-26: Features deals
 - 2023-10-27: Metrics deals, qualifier, gp
 - 2023-10-28: Serde deals
+- 2023-10-29: Test deals
