@@ -151,3 +151,4 @@
 - 2023-10-29: Cache deals, qualifier
 - 2023-10-30: Test deals
 - 2023-11-01: Builder main, contacts, deal, conf, +3
+- 2023-11-02: Retry users, discover, sender, frontier, +3
