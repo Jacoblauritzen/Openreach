@@ -153,3 +153,4 @@
 - 2023-11-01: Builder main, contacts, deal, conf, +3
 - 2023-11-02: Retry users, discover, sender, frontier, +3
 - 2023-11-02: Add discover, follow up, discovery, task, +4 cfg
+- 2023-11-03: Rate frontier, users, daemon, contacts, +2
