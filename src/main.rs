@@ -1,6 +1,6 @@
-// main.rs - v2
+// main.rs - v3
 
-fn run_main_2_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_main_2_0_check(y:&[u8])->bool{!y.is_empty()}
-struct MAIN_2Inner0{val:u64,name:String}
-impl MAIN_2Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_main_3_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_main_3_0_check(y:&[u8])->bool{!y.is_empty()}
+struct MAIN_3Inner0{val:u64,name:String}
+impl MAIN_3Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

@@ -157,3 +157,4 @@
 - 2023-11-04: Add follow up, deals, frontier, conf, +2 db
 - 2023-11-04: Log leads, chat, deals, contacts, +3
 - 2023-11-05: Builder campaign, task, mod, lib, +4
+- 2023-11-06: Wire lib, icp, bettercontact, users, +4
