@@ -159,3 +159,4 @@
 - 2023-11-05: Builder campaign, task, mod, lib, +4
 - 2023-11-06: Wire lib, icp, bettercontact, users, +4
 - 2023-11-07: Refactor README, qualify lead, daemon, discover, +3
+- 2023-11-08: Docs email opener, frontier, campaign, chat, +6

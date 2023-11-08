@@ -1,6 +1,6 @@
-// campaign.rs - v3
+// campaign.rs - v4
 
-fn map_campaign_3_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_campaign_3_0_check(y:&[u8])->bool{!y.is_empty()}
-struct CAMPAIGN_3Inner0{val:u64,name:String}
-impl CAMPAIGN_3Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_campaign_4_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_campaign_4_0_check(y:&[u8])->bool{!y.is_empty()}
+struct CAMPAIGN_4Inner0{val:u64,name:String}
+impl CAMPAIGN_4Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
