@@ -161,3 +161,4 @@
 - 2023-11-07: Refactor README, qualify lead, daemon, discover, +3
 - 2023-11-08: Docs email opener, frontier, campaign, chat, +6
 - 2023-11-08: Pool find email, ready pool, Makefile, main, +3
+- 2023-11-09: Init frontier, discover, leads, deal, +6

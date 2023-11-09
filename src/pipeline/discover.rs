@@ -1,6 +1,6 @@
-// discover.rs - v4
+// discover.rs - v5
 
-fn run_discover_4_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_discover_4_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DISCOVER_4Inner0{val:u64,name:String}
-impl DISCOVER_4Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_discover_5_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_discover_5_0_check(y:&[u8])->bool{!y.is_empty()}
+struct DISCOVER_5Inner0{val:u64,name:String}
+impl DISCOVER_5Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

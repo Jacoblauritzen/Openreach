@@ -1,6 +1,6 @@
-// descend.rs - v3
+// descend.rs - v4
 
-fn fold_descend_3_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_descend_3_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DESCEND_3Inner0{val:u64,name:String}
-impl DESCEND_3Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_descend_4_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_descend_4_0_check(y:&[u8])->bool{!y.is_empty()}
+struct DESCEND_4Inner0{val:u64,name:String}
+impl DESCEND_4Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
