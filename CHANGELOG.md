@@ -164,3 +164,4 @@
 - 2023-11-09: Init frontier, discover, leads, deal, +6
 - 2023-11-10: Pagination email opener, descend, users, follow up, +2
 - 2023-11-10: Cache descend, sender, Makefile, leads, +4
+- 2023-11-11: Rate conf, tz country, leads, bettercontact, +3
