@@ -1,6 +1,6 @@
-// frontier.rs - v9
+// frontier.rs - v10
 
-fn map_frontier_9_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_frontier_9_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_9Inner0{val:u64,name:String}
-impl FRONTIER_9Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_frontier_10_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_frontier_10_0_check(y:&[u8])->bool{!y.is_empty()}
+struct FRONTIER_10Inner0{val:u64,name:String}
+impl FRONTIER_10Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

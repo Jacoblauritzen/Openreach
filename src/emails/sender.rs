@@ -1,6 +1,6 @@
-// sender.rs - v4
+// sender.rs - v5
 
-fn do_sender_4_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_sender_4_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_4Inner0{val:u64,name:String}
-impl SENDER_4Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_sender_5_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_sender_5_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_5Inner0{val:u64,name:String}
+impl SENDER_5Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

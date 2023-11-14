@@ -1,6 +1,6 @@
-// leads.rs - v6
+// leads.rs - v7
 
-fn set_leads_6_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_leads_6_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_6Inner0{val:u64,name:String}
-impl LEADS_6Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_leads_7_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_leads_7_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_7Inner0{val:u64,name:String}
+impl LEADS_7Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
