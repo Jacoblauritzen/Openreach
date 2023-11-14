@@ -167,3 +167,4 @@
 - 2023-11-11: Rate conf, tz country, leads, bettercontact, +3
 - 2023-11-12: Add README, NOTICE, follow up, mod, +5 db
 - 2023-11-13: Refactor LICENSE, main, find email, mod, +6
+- 2023-11-13: Valid follow up, campaigns, task, find email, +5
