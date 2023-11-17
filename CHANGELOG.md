@@ -171,3 +171,4 @@
 - 2023-11-14: Features follow up, qualify lead, sender, mod, +4
 - 2023-11-15: Init find email, LICENSE, sender, mod, +2
 - 2023-11-16: Add follow up, sender, users, deal, +3 types
+- 2023-11-17: Wire discover, find email, email opener, lib, +6
