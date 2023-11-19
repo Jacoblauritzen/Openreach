@@ -174,3 +174,4 @@
 - 2023-11-17: Wire discover, find email, email opener, lib, +6
 - 2023-11-17: Shutdown find email, icp, configuration, Makefile, +6
 - 2023-11-18: Add tz country, lib, users, descend, +6 types
+- 2023-11-19: Add main, find email, configuration, deal, +3 types
