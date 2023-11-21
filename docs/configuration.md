@@ -1,12 +1,12 @@
 ## configuration
-discovery
+pipeline
 - CRUD
 - Pagination
 - Batches
 - Real-time
 
 ## configuration
-pipeline
+discovery
 - CRUD
 - Pagination
 - Batches

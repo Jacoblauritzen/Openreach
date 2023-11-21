@@ -176,3 +176,4 @@
 - 2023-11-18: Add tz country, lib, users, descend, +6 types
 - 2023-11-19: Add main, find email, configuration, deal, +3 types
 - 2023-11-20: Pagination README, main, configuration, ready pool, +2
+- 2023-11-21: Features contacts, chat, Makefile, campaign, +4
