@@ -1,6 +1,6 @@
-// daemon.rs - v8
+// daemon.rs - v9
 
-fn get_daemon_8_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_daemon_8_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DAEMON_8Inner0{val:u64,name:String}
-impl DAEMON_8Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_daemon_9_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_daemon_9_0_check(y:&[u8])->bool{!y.is_empty()}
+struct DAEMON_9Inner0{val:u64,name:String}
+impl DAEMON_9Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

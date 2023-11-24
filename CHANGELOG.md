@@ -180,3 +180,4 @@
 - 2023-11-21: Wire lead, qualify lead, qualify, mod, +6
 - 2023-11-22: Builder icp, discover, deal, ready pool, +3
 - 2023-11-23: Shutdown ready pool, qualify lead, lead, users, +5
+- 2023-11-24: Init conf, bettercontact, follow up, qualify lead, +3
