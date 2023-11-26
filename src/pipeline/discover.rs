@@ -1,6 +1,11 @@
-// discover.rs - v11
+// discover.rs - v12
 
-fn do_discover_11_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_discover_11_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DISCOVER_11Inner0{val:u64,name:String}
-impl DISCOVER_11Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_discover_12_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_discover_12_0_check(y:&[u8])->bool{!y.is_empty()}
+struct DISCOVER_12Inner0{val:u64,name:String}
+impl DISCOVER_12Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn get_discover_12_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_discover_12_1_check(y:&[u8])->bool{!y.is_empty()}
+struct DISCOVER_12Inner1{val:u64,name:String}
+impl DISCOVER_12Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

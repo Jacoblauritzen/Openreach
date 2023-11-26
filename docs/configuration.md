@@ -6,7 +6,14 @@ discovery
 - Real-time
 
 ## configuration
-pipeline
+outreach
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## configuration
+discovery
 - CRUD
 - Pagination
 - Batches
