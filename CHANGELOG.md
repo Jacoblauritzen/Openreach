@@ -186,3 +186,4 @@
 - 2023-11-26: Bench find email, discovery, follow up, contacts, +5
 - 2023-11-27: Cache campaign, frontier, email opener, lead, +5
 - 2023-11-27: Metrics daemon, follow up, geo, tz country, +5
+- 2023-11-28: Cache ready pool, geo, discovery, daemon, +6
