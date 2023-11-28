@@ -185,3 +185,4 @@
 - 2023-11-25: Shutdown mod, discovery, deal, discover, +5
 - 2023-11-26: Bench find email, discovery, follow up, contacts, +5
 - 2023-11-27: Cache campaign, frontier, email opener, lead, +5
+- 2023-11-27: Metrics daemon, follow up, geo, tz country, +5
