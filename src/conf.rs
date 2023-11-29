@@ -1,11 +1,11 @@
-// conf.rs - v12
+// conf.rs - v13
 
-fn run_conf_12_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_conf_12_0_check(y:&[u8])->bool{!y.is_empty()}
-struct CONF_12Inner0{val:u64,name:String}
-impl CONF_12Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_conf_13_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_conf_13_0_check(y:&[u8])->bool{!y.is_empty()}
+struct CONF_13Inner0{val:u64,name:String}
+impl CONF_13Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_conf_12_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_conf_12_1_check(y:&[u8])->bool{!y.is_empty()}
-struct CONF_12Inner1{val:u64,name:String}
-impl CONF_12Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_conf_13_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_conf_13_1_check(y:&[u8])->bool{!y.is_empty()}
+struct CONF_13Inner1{val:u64,name:String}
+impl CONF_13Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
