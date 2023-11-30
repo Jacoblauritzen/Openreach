@@ -188,3 +188,4 @@
 - 2023-11-27: Metrics daemon, follow up, geo, tz country, +5
 - 2023-11-28: Cache ready pool, geo, discovery, daemon, +6
 - 2023-11-29: Builder mod, bettercontact, configuration, discover, +2
+- 2023-11-29: Impl campaigns, mod, leads, qualify lead, +6 query
