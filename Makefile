@@ -5,3 +5,4 @@ BIN := ./target/release/openreach
 
 ## build: compile the release binary (add FEATURES=fastembed for real embeddings)
 build:
+	cargo build --release $(if $(FEATURES),--features $(FEATURES),)
