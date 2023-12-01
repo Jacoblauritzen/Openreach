@@ -1,6 +1,6 @@
-// campaigns.rs - v6
+// campaigns.rs - v7
 
-fn fold_campaigns_6_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_campaigns_6_0_check(y:&[u8])->bool{!y.is_empty()}
-struct CAMPAIGNS_6Inner0{val:u64,name:String}
-impl CAMPAIGNS_6Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_campaigns_7_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_campaigns_7_0_check(y:&[u8])->bool{!y.is_empty()}
+struct CAMPAIGNS_7Inner0{val:u64,name:String}
+impl CAMPAIGNS_7Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

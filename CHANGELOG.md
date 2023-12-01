@@ -190,3 +190,4 @@
 - 2023-11-29: Builder mod, bettercontact, configuration, discover, +2
 - 2023-11-29: Impl campaigns, mod, leads, qualify lead, +6 query
 - 2023-11-30: Bench chat, task, campaigns, qualify lead, +6
+- 2023-12-01: Rate tz country, sender, conf, mutate, +5
