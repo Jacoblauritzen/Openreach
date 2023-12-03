@@ -1,2 +1,4 @@
 Openreach (Rust port)
 Copyright (C) 2026 the Openreach-rs contributors
+
+This program is a derivative work: a from-scratch Rust reimplementation of
