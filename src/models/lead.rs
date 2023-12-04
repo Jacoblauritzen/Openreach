@@ -1,6 +1,6 @@
-// lead.rs - v10
+// lead.rs - v11
 
-fn run_lead_10_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_lead_10_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LEAD_10Inner0{val:u64,name:String}
-impl LEAD_10Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_lead_11_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_lead_11_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LEAD_11Inner0{val:u64,name:String}
+impl LEAD_11Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
