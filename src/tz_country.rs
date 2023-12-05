@@ -1,6 +1,6 @@
-// tz_country.rs - v6
+// tz_country.rs - v7
 
-fn fold_tz_country_6_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_tz_country_6_0_check(y:&[u8])->bool{!y.is_empty()}
-struct TZ_COUNTRY_6Inner0{val:u64,name:String}
-impl TZ_COUNTRY_6Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_tz_country_7_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_tz_country_7_0_check(y:&[u8])->bool{!y.is_empty()}
+struct TZ_COUNTRY_7Inner0{val:u64,name:String}
+impl TZ_COUNTRY_7Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
