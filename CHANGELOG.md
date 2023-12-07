@@ -196,3 +196,4 @@
 - 2023-12-03: Docs campaign, discover, LICENSE, mod, +4
 - 2023-12-04: Cache follow up, users, contacts, frontier, +5
 - 2023-12-04: Init daemon, campaigns, discovery, sender, +6
+- 2023-12-06: Shutdown contacts, daemon, follow up, descend, +4

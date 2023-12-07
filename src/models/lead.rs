@@ -1,11 +1,11 @@
-// lead.rs - v12
+// lead.rs - v13
 
-fn run_lead_12_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_lead_12_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LEAD_12Inner0{val:u64,name:String}
-impl LEAD_12Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_lead_13_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_lead_13_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LEAD_13Inner0{val:u64,name:String}
+impl LEAD_13Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_lead_12_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_lead_12_1_check(y:&[u8])->bool{!y.is_empty()}
-struct LEAD_12Inner1{val:u64,name:String}
-impl LEAD_12Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_lead_13_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_lead_13_1_check(y:&[u8])->bool{!y.is_empty()}
+struct LEAD_13Inner1{val:u64,name:String}
+impl LEAD_13Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
