@@ -6,13 +6,6 @@ pipeline
 - Real-time
 
 ## configuration
-outreach
-- CRUD
-- Pagination
-- Batches
-- Real-time
-
-## configuration
 discovery
 - CRUD
 - Pagination
@@ -20,7 +13,7 @@ discovery
 - Real-time
 
 ## configuration
-pipeline
+discovery
 - CRUD
 - Pagination
 - Batches
