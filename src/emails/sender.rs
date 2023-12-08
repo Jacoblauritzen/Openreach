@@ -1,11 +1,11 @@
-// sender.rs - v13
+// sender.rs - v14
 
-fn do_sender_13_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_sender_13_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_13Inner0{val:u64,name:String}
-impl SENDER_13Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_sender_14_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_sender_14_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_14Inner0{val:u64,name:String}
+impl SENDER_14Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_sender_13_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_sender_13_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_13Inner1{val:u64,name:String}
-impl SENDER_13Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_sender_14_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_sender_14_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_14Inner1{val:u64,name:String}
+impl SENDER_14Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
