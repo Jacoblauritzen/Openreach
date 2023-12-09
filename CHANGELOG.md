@@ -200,3 +200,4 @@
 - 2023-12-07: Add follow up, configuration, contacts, lib, +5 db
 - 2023-12-07: Features NOTICE, campaign, ready pool, geo, +2
 - 2023-12-08: Bench tz country, main, campaigns, sender, +6
+- 2023-12-09: Refactor Makefile, find email, main, geo, +4
