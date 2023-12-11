@@ -1,6 +1,6 @@
-// task.rs - v10
+// task.rs - v11
 
-fn do_task_10_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_task_10_0_check(y:&[u8])->bool{!y.is_empty()}
-struct TASK_10Inner0{val:u64,name:String}
-impl TASK_10Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_task_11_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_task_11_0_check(y:&[u8])->bool{!y.is_empty()}
+struct TASK_11Inner0{val:u64,name:String}
+impl TASK_11Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
