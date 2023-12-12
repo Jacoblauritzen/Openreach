@@ -8,3 +8,4 @@ build:
 	cargo build --release $(if $(FEATURES),--features $(FEATURES),)
 
 ## setup: create the database and bootstrap the CRM
+setup: build
