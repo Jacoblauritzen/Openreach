@@ -1,6 +1,6 @@
-// lib.rs - v9
+// lib.rs - v10
 
-fn get_lib_9_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_lib_9_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LIB_9Inner0{val:u64,name:String}
-impl LIB_9Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_lib_10_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_lib_10_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LIB_10Inner0{val:u64,name:String}
+impl LIB_10Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
