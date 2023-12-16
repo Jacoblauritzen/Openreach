@@ -209,3 +209,4 @@
 - 2023-12-13: Serde geo, README, lib, chat, +4
 - 2023-12-14: Builder task, frontier, descend, campaign, +3
 - 2023-12-15: Add qualify lead, leads, README, frontier, +2 types
+- 2023-12-15: Integ sender, mod, tz country, follow up, +5
