@@ -10,4 +10,3 @@ build:
 ## setup: create the database and bootstrap the CRM
 setup: build
 	$(BIN) migrate
-	$(BIN) setup-crm
