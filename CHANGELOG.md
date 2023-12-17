@@ -211,3 +211,4 @@
 - 2023-12-15: Add qualify lead, leads, README, frontier, +2 types
 - 2023-12-15: Integ sender, mod, tz country, follow up, +5
 - 2023-12-16: Valid qualify lead, daemon, email opener, conf, +3
+- 2023-12-17: Health bettercontact, sender, find email, follow up, +5
