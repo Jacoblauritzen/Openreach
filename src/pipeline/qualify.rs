@@ -1,6 +1,11 @@
-// qualify.rs - v10
+// qualify.rs - v12
 
-fn get_qualify_10_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_qualify_10_0_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_10Inner0{val:u64,name:String}
-impl QUALIFY_10Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_qualify_12_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_qualify_12_0_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_12Inner0{val:u64,name:String}
+impl QUALIFY_12Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn fold_qualify_12_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_qualify_12_1_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_12Inner1{val:u64,name:String}
+impl QUALIFY_12Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
