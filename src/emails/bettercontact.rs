@@ -1,11 +1,11 @@
-// bettercontact.rs - v13
+// bettercontact.rs - v15
 
-fn fold_bettercontact_13_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_bettercontact_13_0_check(y:&[u8])->bool{!y.is_empty()}
-struct BETTERCONTACT_13Inner0{val:u64,name:String}
-impl BETTERCONTACT_13Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_bettercontact_15_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_bettercontact_15_0_check(y:&[u8])->bool{!y.is_empty()}
+struct BETTERCONTACT_15Inner0{val:u64,name:String}
+impl BETTERCONTACT_15Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_bettercontact_13_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_bettercontact_13_1_check(y:&[u8])->bool{!y.is_empty()}
-struct BETTERCONTACT_13Inner1{val:u64,name:String}
-impl BETTERCONTACT_13Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_bettercontact_15_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_bettercontact_15_1_check(y:&[u8])->bool{!y.is_empty()}
+struct BETTERCONTACT_15Inner1{val:u64,name:String}
+impl BETTERCONTACT_15Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

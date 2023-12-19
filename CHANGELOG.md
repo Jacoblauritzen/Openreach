@@ -213,3 +213,4 @@
 - 2023-12-16: Valid qualify lead, daemon, email opener, conf, +3
 - 2023-12-17: Health bettercontact, sender, find email, follow up, +5
 - 2023-12-17: Add frontier, follow up, discover, find email, +2 cfg
+- 2023-12-18: Impl bettercontact, discover, deal, main, +2 query
