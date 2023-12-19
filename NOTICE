@@ -3,3 +3,4 @@ Copyright (C) 2026 the Openreach-rs contributors
 
 This program is a derivative work: a from-scratch Rust reimplementation of
 Openreach by eracle (https://github.com/eracle/Openreach), used under the
+terms of the GNU General Public License version 3 or later.
