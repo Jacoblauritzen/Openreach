@@ -215,3 +215,4 @@
 - 2023-12-17: Add frontier, follow up, discover, find email, +2 cfg
 - 2023-12-18: Impl bettercontact, discover, deal, main, +2 query
 - 2023-12-19: Pool leads, bettercontact, deal, conf, +3
+- 2023-12-20: Valid conf, campaign, README, discover, +2
