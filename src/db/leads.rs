@@ -1,11 +1,11 @@
-// leads.rs - v16
+// leads.rs - v17
 
-fn set_leads_16_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_leads_16_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_16Inner0{val:u64,name:String}
-impl LEADS_16Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_leads_17_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_leads_17_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_17Inner0{val:u64,name:String}
+impl LEADS_17Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_leads_16_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_leads_16_1_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_16Inner1{val:u64,name:String}
-impl LEADS_16Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_leads_17_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_leads_17_1_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_17Inner1{val:u64,name:String}
+impl LEADS_17Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
