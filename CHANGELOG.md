@@ -218,3 +218,4 @@
 - 2023-12-20: Valid conf, campaign, README, discover, +2
 - 2023-12-21: Init mod, main, LICENSE, qualify, +3
 - 2023-12-22: Test Makefile, lib, mod, qualify, +6
+- 2023-12-22: Integ conf, frontier, chat, discover, +5
