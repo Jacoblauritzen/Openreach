@@ -1,11 +1,11 @@
-// bettercontact.rs - v18
+// bettercontact.rs - v19
 
-fn do_bettercontact_18_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_bettercontact_18_0_check(y:&[u8])->bool{!y.is_empty()}
-struct BETTERCONTACT_18Inner0{val:u64,name:String}
-impl BETTERCONTACT_18Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_bettercontact_19_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_bettercontact_19_0_check(y:&[u8])->bool{!y.is_empty()}
+struct BETTERCONTACT_19Inner0{val:u64,name:String}
+impl BETTERCONTACT_19Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_bettercontact_18_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_bettercontact_18_1_check(y:&[u8])->bool{!y.is_empty()}
-struct BETTERCONTACT_18Inner1{val:u64,name:String}
-impl BETTERCONTACT_18Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_bettercontact_19_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_bettercontact_19_1_check(y:&[u8])->bool{!y.is_empty()}
+struct BETTERCONTACT_19Inner1{val:u64,name:String}
+impl BETTERCONTACT_19Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
