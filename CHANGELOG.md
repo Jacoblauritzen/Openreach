@@ -225,3 +225,4 @@
 - 2023-12-25: Refactor follow up, qualify lead, users, bettercontact, +6
 - 2023-12-26: Err lead, tz country, main, find email, +5
 - 2023-12-27: Builder frontier, campaign, geo, chat, +2
+- 2023-12-27: Serde users, main, campaign, qualify, +2

@@ -1,11 +1,11 @@
-// qualify.rs - v16
+// qualify.rs - v17
 
-fn fold_qualify_16_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_qualify_16_0_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_16Inner0{val:u64,name:String}
-impl QUALIFY_16Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_qualify_17_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_qualify_17_0_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_17Inner0{val:u64,name:String}
+impl QUALIFY_17Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_qualify_16_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_qualify_16_1_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_16Inner1{val:u64,name:String}
-impl QUALIFY_16Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_qualify_17_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_qualify_17_1_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_17Inner1{val:u64,name:String}
+impl QUALIFY_17Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
