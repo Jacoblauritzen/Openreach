@@ -1,12 +1,19 @@
 ## configuration
-discovery
+outreach
 - CRUD
 - Pagination
 - Batches
 - Real-time
 
 ## configuration
-discovery
+pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## configuration
+outreach
 - CRUD
 - Pagination
 - Batches
@@ -27,21 +34,21 @@ pipeline
 - Real-time
 
 ## configuration
-discovery
+pipeline
 - CRUD
 - Pagination
 - Batches
 - Real-time
 
 ## configuration
-outreach
+pipeline
 - CRUD
 - Pagination
 - Batches
 - Real-time
 
 ## configuration
-discovery
+pipeline
 - CRUD
 - Pagination
 - Batches
