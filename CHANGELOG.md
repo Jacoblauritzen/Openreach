@@ -230,3 +230,4 @@
 - 2023-12-29: Add task, sender, lib, mod, +5 db
 - 2023-12-30: Metrics descend, campaign, discover, lead, +6
 - 2023-12-30: Test main, descend, sender, ready pool, +3
+- 2023-12-31: Test deal, daemon, README, bettercontact, +3
