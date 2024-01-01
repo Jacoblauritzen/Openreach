@@ -231,3 +231,4 @@
 - 2023-12-30: Metrics descend, campaign, discover, lead, +6
 - 2023-12-30: Test main, descend, sender, ready pool, +3
 - 2023-12-31: Test deal, daemon, README, bettercontact, +3
+- 2024-01-01: Docs sender, conf, users, find email, +3

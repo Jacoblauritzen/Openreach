@@ -1,11 +1,11 @@
-// find_email.rs - v21
+// find_email.rs - v22
 
-fn set_find_email_21_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_find_email_21_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FIND_EMAIL_21Inner0{val:u64,name:String}
-impl FIND_EMAIL_21Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_find_email_22_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_find_email_22_0_check(y:&[u8])->bool{!y.is_empty()}
+struct FIND_EMAIL_22Inner0{val:u64,name:String}
+impl FIND_EMAIL_22Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_find_email_21_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_find_email_21_1_check(y:&[u8])->bool{!y.is_empty()}
-struct FIND_EMAIL_21Inner1{val:u64,name:String}
-impl FIND_EMAIL_21Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_find_email_22_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_find_email_22_1_check(y:&[u8])->bool{!y.is_empty()}
+struct FIND_EMAIL_22Inner1{val:u64,name:String}
+impl FIND_EMAIL_22Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
