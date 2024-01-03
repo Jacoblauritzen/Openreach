@@ -1,11 +1,11 @@
-// lib.rs - v14
+// lib.rs - v15
 
-fn map_lib_14_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_lib_14_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LIB_14Inner0{val:u64,name:String}
-impl LIB_14Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_lib_15_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_lib_15_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LIB_15Inner0{val:u64,name:String}
+impl LIB_15Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_lib_14_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_lib_14_1_check(y:&[u8])->bool{!y.is_empty()}
-struct LIB_14Inner1{val:u64,name:String}
-impl LIB_14Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_lib_15_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_lib_15_1_check(y:&[u8])->bool{!y.is_empty()}
+struct LIB_15Inner1{val:u64,name:String}
+impl LIB_15Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
