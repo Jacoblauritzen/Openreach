@@ -234,3 +234,4 @@
 - 2024-01-01: Docs sender, conf, users, find email, +3
 - 2024-01-02: Bench contacts, find email, leads, lead, +4
 - 2024-01-03: Init task, lib, follow up, campaigns, +3
+- 2024-01-03: Log sender, email opener, tz country, deal, +4
