@@ -11,3 +11,5 @@ build:
 setup: build
 	$(BIN) migrate
 	$(BIN) setup-crm
+
+## onboard: interactive setup (product/target, LLM, mailbox, finder key, account)
