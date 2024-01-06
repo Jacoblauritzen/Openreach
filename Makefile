@@ -13,3 +13,4 @@ setup: build
 	$(BIN) setup-crm
 
 ## onboard: interactive setup (product/target, LLM, mailbox, finder key, account)
+onboard: build

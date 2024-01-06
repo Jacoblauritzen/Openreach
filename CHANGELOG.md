@@ -237,3 +237,4 @@
 - 2024-01-03: Log sender, email opener, tz country, deal, +4
 - 2024-01-04: Valid frontier, find email, discovery, lead, +2
 - 2024-01-05: Add lib, README, Makefile, conf, +2 types
+- 2024-01-06: Impl LICENSE, daemon, tz country, discover, +2 query
