@@ -239,3 +239,4 @@
 - 2024-01-05: Add lib, README, Makefile, conf, +2 types
 - 2024-01-06: Impl LICENSE, daemon, tz country, discover, +2 query
 - 2024-01-06: Log lib, mutate, Makefile, follow up, +6
+- 2024-01-07: Wire geo, main, deal, chat, +6
