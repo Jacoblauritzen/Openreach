@@ -250,3 +250,4 @@
 - 2024-01-13: Bench daemon, ready pool, discovery, NOTICE, +2
 - 2024-01-14: Features users, mod, sender, README, +3
 - 2024-01-15: Log deal, find email, campaigns, configuration, +3
+- 2024-01-15: Add qualify, main, deal, campaigns, +4 types
