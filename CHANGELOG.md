@@ -251,3 +251,4 @@
 - 2024-01-14: Features users, mod, sender, README, +3
 - 2024-01-15: Log deal, find email, campaigns, configuration, +3
 - 2024-01-15: Add qualify, main, deal, campaigns, +4 types
+- 2024-01-16: Features sender, follow up, campaign, main, +6
