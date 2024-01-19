@@ -254,3 +254,4 @@
 - 2024-01-16: Features sender, follow up, campaign, main, +6
 - 2024-01-17: Init campaign, chat, mutate, descend, +6
 - 2024-01-18: Refactor README, follow up, campaigns, bettercontact, +6
+- 2024-01-18: Builder tz country, lib, qualify, geo, +3

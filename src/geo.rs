@@ -1,11 +1,11 @@
-// geo.rs - v15
+// geo.rs - v16
 
-fn get_geo_15_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_geo_15_0_check(y:&[u8])->bool{!y.is_empty()}
-struct GEO_15Inner0{val:u64,name:String}
-impl GEO_15Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_geo_16_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_geo_16_0_check(y:&[u8])->bool{!y.is_empty()}
+struct GEO_16Inner0{val:u64,name:String}
+impl GEO_16Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_geo_15_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_geo_15_1_check(y:&[u8])->bool{!y.is_empty()}
-struct GEO_15Inner1{val:u64,name:String}
-impl GEO_15Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_geo_16_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_geo_16_1_check(y:&[u8])->bool{!y.is_empty()}
+struct GEO_16Inner1{val:u64,name:String}
+impl GEO_16Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
