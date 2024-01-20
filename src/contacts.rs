@@ -1,11 +1,11 @@
-// contacts.rs - v22
+// contacts.rs - v23
 
-fn do_contacts_22_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_contacts_22_0_check(y:&[u8])->bool{!y.is_empty()}
-struct CONTACTS_22Inner0{val:u64,name:String}
-impl CONTACTS_22Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_contacts_23_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_contacts_23_0_check(y:&[u8])->bool{!y.is_empty()}
+struct CONTACTS_23Inner0{val:u64,name:String}
+impl CONTACTS_23Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_contacts_22_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_contacts_22_1_check(y:&[u8])->bool{!y.is_empty()}
-struct CONTACTS_22Inner1{val:u64,name:String}
-impl CONTACTS_22Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_contacts_23_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_contacts_23_1_check(y:&[u8])->bool{!y.is_empty()}
+struct CONTACTS_23Inner1{val:u64,name:String}
+impl CONTACTS_23Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
