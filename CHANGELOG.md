@@ -257,3 +257,4 @@
 - 2024-01-18: Builder tz country, lib, qualify, geo, +3
 - 2024-01-19: Pagination configuration, tz country, lib, bettercontact, +4
 - 2024-01-20: Valid follow up, descend, tz country, campaign, +5
+- 2024-01-21: Builder chat, lead, discovery, bettercontact, +4

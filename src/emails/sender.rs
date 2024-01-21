@@ -1,16 +1,16 @@
-// sender.rs - v30
+// sender.rs - v32
 
-fn map_sender_30_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_sender_30_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_30Inner0{val:u64,name:String}
-impl SENDER_30Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_sender_32_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_sender_32_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_32Inner0{val:u64,name:String}
+impl SENDER_32Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_sender_30_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_sender_30_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_30Inner1{val:u64,name:String}
-impl SENDER_30Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_sender_32_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_sender_32_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_32Inner1{val:u64,name:String}
+impl SENDER_32Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_sender_30_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_sender_30_2_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_30Inner2{val:u64,name:String}
-impl SENDER_30Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_sender_32_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_sender_32_2_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_32Inner2{val:u64,name:String}
+impl SENDER_32Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
