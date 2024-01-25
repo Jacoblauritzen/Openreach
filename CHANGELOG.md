@@ -262,3 +262,4 @@
 - 2024-01-22: Cache conf, chat, lead, campaign, +5
 - 2024-01-23: Rate README, chat, campaign, campaigns, +2
 - 2024-01-23: Pagination bettercontact, conf, mutate, follow up, +4
+- 2024-01-25: Cache find email, tz country, daemon, icp, +6
