@@ -265,3 +265,4 @@
 - 2024-01-25: Cache find email, tz country, daemon, icp, +6
 - 2024-01-25: Cache lead, descend, deal, mod, +6
 - 2024-01-26: Cache LICENSE, ready pool, mod, follow up, +6
+- 2024-01-27: Add lib, campaign, icp, discover, +5 cfg
