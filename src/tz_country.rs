@@ -1,16 +1,16 @@
-// tz_country.rs - v28
+// tz_country.rs - v30
 
-fn run_tz_country_28_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_tz_country_28_0_check(y:&[u8])->bool{!y.is_empty()}
-struct TZ_COUNTRY_28Inner0{val:u64,name:String}
-impl TZ_COUNTRY_28Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_tz_country_30_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_tz_country_30_0_check(y:&[u8])->bool{!y.is_empty()}
+struct TZ_COUNTRY_30Inner0{val:u64,name:String}
+impl TZ_COUNTRY_30Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_tz_country_28_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_tz_country_28_1_check(y:&[u8])->bool{!y.is_empty()}
-struct TZ_COUNTRY_28Inner1{val:u64,name:String}
-impl TZ_COUNTRY_28Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_tz_country_30_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_tz_country_30_1_check(y:&[u8])->bool{!y.is_empty()}
+struct TZ_COUNTRY_30Inner1{val:u64,name:String}
+impl TZ_COUNTRY_30Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_tz_country_28_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_tz_country_28_2_check(y:&[u8])->bool{!y.is_empty()}
-struct TZ_COUNTRY_28Inner2{val:u64,name:String}
-impl TZ_COUNTRY_28Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_tz_country_30_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_tz_country_30_2_check(y:&[u8])->bool{!y.is_empty()}
+struct TZ_COUNTRY_30Inner2{val:u64,name:String}
+impl TZ_COUNTRY_30Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

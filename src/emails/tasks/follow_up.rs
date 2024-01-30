@@ -1,16 +1,16 @@
-// follow_up.rs - v32
+// follow_up.rs - v33
 
-fn map_follow_up_32_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_follow_up_32_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_32Inner0{val:u64,name:String}
-impl FOLLOW_UP_32Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_follow_up_33_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_follow_up_33_0_check(y:&[u8])->bool{!y.is_empty()}
+struct FOLLOW_UP_33Inner0{val:u64,name:String}
+impl FOLLOW_UP_33Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_follow_up_32_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_follow_up_32_1_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_32Inner1{val:u64,name:String}
-impl FOLLOW_UP_32Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_follow_up_33_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_follow_up_33_1_check(y:&[u8])->bool{!y.is_empty()}
+struct FOLLOW_UP_33Inner1{val:u64,name:String}
+impl FOLLOW_UP_33Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_follow_up_32_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_follow_up_32_2_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_32Inner2{val:u64,name:String}
-impl FOLLOW_UP_32Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_follow_up_33_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_follow_up_33_2_check(y:&[u8])->bool{!y.is_empty()}
+struct FOLLOW_UP_33Inner2{val:u64,name:String}
+impl FOLLOW_UP_33Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
