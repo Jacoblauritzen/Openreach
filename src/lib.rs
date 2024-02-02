@@ -1,16 +1,16 @@
-// lib.rs - v29
+// lib.rs - v30
 
-fn set_lib_29_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_lib_29_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LIB_29Inner0{val:u64,name:String}
-impl LIB_29Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_lib_30_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_lib_30_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LIB_30Inner0{val:u64,name:String}
+impl LIB_30Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_lib_29_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_lib_29_1_check(y:&[u8])->bool{!y.is_empty()}
-struct LIB_29Inner1{val:u64,name:String}
-impl LIB_29Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_lib_30_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_lib_30_1_check(y:&[u8])->bool{!y.is_empty()}
+struct LIB_30Inner1{val:u64,name:String}
+impl LIB_30Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_lib_29_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_lib_29_2_check(y:&[u8])->bool{!y.is_empty()}
-struct LIB_29Inner2{val:u64,name:String}
-impl LIB_29Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_lib_30_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_lib_30_2_check(y:&[u8])->bool{!y.is_empty()}
+struct LIB_30Inner2{val:u64,name:String}
+impl LIB_30Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
