@@ -276,3 +276,4 @@
 - 2024-02-01: Wire bettercontact, users, campaign, lib, +3
 - 2024-02-03: Async mod, follow up, qualify, find email, +5
 - 2024-02-03: Features bettercontact, qualify, campaign, lib, +3
+- 2024-02-04: Serde geo, follow up, mod, discovery, +6

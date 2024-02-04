@@ -1,11 +1,11 @@
-// discovery.rs - v20
+// discovery.rs - v21
 
-fn set_discovery_20_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_discovery_20_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DISCOVERY_20Inner0{val:u64,name:String}
-impl DISCOVERY_20Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_discovery_21_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_discovery_21_0_check(y:&[u8])->bool{!y.is_empty()}
+struct DISCOVERY_21Inner0{val:u64,name:String}
+impl DISCOVERY_21Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_discovery_20_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_discovery_20_1_check(y:&[u8])->bool{!y.is_empty()}
-struct DISCOVERY_20Inner1{val:u64,name:String}
-impl DISCOVERY_20Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_discovery_21_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_discovery_21_1_check(y:&[u8])->bool{!y.is_empty()}
+struct DISCOVERY_21Inner1{val:u64,name:String}
+impl DISCOVERY_21Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
