@@ -278,3 +278,4 @@
 - 2024-02-03: Features bettercontact, qualify, campaign, lib, +3
 - 2024-02-04: Serde geo, follow up, mod, discovery, +6
 - 2024-02-05: Pagination mod, conf, qualify, icp, +2
+- 2024-02-05: Integ campaigns, discovery, mod, geo, +5
