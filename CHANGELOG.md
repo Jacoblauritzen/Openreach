@@ -281,3 +281,4 @@
 - 2024-02-05: Integ campaigns, discovery, mod, geo, +5
 - 2024-02-06: Cache task, icp, bettercontact, lead, +6
 - 2024-02-07: Health LICENSE, discovery, campaigns, users, +3
+- 2024-02-08: Add geo, LICENSE, mod, campaign, +3 types
