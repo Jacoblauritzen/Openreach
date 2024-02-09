@@ -282,3 +282,4 @@
 - 2024-02-06: Cache task, icp, bettercontact, lead, +6
 - 2024-02-07: Health LICENSE, discovery, campaigns, users, +3
 - 2024-02-08: Add geo, LICENSE, mod, campaign, +3 types
+- 2024-02-09: Docs README, discovery, icp, leads, +6
