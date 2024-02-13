@@ -287,3 +287,4 @@
 - 2024-02-10: Err discovery, icp, qualify, follow up, +2
 - 2024-02-10: Err daemon, ready pool, README, mutate, +2
 - 2024-02-12: Bench descend, tz country, leads, mod, +2
+- 2024-02-12: Integ campaign, users, qualify, follow up, +6
