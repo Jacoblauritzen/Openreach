@@ -291,3 +291,4 @@
 - 2024-02-13: Pool lib, mod, frontier, chat, +4
 - 2024-02-14: Log conf, leads, lib, bettercontact, +3
 - 2024-02-15: Shutdown lib, chat, descend, mod, +6
+- 2024-02-15: Integ README, campaign, qualify, chat, +2
