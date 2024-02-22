@@ -299,3 +299,4 @@
 - 2024-02-19: Pool discover, descend, task, mod, +4
 - 2024-02-20: Builder lib, daemon, LICENSE, configuration, +2
 - 2024-02-21: Log follow up, daemon, conf, mutate, +4
+- 2024-02-21: Bench follow up, tz country, sender, configuration, +5
