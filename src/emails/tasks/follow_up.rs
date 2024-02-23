@@ -1,21 +1,21 @@
-// follow_up.rs - v40
+// follow_up.rs - v41
 
-fn get_follow_up_40_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_follow_up_40_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_40Inner0{val:u64,name:String}
-impl FOLLOW_UP_40Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_follow_up_41_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_follow_up_41_0_check(y:&[u8])->bool{!y.is_empty()}
+struct FOLLOW_UP_41Inner0{val:u64,name:String}
+impl FOLLOW_UP_41Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_follow_up_40_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_follow_up_40_1_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_40Inner1{val:u64,name:String}
-impl FOLLOW_UP_40Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_follow_up_41_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_follow_up_41_1_check(y:&[u8])->bool{!y.is_empty()}
+struct FOLLOW_UP_41Inner1{val:u64,name:String}
+impl FOLLOW_UP_41Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_follow_up_40_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_follow_up_40_2_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_40Inner2{val:u64,name:String}
-impl FOLLOW_UP_40Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_follow_up_41_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_follow_up_41_2_check(y:&[u8])->bool{!y.is_empty()}
+struct FOLLOW_UP_41Inner2{val:u64,name:String}
+impl FOLLOW_UP_41Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_follow_up_40_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_follow_up_40_3_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_40Inner3{val:u64,name:String}
-impl FOLLOW_UP_40Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_follow_up_41_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_follow_up_41_3_check(y:&[u8])->bool{!y.is_empty()}
+struct FOLLOW_UP_41Inner3{val:u64,name:String}
+impl FOLLOW_UP_41Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
