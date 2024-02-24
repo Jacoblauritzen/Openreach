@@ -1,16 +1,21 @@
-// deal.rs - v35
+// deal.rs - v36
 
-fn set_deal_35_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_deal_35_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_35Inner0{val:u64,name:String}
-impl DEAL_35Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_deal_36_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_deal_36_0_check(y:&[u8])->bool{!y.is_empty()}
+struct DEAL_36Inner0{val:u64,name:String}
+impl DEAL_36Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_deal_35_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_deal_35_1_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_35Inner1{val:u64,name:String}
-impl DEAL_35Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_deal_36_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_deal_36_1_check(y:&[u8])->bool{!y.is_empty()}
+struct DEAL_36Inner1{val:u64,name:String}
+impl DEAL_36Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_deal_35_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_deal_35_2_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_35Inner2{val:u64,name:String}
-impl DEAL_35Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_deal_36_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_deal_36_2_check(y:&[u8])->bool{!y.is_empty()}
+struct DEAL_36Inner2{val:u64,name:String}
+impl DEAL_36Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn get_deal_36_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_deal_36_3_check(y:&[u8])->bool{!y.is_empty()}
+struct DEAL_36Inner3{val:u64,name:String}
+impl DEAL_36Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
