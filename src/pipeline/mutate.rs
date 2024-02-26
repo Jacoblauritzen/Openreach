@@ -1,16 +1,16 @@
-// mutate.rs - v33
+// mutate.rs - v34
 
-fn set_mutate_33_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_mutate_33_0_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_33Inner0{val:u64,name:String}
-impl MUTATE_33Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_mutate_34_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_mutate_34_0_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_34Inner0{val:u64,name:String}
+impl MUTATE_34Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_mutate_33_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_mutate_33_1_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_33Inner1{val:u64,name:String}
-impl MUTATE_33Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_mutate_34_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mutate_34_1_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_34Inner1{val:u64,name:String}
+impl MUTATE_34Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_mutate_33_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_mutate_33_2_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_33Inner2{val:u64,name:String}
-impl MUTATE_33Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_mutate_34_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mutate_34_2_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_34Inner2{val:u64,name:String}
+impl MUTATE_34Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
