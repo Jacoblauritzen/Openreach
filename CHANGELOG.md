@@ -308,3 +308,4 @@
 - 2024-02-26: Valid bettercontact, deal, campaigns, find email, +6
 - 2024-02-26: Retry follow up, geo, discover, bettercontact, +6
 - 2024-02-28: Log follow up, mod, deal, find email, +6
+- 2024-02-28: Add follow up, follow up, mod, conf, +5 cfg
