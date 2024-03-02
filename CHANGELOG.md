@@ -310,3 +310,4 @@
 - 2024-02-28: Log follow up, mod, deal, find email, +6
 - 2024-02-28: Add follow up, follow up, mod, conf, +5 cfg
 - 2024-02-29: Test sender, configuration, campaign, deal, +6
+- 2024-03-01: Wire configuration, frontier, mod, find email, +4
