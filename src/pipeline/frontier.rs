@@ -1,21 +1,21 @@
-// frontier.rs - v39
+// frontier.rs - v40
 
-fn get_frontier_39_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_frontier_39_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_39Inner0{val:u64,name:String}
-impl FRONTIER_39Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_frontier_40_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_frontier_40_0_check(y:&[u8])->bool{!y.is_empty()}
+struct FRONTIER_40Inner0{val:u64,name:String}
+impl FRONTIER_40Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_frontier_39_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_frontier_39_1_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_39Inner1{val:u64,name:String}
-impl FRONTIER_39Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_frontier_40_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_frontier_40_1_check(y:&[u8])->bool{!y.is_empty()}
+struct FRONTIER_40Inner1{val:u64,name:String}
+impl FRONTIER_40Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_frontier_39_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_frontier_39_2_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_39Inner2{val:u64,name:String}
-impl FRONTIER_39Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_frontier_40_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_frontier_40_2_check(y:&[u8])->bool{!y.is_empty()}
+struct FRONTIER_40Inner2{val:u64,name:String}
+impl FRONTIER_40Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_frontier_39_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_frontier_39_3_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_39Inner3{val:u64,name:String}
-impl FRONTIER_39Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_frontier_40_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_frontier_40_3_check(y:&[u8])->bool{!y.is_empty()}
+struct FRONTIER_40Inner3{val:u64,name:String}
+impl FRONTIER_40Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
