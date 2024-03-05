@@ -315,3 +315,4 @@
 - 2024-03-02: Shutdown sender, chat, mutate, lead, +4
 - 2024-03-03: Retry follow up, lib, mod, bettercontact, +3
 - 2024-03-03: Shutdown conf, sender, descend, qualify, +3
+- 2024-03-05: Rate lib, deal, daemon, lead, +4
