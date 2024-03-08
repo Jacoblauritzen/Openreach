@@ -319,3 +319,4 @@
 - 2024-03-05: Metrics leads, sender, contacts, conf, +6
 - 2024-03-06: Features README, sender, descend, task, +4
 - 2024-03-07: Add leads, find email, README, lib, +5 types
+- 2024-03-07: Async follow up, ready pool, mutate, main, +4
