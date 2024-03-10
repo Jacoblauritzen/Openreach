@@ -321,3 +321,4 @@
 - 2024-03-07: Add leads, find email, README, lib, +5 types
 - 2024-03-07: Async follow up, ready pool, mutate, main, +4
 - 2024-03-08: Err deal, frontier, contacts, icp, +5
+- 2024-03-09: Integ find email, task, icp, mutate, +6
