@@ -327,3 +327,4 @@
 - 2024-03-11: Features lead, leads, deal, contacts, +2
 - 2024-03-12: Add deal, icp, mod, chat, +5 db
 - 2024-03-13: Builder mutate, discovery, daemon, follow up, +3
+- 2024-03-13: Features mutate, discovery, sender, lead, +6
