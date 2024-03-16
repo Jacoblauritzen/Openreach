@@ -330,3 +330,4 @@
 - 2024-03-13: Features mutate, discovery, sender, lead, +6
 - 2024-03-14: Cache descend, geo, leads, lead, +6
 - 2024-03-15: Health follow up, deal, daemon, task, +2
+- 2024-03-16: Add lead, task, ready pool, users, +3 cfg
