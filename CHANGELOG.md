@@ -332,3 +332,4 @@
 - 2024-03-15: Health follow up, deal, daemon, task, +2
 - 2024-03-16: Add lead, task, ready pool, users, +3 cfg
 - 2024-03-16: Integ frontier, daemon, tz country, bettercontact, +6
+- 2024-03-17: Add users, lib, campaigns, frontier, +5 cfg
