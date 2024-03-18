@@ -333,3 +333,4 @@
 - 2024-03-16: Add lead, task, ready pool, users, +3 cfg
 - 2024-03-16: Integ frontier, daemon, tz country, bettercontact, +6
 - 2024-03-17: Add users, lib, campaigns, frontier, +5 cfg
+- 2024-03-18: Retry qualify, follow up, lib, ready pool, +6
