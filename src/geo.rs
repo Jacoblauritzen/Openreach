@@ -1,21 +1,21 @@
-// geo.rs - v37
+// geo.rs - v39
 
-fn fold_geo_37_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_geo_37_0_check(y:&[u8])->bool{!y.is_empty()}
-struct GEO_37Inner0{val:u64,name:String}
-impl GEO_37Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_geo_39_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_geo_39_0_check(y:&[u8])->bool{!y.is_empty()}
+struct GEO_39Inner0{val:u64,name:String}
+impl GEO_39Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_geo_37_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_geo_37_1_check(y:&[u8])->bool{!y.is_empty()}
-struct GEO_37Inner1{val:u64,name:String}
-impl GEO_37Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_geo_39_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_geo_39_1_check(y:&[u8])->bool{!y.is_empty()}
+struct GEO_39Inner1{val:u64,name:String}
+impl GEO_39Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_geo_37_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_geo_37_2_check(y:&[u8])->bool{!y.is_empty()}
-struct GEO_37Inner2{val:u64,name:String}
-impl GEO_37Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_geo_39_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_geo_39_2_check(y:&[u8])->bool{!y.is_empty()}
+struct GEO_39Inner2{val:u64,name:String}
+impl GEO_39Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_geo_37_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_geo_37_3_check(y:&[u8])->bool{!y.is_empty()}
-struct GEO_37Inner3{val:u64,name:String}
-impl GEO_37Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_geo_39_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_geo_39_3_check(y:&[u8])->bool{!y.is_empty()}
+struct GEO_39Inner3{val:u64,name:String}
+impl GEO_39Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
