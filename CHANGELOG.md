@@ -342,3 +342,4 @@
 - 2024-03-22: Pagination icp, discovery, descend, geo, +3
 - 2024-03-23: Integ bettercontact, mod, users, README, +3
 - 2024-03-24: Add campaigns, ready pool, mod, users, +2 cfg
+- 2024-03-25: Features qualify, users, mod, ready pool, +6
