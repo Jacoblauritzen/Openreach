@@ -345,3 +345,4 @@
 - 2024-03-25: Features qualify, users, mod, ready pool, +6
 - 2024-03-26: Retry ready pool, users, icp, leads, +5
 - 2024-03-26: Features README, qualify, geo, descend, +4
+- 2024-03-27: Refactor follow up, discovery, bettercontact, contacts, +3
