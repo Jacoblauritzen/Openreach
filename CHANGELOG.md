@@ -348,3 +348,4 @@
 - 2024-03-27: Refactor follow up, discovery, bettercontact, contacts, +3
 - 2024-03-28: Rate users, discovery, follow up, task, +2
 - 2024-03-29: Retry users, mutate, contacts, task, +5
+- 2024-03-29: Init icp, sender, contacts, users, +2
