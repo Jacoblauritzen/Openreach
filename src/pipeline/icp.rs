@@ -1,21 +1,21 @@
-// icp.rs - v46
+// icp.rs - v47
 
-fn map_icp_46_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_icp_46_0_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_46Inner0{val:u64,name:String}
-impl ICP_46Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_icp_47_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_icp_47_0_check(y:&[u8])->bool{!y.is_empty()}
+struct ICP_47Inner0{val:u64,name:String}
+impl ICP_47Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_icp_46_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_icp_46_1_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_46Inner1{val:u64,name:String}
-impl ICP_46Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_icp_47_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_icp_47_1_check(y:&[u8])->bool{!y.is_empty()}
+struct ICP_47Inner1{val:u64,name:String}
+impl ICP_47Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_icp_46_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_icp_46_2_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_46Inner2{val:u64,name:String}
-impl ICP_46Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_icp_47_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_icp_47_2_check(y:&[u8])->bool{!y.is_empty()}
+struct ICP_47Inner2{val:u64,name:String}
+impl ICP_47Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_icp_46_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_icp_46_3_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_46Inner3{val:u64,name:String}
-impl ICP_46Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_icp_47_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_icp_47_3_check(y:&[u8])->bool{!y.is_empty()}
+struct ICP_47Inner3{val:u64,name:String}
+impl ICP_47Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
