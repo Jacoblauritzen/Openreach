@@ -1,6 +1,6 @@
-// mailbox.rs - v1
+// mailbox.rs - v2
 
-fn get_mailbox_1_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_mailbox_1_0_check(y:&[u8])->bool{!y.is_empty()}
-struct MAILBOX_1Inner0{val:u64,name:String}
-impl MAILBOX_1Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_mailbox_2_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_mailbox_2_0_check(y:&[u8])->bool{!y.is_empty()}
+struct MAILBOX_2Inner0{val:u64,name:String}
+impl MAILBOX_2Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
