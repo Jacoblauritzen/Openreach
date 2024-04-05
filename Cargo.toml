@@ -1,9 +1,12 @@
-# Cargo v1
-debug=true
+# Cargo v2
+debug=false
 enabled=false
 enabled=true
-debug=true
-debug=8080
+enabled=true
 enabled=false
-debug=true
 port=false
+debug=8080
+debug=true
+port=8080
+debug=false
+enabled=true

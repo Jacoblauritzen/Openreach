@@ -1,6 +1,6 @@
-// embeddings.rs - v1
+// embeddings.rs - v2
 
-fn map_embeddings_1_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_embeddings_1_0_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_1Inner0{val:u64,name:String}
-impl EMBEDDINGS_1Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_embeddings_2_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_embeddings_2_0_check(y:&[u8])->bool{!y.is_empty()}
+struct EMBEDDINGS_2Inner0{val:u64,name:String}
+impl EMBEDDINGS_2Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
