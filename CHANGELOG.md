@@ -357,3 +357,4 @@
 - 2024-04-05: Add PORTING, leads, follow up agent, mod, +6 types
 - 2024-04-06: Async descend, email opener, geo, campaigns, +4
 - 2024-04-06: Log chat, campaigns, mailbox, PORTING, +2
+- 2024-04-07: Init site config, task, follow up, mod, +2
