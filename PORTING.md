@@ -1,5 +1,12 @@
 ## PORTING
-outreach
+pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## PORTING
+discovery
 - CRUD
 - Pagination
 - Batches
