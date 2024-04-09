@@ -3,3 +3,8 @@
 -- This mirrors the final state of the Django migration graph (crm 0001–0015,
 -- core/emails/chat/legacy) as a single clean-room schema. Table and column names
 -- follow Django's <app_label>_<model> convention so the data model reads 1:1
+-- against openhaze/*/models.py. SQLite is the store (data/db.sqlite3), same
+-- as the original (openhaze/settings.py).
+--
+-- Datetimes are stored as TEXT in RFC3339/ISO-8601 UTC (Django's SQLite datetime
+-- representation); booleans as INTEGER 0/1; JSONField/BinaryField as TEXT/BLOB.

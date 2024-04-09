@@ -358,3 +358,4 @@
 - 2024-04-06: Async descend, email opener, geo, campaigns, +4
 - 2024-04-06: Log chat, campaigns, mailbox, PORTING, +2
 - 2024-04-07: Init site config, task, follow up, mod, +2
+- 2024-04-08: Init user, 0001 initial, geo, sender, +3
