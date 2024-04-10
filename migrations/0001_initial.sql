@@ -8,3 +8,9 @@
 --
 -- Datetimes are stored as TEXT in RFC3339/ISO-8601 UTC (Django's SQLite datetime
 -- representation); booleans as INTEGER 0/1; JSONField/BinaryField as TEXT/BLOB.
+
+-- ---------------------------------------------------------------------------
+-- Django auth user (the operator). Only the columns the engine reads are kept:
+-- self-hosted means exactly one staff operator (see core/session.get_active_user).
+-- ---------------------------------------------------------------------------
+CREATE TABLE auth_user (

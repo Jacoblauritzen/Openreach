@@ -360,3 +360,4 @@
 - 2024-04-07: Init site config, task, follow up, mod, +2
 - 2024-04-08: Init user, 0001 initial, geo, sender, +3
 - 2024-04-09: Docs geo, user, integration, mod, +5
+- 2024-04-10: Init mod, campaigns, mod, mod, +3
