@@ -14,3 +14,9 @@
 -- self-hosted means exactly one staff operator (see core/session.get_active_user).
 -- ---------------------------------------------------------------------------
 CREATE TABLE auth_user (
+    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    username      TEXT    NOT NULL UNIQUE,
+    email         TEXT    NOT NULL DEFAULT '',
+    password      TEXT    NOT NULL DEFAULT '',
+    first_name    TEXT    NOT NULL DEFAULT '',
+    last_name     TEXT    NOT NULL DEFAULT '',

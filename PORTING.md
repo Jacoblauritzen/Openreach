@@ -11,3 +11,10 @@ outreach
 - Pagination
 - Batches
 - Real-time
+
+## PORTING
+pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
