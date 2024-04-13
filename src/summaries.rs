@@ -1,6 +1,6 @@
-// summaries.rs - v4
+// summaries.rs - v5
 
-fn run_summaries_4_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_summaries_4_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SUMMARIES_4Inner0{val:u64,name:String}
-impl SUMMARIES_4Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_summaries_5_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_summaries_5_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SUMMARIES_5Inner0{val:u64,name:String}
+impl SUMMARIES_5Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
