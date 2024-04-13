@@ -362,3 +362,4 @@
 - 2024-04-09: Docs geo, user, integration, mod, +5
 - 2024-04-10: Init mod, campaigns, mod, mod, +3
 - 2024-04-11: Async users, user, mod, 0001 initial, +4
+- 2024-04-12: Add qualify, descend, sender, 0001 initial, +6 cfg
