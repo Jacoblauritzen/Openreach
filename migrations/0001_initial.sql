@@ -25,3 +25,9 @@ CREATE TABLE auth_user (
     is_superuser  INTEGER NOT NULL DEFAULT 0,
     last_login    TEXT,
     date_joined   TEXT    NOT NULL
+);
+
+-- ---------------------------------------------------------------------------
+-- core.SiteConfig — singleton (pk=1). LLM + provider keys, contacts hub creds,
+-- operator country. (openhaze/core/models.py:SiteConfig)
+-- ---------------------------------------------------------------------------

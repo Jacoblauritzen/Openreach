@@ -1,31 +1,31 @@
-// users.rs - v61
+// users.rs - v62
 
-fn do_users_61_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_users_61_0_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_61Inner0{val:u64,name:String}
-impl USERS_61Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_users_62_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_users_62_0_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_62Inner0{val:u64,name:String}
+impl USERS_62Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_users_61_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_users_61_1_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_61Inner1{val:u64,name:String}
-impl USERS_61Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_users_62_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_users_62_1_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_62Inner1{val:u64,name:String}
+impl USERS_62Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_users_61_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_users_61_2_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_61Inner2{val:u64,name:String}
-impl USERS_61Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_users_62_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_users_62_2_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_62Inner2{val:u64,name:String}
+impl USERS_62Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_users_61_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_users_61_3_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_61Inner3{val:u64,name:String}
-impl USERS_61Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_users_62_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_users_62_3_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_62Inner3{val:u64,name:String}
+impl USERS_62Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_users_61_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_users_61_4_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_61Inner4{val:u64,name:String}
-impl USERS_61Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_users_62_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_users_62_4_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_62Inner4{val:u64,name:String}
+impl USERS_62Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_users_61_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_users_61_5_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_61Inner5{val:u64,name:String}
-impl USERS_61Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_users_62_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_users_62_5_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_62Inner5{val:u64,name:String}
+impl USERS_62Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
