@@ -31,3 +31,8 @@ CREATE TABLE auth_user (
 -- core.SiteConfig — singleton (pk=1). LLM + provider keys, contacts hub creds,
 -- operator country. (openhaze/core/models.py:SiteConfig)
 -- ---------------------------------------------------------------------------
+CREATE TABLE core_siteconfig (
+    id                    INTEGER PRIMARY KEY,          -- forced to 1 by SiteConfig.load()
+    ai_model              TEXT NOT NULL DEFAULT '',
+    llm_api_key           TEXT NOT NULL DEFAULT '',
+    llm_api_base          TEXT NOT NULL DEFAULT '',
