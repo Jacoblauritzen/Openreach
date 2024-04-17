@@ -366,3 +366,4 @@
 - 2024-04-13: Async PORTING, users, mod,  outreach base, +4
 - 2024-04-14: Wire 0001 initial, geo, logo, users, +4
 - 2024-04-15: Wire follow up, 0001 initial, mod, users, +5
+- 2024-04-16: Add  outreach base, summaries, sender, follow up, +4 types
