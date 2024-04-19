@@ -369,3 +369,4 @@
 - 2024-04-16: Add  outreach base, summaries, sender, follow up, +4 types
 - 2024-04-17: Log task, integration, follow up, site config, +2
 - 2024-04-17: Cache  outreach base, summaries, qualify, task, +5
+- 2024-04-19: Rate embeddings, contacts, mod, task, +6
