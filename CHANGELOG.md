@@ -371,3 +371,4 @@
 - 2024-04-17: Cache  outreach base, summaries, qualify, task, +5
 - 2024-04-19: Rate embeddings, contacts, mod, task, +6
 - 2024-04-20: Log qualify, mod, follow up, users, +4
+- 2024-04-21: Features PORTING, contacts,  outreach base, mutate queries, +5
