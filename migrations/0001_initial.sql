@@ -36,3 +36,8 @@ CREATE TABLE core_siteconfig (
     ai_model              TEXT NOT NULL DEFAULT '',
     llm_api_key           TEXT NOT NULL DEFAULT '',
     llm_api_base          TEXT NOT NULL DEFAULT '',
+    bettercontact_api_key TEXT NOT NULL DEFAULT '',
+    contacts_api_token    TEXT NOT NULL DEFAULT '',
+    contacts_api_url      TEXT NOT NULL DEFAULT '',
+    country_code          TEXT NOT NULL DEFAULT ''
+);
