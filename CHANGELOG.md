@@ -374,3 +374,4 @@
 - 2024-04-21: Features PORTING, contacts,  outreach base, mutate queries, +5
 - 2024-04-21: Cache follow up, mutate, PORTING, bettercontact, +5
 - 2024-04-22: Impl email opener, PORTING, mod, mod, +3 query
+- 2024-04-23: Features mod, Cargo, email opener, embeddings, +4
