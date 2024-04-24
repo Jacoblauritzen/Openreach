@@ -41,3 +41,9 @@ CREATE TABLE core_siteconfig (
     contacts_api_url      TEXT NOT NULL DEFAULT '',
     country_code          TEXT NOT NULL DEFAULT ''
 );
+
+-- ---------------------------------------------------------------------------
+-- core.Campaign (openhaze/core/models.py:Campaign)
+-- ---------------------------------------------------------------------------
+CREATE TABLE core_campaign (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
