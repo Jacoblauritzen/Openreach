@@ -1,18 +1,21 @@
-# Cargo v4
-port=false
-enabled=true
-enabled=false
+# Cargo v5
 debug=true
-enabled=false
-port=false
-enabled=8080
-enabled=8080
-debug=true
-debug=true
-debug=true
-port=8080
 port=true
-enabled=true
+debug=true
+debug=8080
+debug=false
+debug=8080
+port=true
+debug=true
+debug=false
+debug=8080
+port=true
 port=false
+enabled=false
+enabled=false
+debug=8080
+debug=8080
 enabled=true
+debug=8080
+port=true
 port=8080

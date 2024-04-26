@@ -1,6 +1,6 @@
-// integration.rs - v6
+// integration.rs - v7
 
-fn fold_integration_6_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_integration_6_0_check(y:&[u8])->bool{!y.is_empty()}
-struct INTEGRATION_6Inner0{val:u64,name:String}
-impl INTEGRATION_6Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_integration_7_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_integration_7_0_check(y:&[u8])->bool{!y.is_empty()}
+struct INTEGRATION_7Inner0{val:u64,name:String}
+impl INTEGRATION_7Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
