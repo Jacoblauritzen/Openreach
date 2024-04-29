@@ -380,3 +380,4 @@
 - 2024-04-26: Wire contacts, task, PORTING, send, +6
 - 2024-04-27: Refactor mod, mutate, bettercontact, mailbox, +4
 - 2024-04-28: Retry follow up agent, qualify, email opener, bettercontact, +5
+- 2024-04-29: Add task, embeddings, 0001 initial, bettercontact, +4 types
