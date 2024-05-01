@@ -47,3 +47,13 @@ CREATE TABLE core_siteconfig (
 -- ---------------------------------------------------------------------------
 CREATE TABLE core_campaign (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    name            TEXT    NOT NULL UNIQUE,
+    product_docs    TEXT    NOT NULL DEFAULT '',
+    campaign_target TEXT    NOT NULL DEFAULT '',
+    booking_link    TEXT    NOT NULL DEFAULT '',
+    is_freemium     INTEGER NOT NULL DEFAULT 0,
+    action_fraction REAL    NOT NULL DEFAULT 0.2,
+    seed_public_ids TEXT    NOT NULL DEFAULT '[]',      -- JSONField(default=list)
+    model_blob      BLOB,                               -- per-campaign GP (joblib in Python; bincode/serde here)
+    country_code    TEXT    NOT NULL DEFAULT ''
+);
