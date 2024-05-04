@@ -57,3 +57,10 @@ CREATE TABLE core_campaign (
     model_blob      BLOB,                               -- per-campaign GP (joblib in Python; bincode/serde here)
     country_code    TEXT    NOT NULL DEFAULT ''
 );
+
+-- core.Campaign.users  (M2M Campaign <-> auth_user)
+CREATE TABLE core_campaign_users (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    campaign_id INTEGER NOT NULL REFERENCES core_campaign(id) ON DELETE CASCADE,
+    user_id     INTEGER NOT NULL REFERENCES auth_user(id)     ON DELETE CASCADE,
+    UNIQUE (campaign_id, user_id)
