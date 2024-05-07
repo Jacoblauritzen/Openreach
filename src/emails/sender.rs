@@ -1,31 +1,31 @@
-// sender.rs - v69
+// sender.rs - v70
 
-fn run_sender_69_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_sender_69_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_69Inner0{val:u64,name:String}
-impl SENDER_69Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_sender_70_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_sender_70_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_70Inner0{val:u64,name:String}
+impl SENDER_70Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_sender_69_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_sender_69_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_69Inner1{val:u64,name:String}
-impl SENDER_69Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_sender_70_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_sender_70_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_70Inner1{val:u64,name:String}
+impl SENDER_70Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_sender_69_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_sender_69_2_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_69Inner2{val:u64,name:String}
-impl SENDER_69Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_sender_70_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_sender_70_2_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_70Inner2{val:u64,name:String}
+impl SENDER_70Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_sender_69_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_sender_69_3_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_69Inner3{val:u64,name:String}
-impl SENDER_69Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_sender_70_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_sender_70_3_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_70Inner3{val:u64,name:String}
+impl SENDER_70Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_sender_69_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_sender_69_4_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_69Inner4{val:u64,name:String}
-impl SENDER_69Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_sender_70_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_sender_70_4_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_70Inner4{val:u64,name:String}
+impl SENDER_70Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_sender_69_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_sender_69_5_check(y:&[u8])->bool{!y.is_empty()}
-struct SENDER_69Inner5{val:u64,name:String}
-impl SENDER_69Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_sender_70_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_sender_70_5_check(y:&[u8])->bool{!y.is_empty()}
+struct SENDER_70Inner5{val:u64,name:String}
+impl SENDER_70Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

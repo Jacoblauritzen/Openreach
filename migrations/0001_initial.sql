@@ -64,3 +64,8 @@ CREATE TABLE core_campaign_users (
     campaign_id INTEGER NOT NULL REFERENCES core_campaign(id) ON DELETE CASCADE,
     user_id     INTEGER NOT NULL REFERENCES auth_user(id)     ON DELETE CASCADE,
     UNIQUE (campaign_id, user_id)
+);
+
+-- ---------------------------------------------------------------------------
+-- core.Clause — one (family, value) pair, globally unique, shared across campaigns.
+-- (openhaze/core/models.py:Clause)
