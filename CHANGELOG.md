@@ -390,3 +390,4 @@
 - 2024-05-05: Integ follow up, descend, logo, sender, +5
 - 2024-05-06: Valid follow up, PORTING, Cargo, 0001 initial, +6
 - 2024-05-07: Async follow up agent, users,  outreach base, email opener, +2
+- 2024-05-08: Shutdown email opener, mod, embeddings, logo, +4
