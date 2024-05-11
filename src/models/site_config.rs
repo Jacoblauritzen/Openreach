@@ -1,11 +1,11 @@
-// site_config.rs - v13
+// site_config.rs - v14
 
-fn map_site_config_13_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_site_config_13_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SITE_CONFIG_13Inner0{val:u64,name:String}
-impl SITE_CONFIG_13Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_site_config_14_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_site_config_14_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SITE_CONFIG_14Inner0{val:u64,name:String}
+impl SITE_CONFIG_14Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_site_config_13_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_site_config_13_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SITE_CONFIG_13Inner1{val:u64,name:String}
-impl SITE_CONFIG_13Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_site_config_14_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_site_config_14_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SITE_CONFIG_14Inner1{val:u64,name:String}
+impl SITE_CONFIG_14Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
