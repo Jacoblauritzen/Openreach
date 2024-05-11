@@ -393,3 +393,4 @@
 - 2024-05-08: Shutdown email opener, mod, embeddings, logo, +4
 - 2024-05-09: Features mutate, PORTING, logo, Cargo, +4
 - 2024-05-10: Init leads, site config, Cargo, qualify, +5
+- 2024-05-11: Rate follow up agent, user, email opener, mutate, +5
