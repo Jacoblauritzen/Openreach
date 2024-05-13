@@ -395,3 +395,4 @@
 - 2024-05-10: Init leads, site config, Cargo, qualify, +5
 - 2024-05-11: Rate follow up agent, user, email opener, mutate, +5
 - 2024-05-12: Init PORTING, mod, mod, mod, +2
+- 2024-05-13: Serde PORTING, email opener, qualify, mod, +5
