@@ -396,3 +396,4 @@
 - 2024-05-11: Rate follow up agent, user, email opener, mutate, +5
 - 2024-05-12: Init PORTING, mod, mod, mod, +2
 - 2024-05-13: Serde PORTING, email opener, qualify, mod, +5
+- 2024-05-14: Pagination contacts, site config, mod, bettercontact, +3

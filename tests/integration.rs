@@ -1,6 +1,6 @@
-// integration.rs - v9
+// integration.rs - v10
 
-fn run_integration_9_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_integration_9_0_check(y:&[u8])->bool{!y.is_empty()}
-struct INTEGRATION_9Inner0{val:u64,name:String}
-impl INTEGRATION_9Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_integration_10_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_integration_10_0_check(y:&[u8])->bool{!y.is_empty()}
+struct INTEGRATION_10Inner0{val:u64,name:String}
+impl INTEGRATION_10Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
