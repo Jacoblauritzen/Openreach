@@ -69,3 +69,9 @@ CREATE TABLE core_campaign_users (
 -- ---------------------------------------------------------------------------
 -- core.Clause — one (family, value) pair, globally unique, shared across campaigns.
 -- (openhaze/core/models.py:Clause)
+-- ---------------------------------------------------------------------------
+CREATE TABLE core_clause (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    family     TEXT NOT NULL,          -- constrained to discovery.FILTER_FAMILIES in app code
+    value      TEXT NOT NULL,
+    created_at TEXT NOT NULL,
