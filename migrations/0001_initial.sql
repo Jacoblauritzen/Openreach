@@ -75,3 +75,8 @@ CREATE TABLE core_clause (
     family     TEXT NOT NULL,          -- constrained to discovery.FILTER_FAMILIES in app code
     value      TEXT NOT NULL,
     created_at TEXT NOT NULL,
+    CONSTRAINT uniq_clause UNIQUE (family, value)
+);
+
+-- core.Campaign.clauses  (M2M Campaign <-> Clause — the per-campaign clause pool)
+CREATE TABLE core_campaign_clauses (
