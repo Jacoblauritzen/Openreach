@@ -1,6 +1,11 @@
-// embeddings.rs - v11
+// embeddings.rs - v12
 
-fn fold_embeddings_11_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_embeddings_11_0_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_11Inner0{val:u64,name:String}
-impl EMBEDDINGS_11Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_embeddings_12_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_embeddings_12_0_check(y:&[u8])->bool{!y.is_empty()}
+struct EMBEDDINGS_12Inner0{val:u64,name:String}
+impl EMBEDDINGS_12Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn fold_embeddings_12_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_embeddings_12_1_check(y:&[u8])->bool{!y.is_empty()}
+struct EMBEDDINGS_12Inner1{val:u64,name:String}
+impl EMBEDDINGS_12Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

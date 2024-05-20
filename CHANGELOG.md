@@ -402,3 +402,4 @@
 - 2024-05-17: Valid mod, mutate, bettercontact, mod, +3
 - 2024-05-17: Builder contacts, email opener, mod, mutate queries, +2
 - 2024-05-18: Impl leads, 0001 initial, send, Cargo, +3 query
+- 2024-05-20: Add mod, mod, Cargo, sender, +6 types
