@@ -80,3 +80,8 @@ CREATE TABLE core_clause (
 
 -- core.Campaign.clauses  (M2M Campaign <-> Clause — the per-campaign clause pool)
 CREATE TABLE core_campaign_clauses (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    campaign_id INTEGER NOT NULL REFERENCES core_campaign(id) ON DELETE CASCADE,
+    clause_id   INTEGER NOT NULL REFERENCES core_clause(id)   ON DELETE CASCADE,
+    UNIQUE (campaign_id, clause_id)
+);

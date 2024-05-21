@@ -404,3 +404,4 @@
 - 2024-05-18: Impl leads, 0001 initial, send, Cargo, +3 query
 - 2024-05-20: Add mod, mod, Cargo, sender, +6 types
 - 2024-05-20: Serde follow up agent, email opener, Cargo, mod, +6
+- 2024-05-21: Log send, mailbox, follow up, leads, +5
