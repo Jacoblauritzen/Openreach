@@ -85,3 +85,9 @@ CREATE TABLE core_campaign_clauses (
     clause_id   INTEGER NOT NULL REFERENCES core_clause(id)   ON DELETE CASCADE,
     UNIQUE (campaign_id, clause_id)
 );
+
+-- ---------------------------------------------------------------------------
+-- core.DiscoveryQuery — one fetched node in a campaign's discovery walk.
+-- (openhaze/core/models.py:DiscoveryQuery)
+-- ---------------------------------------------------------------------------
+CREATE TABLE core_discoveryquery (

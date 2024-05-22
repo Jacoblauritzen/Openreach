@@ -405,3 +405,4 @@
 - 2024-05-20: Add mod, mod, Cargo, sender, +6 types
 - 2024-05-20: Serde follow up agent, email opener, Cargo, mod, +6
 - 2024-05-21: Log send, mailbox, follow up, leads, +5
+- 2024-05-22: Err  outreach base, send, integration, bettercontact, +6
