@@ -91,3 +91,9 @@ CREATE TABLE core_campaign_clauses (
 -- (openhaze/core/models.py:DiscoveryQuery)
 -- ---------------------------------------------------------------------------
 CREATE TABLE core_discoveryquery (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    campaign_id INTEGER NOT NULL REFERENCES core_campaign(id) ON DELETE CASCADE,
+    clause_key  TEXT    NOT NULL,      -- sha256 of the canonicalized clause set
+    "offset"    INTEGER NOT NULL DEFAULT 0,
+    exhausted   INTEGER NOT NULL DEFAULT 0,
+    created_at  TEXT    NOT NULL,
