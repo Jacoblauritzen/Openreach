@@ -12,3 +12,4 @@ Lines tagged `Me` are from you ({{ self_name }}). Any mention of `{{ self_name }
 {% if days_since_last_outgoing is not none -%}
 You last emailed this lead {{ days_since_last_outgoing }} day(s) ago.
 You have sent {{ unanswered_outgoing }} message(s) in a row without a reply.
+{% endif -%}
