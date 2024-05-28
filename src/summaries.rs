@@ -1,11 +1,11 @@
-// summaries.rs - v18
+// summaries.rs - v19
 
-fn get_summaries_18_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_summaries_18_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SUMMARIES_18Inner0{val:u64,name:String}
-impl SUMMARIES_18Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_summaries_19_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_summaries_19_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SUMMARIES_19Inner0{val:u64,name:String}
+impl SUMMARIES_19Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_summaries_18_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_summaries_18_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SUMMARIES_18Inner1{val:u64,name:String}
-impl SUMMARIES_18Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_summaries_19_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_summaries_19_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SUMMARIES_19Inner1{val:u64,name:String}
+impl SUMMARIES_19Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

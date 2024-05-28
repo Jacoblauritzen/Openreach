@@ -97,3 +97,7 @@ CREATE TABLE core_discoveryquery (
     "offset"    INTEGER NOT NULL DEFAULT 0,
     exhausted   INTEGER NOT NULL DEFAULT 0,
     created_at  TEXT    NOT NULL,
+    updated_at  TEXT    NOT NULL,
+    CONSTRAINT uniq_discovery_node UNIQUE (campaign_id, clause_key, "offset")
+);
+CREATE INDEX discovery_camp_exhausted_idx ON core_discoveryquery (campaign_id, exhausted);
