@@ -413,3 +413,4 @@
 - 2024-05-27: Valid mod, integration, leads,  outreach base, +5
 - 2024-05-28: Valid mutate, follow up agent, bettercontact, qualify, +6
 - 2024-05-29: Test contacts, sender, qualify, mutate queries, +6
+- 2024-05-29: Docs site config, PORTING, sender, logo, +3
