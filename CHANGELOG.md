@@ -416,3 +416,4 @@
 - 2024-05-29: Docs site config, PORTING, sender, logo, +3
 - 2024-05-31: Bench user, follow up agent, 0001 initial, summaries, +2
 - 2024-06-01: Metrics mutate queries, 0001 initial, leads, mailbox, +4
+- 2024-06-01: Add descend, contacts, PORTING, mod, +5 types
