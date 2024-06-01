@@ -101,3 +101,10 @@ CREATE TABLE core_discoveryquery (
     CONSTRAINT uniq_discovery_node UNIQUE (campaign_id, clause_key, "offset")
 );
 CREATE INDEX discovery_camp_exhausted_idx ON core_discoveryquery (campaign_id, exhausted);
+
+CREATE TABLE core_discoveryquery_clauses (
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
+    discoveryquery_id  INTEGER NOT NULL REFERENCES core_discoveryquery(id) ON DELETE CASCADE,
+    clause_id          INTEGER NOT NULL REFERENCES core_clause(id)         ON DELETE CASCADE,
+    UNIQUE (discoveryquery_id, clause_id)
+);
