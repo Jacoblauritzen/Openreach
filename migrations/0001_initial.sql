@@ -108,3 +108,8 @@ CREATE TABLE core_discoveryquery_clauses (
     clause_id          INTEGER NOT NULL REFERENCES core_clause(id)         ON DELETE CASCADE,
     UNIQUE (discoveryquery_id, clause_id)
 );
+
+-- ---------------------------------------------------------------------------
+-- core.EmptyClauseSet — a conjunction the index matches nobody with (any size).
+-- (openhaze/core/models.py:EmptyClauseSet)
+-- ---------------------------------------------------------------------------
