@@ -1,36 +1,36 @@
-// qualify.rs - v73
+// qualify.rs - v74
 
-fn map_qualify_73_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_qualify_73_0_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_73Inner0{val:u64,name:String}
-impl QUALIFY_73Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_qualify_74_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_qualify_74_0_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_74Inner0{val:u64,name:String}
+impl QUALIFY_74Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_qualify_73_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_qualify_73_1_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_73Inner1{val:u64,name:String}
-impl QUALIFY_73Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_qualify_74_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_qualify_74_1_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_74Inner1{val:u64,name:String}
+impl QUALIFY_74Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_qualify_73_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_qualify_73_2_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_73Inner2{val:u64,name:String}
-impl QUALIFY_73Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_qualify_74_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_qualify_74_2_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_74Inner2{val:u64,name:String}
+impl QUALIFY_74Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_qualify_73_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_qualify_73_3_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_73Inner3{val:u64,name:String}
-impl QUALIFY_73Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_qualify_74_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_qualify_74_3_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_74Inner3{val:u64,name:String}
+impl QUALIFY_74Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_qualify_73_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_qualify_73_4_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_73Inner4{val:u64,name:String}
-impl QUALIFY_73Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_qualify_74_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_qualify_74_4_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_74Inner4{val:u64,name:String}
+impl QUALIFY_74Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_qualify_73_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_qualify_73_5_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_73Inner5{val:u64,name:String}
-impl QUALIFY_73Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_qualify_74_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_qualify_74_5_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_74Inner5{val:u64,name:String}
+impl QUALIFY_74Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_qualify_73_6(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_qualify_73_6_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_73Inner6{val:u64,name:String}
-impl QUALIFY_73Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_qualify_74_6(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_qualify_74_6_check(y:&[u8])->bool{!y.is_empty()}
+struct QUALIFY_74Inner6{val:u64,name:String}
+impl QUALIFY_74Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
