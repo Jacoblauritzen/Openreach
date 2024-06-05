@@ -113,3 +113,8 @@ CREATE TABLE core_discoveryquery_clauses (
 -- core.EmptyClauseSet — a conjunction the index matches nobody with (any size).
 -- (openhaze/core/models.py:EmptyClauseSet)
 -- ---------------------------------------------------------------------------
+CREATE TABLE core_emptyclauseset (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    clause_key TEXT NOT NULL UNIQUE,
+    created_at TEXT NOT NULL
+);

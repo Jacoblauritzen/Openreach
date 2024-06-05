@@ -1,11 +1,11 @@
-// embeddings.rs - v17
+// embeddings.rs - v18
 
-fn get_embeddings_17_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_embeddings_17_0_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_17Inner0{val:u64,name:String}
-impl EMBEDDINGS_17Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_embeddings_18_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_embeddings_18_0_check(y:&[u8])->bool{!y.is_empty()}
+struct EMBEDDINGS_18Inner0{val:u64,name:String}
+impl EMBEDDINGS_18Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_embeddings_17_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_embeddings_17_1_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_17Inner1{val:u64,name:String}
-impl EMBEDDINGS_17Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_embeddings_18_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_embeddings_18_1_check(y:&[u8])->bool{!y.is_empty()}
+struct EMBEDDINGS_18Inner1{val:u64,name:String}
+impl EMBEDDINGS_18Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
