@@ -420,3 +420,4 @@
 - 2024-06-02: Health summaries, integration, contacts, email opener, +2
 - 2024-06-03: Add qualify, email opener, summaries, send, +3 db
 - 2024-06-04: Pagination sender, mod, leads, embeddings, +6
+- 2024-06-05: Add integration, user, bettercontact, mutate queries, +3 types
