@@ -422,3 +422,4 @@
 - 2024-06-04: Pagination sender, mod, leads, embeddings, +6
 - 2024-06-05: Add integration, user, bettercontact, mutate queries, +3 types
 - 2024-06-06: Valid qualify, leads, send, email opener, +4
+- 2024-06-07: Err integration, mod, summaries, site config, +6

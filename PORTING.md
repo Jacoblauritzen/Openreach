@@ -1,5 +1,12 @@
 ## PORTING
-outreach
+discovery
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## PORTING
+discovery
 - CRUD
 - Pagination
 - Batches
@@ -14,34 +21,6 @@ outreach
 
 ## PORTING
 pipeline
-- CRUD
-- Pagination
-- Batches
-- Real-time
-
-## PORTING
-outreach
-- CRUD
-- Pagination
-- Batches
-- Real-time
-
-## PORTING
-outreach
-- CRUD
-- Pagination
-- Batches
-- Real-time
-
-## PORTING
-outreach
-- CRUD
-- Pagination
-- Batches
-- Real-time
-
-## PORTING
-outreach
 - CRUD
 - Pagination
 - Batches
@@ -76,7 +55,14 @@ discovery
 - Real-time
 
 ## PORTING
-discovery
+pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## PORTING
+outreach
 - CRUD
 - Pagination
 - Batches
@@ -84,6 +70,27 @@ discovery
 
 ## PORTING
 pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## PORTING
+pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## PORTING
+pipeline
+- CRUD
+- Pagination
+- Batches
+- Real-time
+
+## PORTING
+outreach
 - CRUD
 - Pagination
 - Batches
