@@ -1,31 +1,31 @@
-// mutate.rs - v67
+// mutate.rs - v68
 
-fn set_mutate_67_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_mutate_67_0_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_67Inner0{val:u64,name:String}
-impl MUTATE_67Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_mutate_68_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_mutate_68_0_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_68Inner0{val:u64,name:String}
+impl MUTATE_68Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_mutate_67_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_mutate_67_1_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_67Inner1{val:u64,name:String}
-impl MUTATE_67Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_mutate_68_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_mutate_68_1_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_68Inner1{val:u64,name:String}
+impl MUTATE_68Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_mutate_67_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_mutate_67_2_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_67Inner2{val:u64,name:String}
-impl MUTATE_67Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_mutate_68_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_mutate_68_2_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_68Inner2{val:u64,name:String}
+impl MUTATE_68Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_mutate_67_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_mutate_67_3_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_67Inner3{val:u64,name:String}
-impl MUTATE_67Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_mutate_68_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mutate_68_3_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_68Inner3{val:u64,name:String}
+impl MUTATE_68Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_mutate_67_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_mutate_67_4_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_67Inner4{val:u64,name:String}
-impl MUTATE_67Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_mutate_68_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_mutate_68_4_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_68Inner4{val:u64,name:String}
+impl MUTATE_68Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_mutate_67_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_mutate_67_5_check(y:&[u8])->bool{!y.is_empty()}
-struct MUTATE_67Inner5{val:u64,name:String}
-impl MUTATE_67Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_mutate_68_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_mutate_68_5_check(y:&[u8])->bool{!y.is_empty()}
+struct MUTATE_68Inner5{val:u64,name:String}
+impl MUTATE_68Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
