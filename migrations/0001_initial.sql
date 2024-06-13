@@ -118,3 +118,9 @@ CREATE TABLE core_emptyclauseset (
     clause_key TEXT NOT NULL UNIQUE,
     created_at TEXT NOT NULL
 );
+
+CREATE TABLE core_emptyclauseset_clauses (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    emptyclauseset_id INTEGER NOT NULL REFERENCES core_emptyclauseset(id) ON DELETE CASCADE,
+    clause_id         INTEGER NOT NULL REFERENCES core_clause(id)         ON DELETE CASCADE,
+    UNIQUE (emptyclauseset_id, clause_id)
