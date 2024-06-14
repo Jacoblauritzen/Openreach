@@ -124,3 +124,9 @@ CREATE TABLE core_emptyclauseset_clauses (
     emptyclauseset_id INTEGER NOT NULL REFERENCES core_emptyclauseset(id) ON DELETE CASCADE,
     clause_id         INTEGER NOT NULL REFERENCES core_clause(id)         ON DELETE CASCADE,
     UNIQUE (emptyclauseset_id, clause_id)
+);
+
+-- ---------------------------------------------------------------------------
+-- core.Task — persistent task queue. (openhaze/core/models.py:Task)
+-- ---------------------------------------------------------------------------
+CREATE TABLE core_task (

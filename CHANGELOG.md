@@ -429,3 +429,4 @@
 - 2024-06-11: Init follow up agent, contacts, mutate, leads, +3
 - 2024-06-12: Pool contacts, 0001 initial, mod, embeddings, +5
 - 2024-06-13: Init bettercontact, email opener, mod,  outreach base, +5
+- 2024-06-14: Test  outreach base, summaries, leads, contacts, +4
