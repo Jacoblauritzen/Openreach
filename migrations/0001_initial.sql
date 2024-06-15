@@ -130,3 +130,8 @@ CREATE TABLE core_emptyclauseset_clauses (
 -- core.Task — persistent task queue. (openhaze/core/models.py:Task)
 -- ---------------------------------------------------------------------------
 CREATE TABLE core_task (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    task_type    TEXT NOT NULL,        -- find_email | collect_email | follow_up | email
+    status       TEXT NOT NULL DEFAULT 'pending',
+    scheduled_at TEXT NOT NULL,
+    payload      TEXT NOT NULL DEFAULT '{}',  -- JSONField(default=dict)

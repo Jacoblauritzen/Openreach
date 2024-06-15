@@ -430,3 +430,4 @@
 - 2024-06-12: Pool contacts, 0001 initial, mod, embeddings, +5
 - 2024-06-13: Init bettercontact, email opener, mod,  outreach base, +5
 - 2024-06-14: Test  outreach base, summaries, leads, contacts, +4
+- 2024-06-14: Impl mailbox, email opener, mutate queries, embeddings, +2 query
