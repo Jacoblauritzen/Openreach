@@ -135,3 +135,8 @@ CREATE TABLE core_task (
     status       TEXT NOT NULL DEFAULT 'pending',
     scheduled_at TEXT NOT NULL,
     payload      TEXT NOT NULL DEFAULT '{}',  -- JSONField(default=dict)
+    created_at   TEXT NOT NULL,
+    started_at   TEXT,
+    completed_at TEXT
+);
+CREATE INDEX core_task_status_sched_idx ON core_task (status, scheduled_at);
