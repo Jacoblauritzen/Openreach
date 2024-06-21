@@ -140,3 +140,9 @@ CREATE TABLE core_task (
     completed_at TEXT
 );
 CREATE INDEX core_task_status_sched_idx ON core_task (status, scheduled_at);
+
+-- ---------------------------------------------------------------------------
+-- emails.Mailbox — one SMTP/IMAP sending inbox. (openhaze/emails/models.py:Mailbox)
+-- ---------------------------------------------------------------------------
+CREATE TABLE emails_mailbox (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
