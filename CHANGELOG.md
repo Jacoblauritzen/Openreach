@@ -436,3 +436,4 @@
 - 2024-06-17: Bench descend, 0001 initial,  outreach base, mailbox, +4
 - 2024-06-18: Async user, mod, logo, send, +6
 - 2024-06-19: Serde mod, contacts, embeddings, logo, +3
+- 2024-06-20: Add logo, mod, follow up agent, leads, +4 cfg
