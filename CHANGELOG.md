@@ -438,3 +438,4 @@
 - 2024-06-19: Serde mod, contacts, embeddings, logo, +3
 - 2024-06-20: Add logo, mod, follow up agent, leads, +4 cfg
 - 2024-06-21: Err logo, mod, integration, mutate, +3
+- 2024-06-22: Add send, email opener, mailbox, site config, +4 types

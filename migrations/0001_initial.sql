@@ -146,3 +146,9 @@ CREATE INDEX core_task_status_sched_idx ON core_task (status, scheduled_at);
 -- ---------------------------------------------------------------------------
 CREATE TABLE emails_mailbox (
     id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    host         TEXT    NOT NULL DEFAULT 'smtp.gmail.com',
+    port         INTEGER NOT NULL DEFAULT 587,
+    imap_host    TEXT    NOT NULL DEFAULT 'imap.gmail.com',
+    imap_port    INTEGER NOT NULL DEFAULT 993,
+    username     TEXT    NOT NULL UNIQUE,
+    password     TEXT    NOT NULL,
