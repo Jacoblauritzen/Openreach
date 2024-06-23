@@ -440,3 +440,4 @@
 - 2024-06-21: Err logo, mod, integration, mutate, +3
 - 2024-06-22: Add send, email opener, mailbox, site config, +4 types
 - 2024-06-23: Refactor follow up agent, email opener, send, embeddings, +5
+- 2024-06-23: Impl follow up agent, user, integration, email opener, +5 query
