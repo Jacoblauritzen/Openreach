@@ -442,3 +442,4 @@
 - 2024-06-23: Refactor follow up agent, email opener, send, embeddings, +5
 - 2024-06-23: Impl follow up agent, user, integration, email opener, +5 query
 - 2024-06-25: Test integration, 0001 initial, mod, mailbox, +5
+- 2024-06-26: Docs user, email opener, site config, summaries, +2
