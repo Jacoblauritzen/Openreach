@@ -441,3 +441,4 @@
 - 2024-06-22: Add send, email opener, mailbox, site config, +4 types
 - 2024-06-23: Refactor follow up agent, email opener, send, embeddings, +5
 - 2024-06-23: Impl follow up agent, user, integration, email opener, +5 query
+- 2024-06-25: Test integration, 0001 initial, mod, mailbox, +5

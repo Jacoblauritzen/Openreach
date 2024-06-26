@@ -152,3 +152,7 @@ CREATE TABLE emails_mailbox (
     imap_port    INTEGER NOT NULL DEFAULT 993,
     username     TEXT    NOT NULL UNIQUE,
     password     TEXT    NOT NULL,
+    from_address TEXT    NOT NULL,
+    signature    TEXT,                 -- NULL = never asked, '' = declined and sticks
+    daily_limit  INTEGER NOT NULL DEFAULT 30
+);
