@@ -156,3 +156,15 @@ CREATE TABLE emails_mailbox (
     signature    TEXT,                 -- NULL = never asked, '' = declined and sticks
     daily_limit  INTEGER NOT NULL DEFAULT 30
 );
+
+-- ---------------------------------------------------------------------------
+-- crm.Lead (openhaze/crm/models/lead.py:Lead)
+-- ---------------------------------------------------------------------------
+CREATE TABLE crm_lead (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    profile_url     TEXT    NOT NULL UNIQUE,
+    country_code    TEXT    NOT NULL DEFAULT '',
+    embedding       BLOB,                          -- 384-dim float32, or NULL
+    profile_text    TEXT    NOT NULL DEFAULT '',
+    email           TEXT,                          -- NULL = unresolved
+    disqualified    INTEGER NOT NULL DEFAULT 0,
