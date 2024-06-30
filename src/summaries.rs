@@ -1,21 +1,21 @@
-// summaries.rs - v36
+// summaries.rs - v37
 
-fn do_summaries_36_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_summaries_36_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SUMMARIES_36Inner0{val:u64,name:String}
-impl SUMMARIES_36Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_summaries_37_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_summaries_37_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SUMMARIES_37Inner0{val:u64,name:String}
+impl SUMMARIES_37Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_summaries_36_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_summaries_36_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SUMMARIES_36Inner1{val:u64,name:String}
-impl SUMMARIES_36Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_summaries_37_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_summaries_37_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SUMMARIES_37Inner1{val:u64,name:String}
+impl SUMMARIES_37Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_summaries_36_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_summaries_36_2_check(y:&[u8])->bool{!y.is_empty()}
-struct SUMMARIES_36Inner2{val:u64,name:String}
-impl SUMMARIES_36Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_summaries_37_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_summaries_37_2_check(y:&[u8])->bool{!y.is_empty()}
+struct SUMMARIES_37Inner2{val:u64,name:String}
+impl SUMMARIES_37Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_summaries_36_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_summaries_36_3_check(y:&[u8])->bool{!y.is_empty()}
-struct SUMMARIES_36Inner3{val:u64,name:String}
-impl SUMMARIES_36Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_summaries_37_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_summaries_37_3_check(y:&[u8])->bool{!y.is_empty()}
+struct SUMMARIES_37Inner3{val:u64,name:String}
+impl SUMMARIES_37Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

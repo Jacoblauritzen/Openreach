@@ -447,3 +447,4 @@
 - 2024-06-28: Pool integration, user, 0001 initial, mod, +2
 - 2024-06-28: Wire integration, embeddings, mod, summaries, +4
 - 2024-06-29: Shutdown site config, descend, embeddings, mod, +5
+- 2024-06-30: Cache send, mod, integration, logo, +4
