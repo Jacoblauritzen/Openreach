@@ -174,3 +174,8 @@ CREATE TABLE crm_lead (
 );
 
 -- ---------------------------------------------------------------------------
+-- crm.Deal (openhaze/crm/models/deal.py:Deal)
+-- ---------------------------------------------------------------------------
+CREATE TABLE crm_deal (
+    id               INTEGER PRIMARY KEY AUTOINCREMENT,
+    lead_id          INTEGER NOT NULL REFERENCES crm_lead(id)      ON DELETE CASCADE,
