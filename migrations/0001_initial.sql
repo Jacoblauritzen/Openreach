@@ -179,3 +179,9 @@ CREATE TABLE crm_lead (
 CREATE TABLE crm_deal (
     id               INTEGER PRIMARY KEY AUTOINCREMENT,
     lead_id          INTEGER NOT NULL REFERENCES crm_lead(id)      ON DELETE CASCADE,
+    campaign_id      INTEGER NOT NULL REFERENCES core_campaign(id) ON DELETE CASCADE,
+    state            TEXT    NOT NULL DEFAULT 'Qualified',
+    outcome          TEXT    NOT NULL DEFAULT '',
+    reason           TEXT    NOT NULL DEFAULT '',
+    mailbox_id       INTEGER REFERENCES emails_mailbox(id) ON DELETE SET NULL,
+    email_subject    TEXT    NOT NULL DEFAULT '',
