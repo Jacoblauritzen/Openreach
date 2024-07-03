@@ -185,3 +185,8 @@ CREATE TABLE crm_deal (
     reason           TEXT    NOT NULL DEFAULT '',
     mailbox_id       INTEGER REFERENCES emails_mailbox(id) ON DELETE SET NULL,
     email_subject    TEXT    NOT NULL DEFAULT '',
+    email_sent_at    TEXT,
+    email_message_id TEXT    NOT NULL DEFAULT '',
+    next_follow_up_at TEXT,
+    profile_summary  TEXT,                          -- JSONField(null=True)
+    chat_summary     TEXT,                          -- JSONField(null=True)
