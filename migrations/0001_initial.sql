@@ -190,3 +190,9 @@ CREATE TABLE crm_deal (
     next_follow_up_at TEXT,
     profile_summary  TEXT,                          -- JSONField(null=True)
     chat_summary     TEXT,                          -- JSONField(null=True)
+    creation_date    TEXT    NOT NULL,
+    update_date      TEXT    NOT NULL,
+    CONSTRAINT unique_deal_per_campaign UNIQUE (lead_id, campaign_id)
+);
+CREATE INDEX crm_deal_email_sent_at_idx     ON crm_deal (email_sent_at);
+CREATE INDEX crm_deal_next_follow_up_at_idx ON crm_deal (next_follow_up_at);
