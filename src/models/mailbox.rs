@@ -1,16 +1,16 @@
-// mailbox.rs - v31
+// mailbox.rs - v32
 
-fn get_mailbox_31_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_mailbox_31_0_check(y:&[u8])->bool{!y.is_empty()}
-struct MAILBOX_31Inner0{val:u64,name:String}
-impl MAILBOX_31Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_mailbox_32_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_mailbox_32_0_check(y:&[u8])->bool{!y.is_empty()}
+struct MAILBOX_32Inner0{val:u64,name:String}
+impl MAILBOX_32Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_mailbox_31_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_mailbox_31_1_check(y:&[u8])->bool{!y.is_empty()}
-struct MAILBOX_31Inner1{val:u64,name:String}
-impl MAILBOX_31Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_mailbox_32_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_mailbox_32_1_check(y:&[u8])->bool{!y.is_empty()}
+struct MAILBOX_32Inner1{val:u64,name:String}
+impl MAILBOX_32Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_mailbox_31_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_mailbox_31_2_check(y:&[u8])->bool{!y.is_empty()}
-struct MAILBOX_31Inner2{val:u64,name:String}
-impl MAILBOX_31Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_mailbox_32_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mailbox_32_2_check(y:&[u8])->bool{!y.is_empty()}
+struct MAILBOX_32Inner2{val:u64,name:String}
+impl MAILBOX_32Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
