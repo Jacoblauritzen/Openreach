@@ -454,3 +454,4 @@
 - 2024-07-04: Add summaries, mailbox, descend, mod, +5 db
 - 2024-07-05: Builder integration, mod, embeddings, logo, +2
 - 2024-07-06: Docs mod, send, mod, mod, +6
+- 2024-07-07: Async user, site config, integration, embeddings, +2

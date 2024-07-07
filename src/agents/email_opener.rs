@@ -1,21 +1,21 @@
-// email_opener.rs - v41
+// email_opener.rs - v42
 
-fn fold_email_opener_41_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_email_opener_41_0_check(y:&[u8])->bool{!y.is_empty()}
-struct EMAIL_OPENER_41Inner0{val:u64,name:String}
-impl EMAIL_OPENER_41Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_email_opener_42_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_email_opener_42_0_check(y:&[u8])->bool{!y.is_empty()}
+struct EMAIL_OPENER_42Inner0{val:u64,name:String}
+impl EMAIL_OPENER_42Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_email_opener_41_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_email_opener_41_1_check(y:&[u8])->bool{!y.is_empty()}
-struct EMAIL_OPENER_41Inner1{val:u64,name:String}
-impl EMAIL_OPENER_41Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_email_opener_42_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_email_opener_42_1_check(y:&[u8])->bool{!y.is_empty()}
+struct EMAIL_OPENER_42Inner1{val:u64,name:String}
+impl EMAIL_OPENER_42Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_email_opener_41_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_email_opener_41_2_check(y:&[u8])->bool{!y.is_empty()}
-struct EMAIL_OPENER_41Inner2{val:u64,name:String}
-impl EMAIL_OPENER_41Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_email_opener_42_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_email_opener_42_2_check(y:&[u8])->bool{!y.is_empty()}
+struct EMAIL_OPENER_42Inner2{val:u64,name:String}
+impl EMAIL_OPENER_42Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_email_opener_41_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_email_opener_41_3_check(y:&[u8])->bool{!y.is_empty()}
-struct EMAIL_OPENER_41Inner3{val:u64,name:String}
-impl EMAIL_OPENER_41Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_email_opener_42_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_email_opener_42_3_check(y:&[u8])->bool{!y.is_empty()}
+struct EMAIL_OPENER_42Inner3{val:u64,name:String}
+impl EMAIL_OPENER_42Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
