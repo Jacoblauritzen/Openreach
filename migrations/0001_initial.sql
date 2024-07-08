@@ -196,3 +196,8 @@ CREATE TABLE crm_deal (
 );
 CREATE INDEX crm_deal_email_sent_at_idx     ON crm_deal (email_sent_at);
 CREATE INDEX crm_deal_next_follow_up_at_idx ON crm_deal (next_follow_up_at);
+
+-- ---------------------------------------------------------------------------
+-- chat.ChatMessage (openhaze/chat/models.py:ChatMessage)
+-- ---------------------------------------------------------------------------
+CREATE TABLE chat_chatmessage (
