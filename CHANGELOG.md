@@ -458,3 +458,4 @@
 - 2024-07-08: Test mod, 0001 initial, site config, user, +6
 - 2024-07-09: Docs mod, mailbox, embeddings, user, +2
 - 2024-07-10: Add mod, mod, user, mod, +3 types
+- 2024-07-11: Retry summaries, mod, send, integration, +2
