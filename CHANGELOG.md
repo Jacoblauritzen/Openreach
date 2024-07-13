@@ -460,3 +460,4 @@
 - 2024-07-10: Add mod, mod, user, mod, +3 types
 - 2024-07-11: Retry summaries, mod, send, integration, +2
 - 2024-07-12: Rate integration, user, mod, mod, +5
+- 2024-07-12: Metrics mod, logo, mod, email opener, +3
