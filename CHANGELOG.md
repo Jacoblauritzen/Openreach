@@ -461,3 +461,4 @@
 - 2024-07-11: Retry summaries, mod, send, integration, +2
 - 2024-07-12: Rate integration, user, mod, mod, +5
 - 2024-07-12: Metrics mod, logo, mod, email opener, +3
+- 2024-07-13: Wire site config, mod, integration, mod, +3
