@@ -467,3 +467,4 @@
 - 2024-07-16: Rate mod, mod, mod, integration, +5
 - 2024-07-17: Add summaries, send, embeddings, site config, +5 db
 - 2024-07-18: Log mod, mod, embeddings, integration, +5
+- 2024-07-19: Docs summaries, mailbox, mod, user, +4
