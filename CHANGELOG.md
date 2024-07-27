@@ -475,3 +475,4 @@
 - 2024-07-24: Docs send, mod, mailbox, mod, +5
 - 2024-07-25: Log mod, send, mailbox, mod, +3
 - 2024-07-26: Test send, mod, mod, summaries, +5
+- 2024-07-26: Add summaries, mod, mod, embeddings, +4 types
