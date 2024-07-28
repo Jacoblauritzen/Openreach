@@ -1,21 +1,26 @@
-// send.rs - v46
+// send.rs - v48
 
-fn get_send_46_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_send_46_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_46Inner0{val:u64,name:String}
-impl SEND_46Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_send_48_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_send_48_0_check(y:&[u8])->bool{!y.is_empty()}
+struct SEND_48Inner0{val:u64,name:String}
+impl SEND_48Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_send_46_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_send_46_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_46Inner1{val:u64,name:String}
-impl SEND_46Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_send_48_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_send_48_1_check(y:&[u8])->bool{!y.is_empty()}
+struct SEND_48Inner1{val:u64,name:String}
+impl SEND_48Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_send_46_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_send_46_2_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_46Inner2{val:u64,name:String}
-impl SEND_46Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_send_48_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_send_48_2_check(y:&[u8])->bool{!y.is_empty()}
+struct SEND_48Inner2{val:u64,name:String}
+impl SEND_48Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_send_46_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_send_46_3_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_46Inner3{val:u64,name:String}
-impl SEND_46Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_send_48_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_send_48_3_check(y:&[u8])->bool{!y.is_empty()}
+struct SEND_48Inner3{val:u64,name:String}
+impl SEND_48Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn fold_send_48_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_send_48_4_check(y:&[u8])->bool{!y.is_empty()}
+struct SEND_48Inner4{val:u64,name:String}
+impl SEND_48Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
