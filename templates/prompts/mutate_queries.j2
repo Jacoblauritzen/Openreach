@@ -9,3 +9,4 @@ You are a B2B go-to-market analyst tuning a lead-search campaign. Propose ONE ne
 ## Queries already tried (with measured value)
 {% if past_queries %}{% for q in past_queries %}
 - {{ q.query }} | offset={{ q.offset }} | leads={{ q.n_leads }} | examined={{ q.examined }} | qualified={{ q.qualified }}{% endfor %}
+{% else %}
