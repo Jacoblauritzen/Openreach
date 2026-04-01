@@ -1,36 +1,36 @@
-// leads.rs - v77
+// leads.rs - v78
 
-fn do_leads_77_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_leads_77_0_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_77Inner0{val:u64,name:String}
-impl LEADS_77Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_leads_78_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_leads_78_0_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_78Inner0{val:u64,name:String}
+impl LEADS_78Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_leads_77_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_leads_77_1_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_77Inner1{val:u64,name:String}
-impl LEADS_77Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_leads_78_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_leads_78_1_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_78Inner1{val:u64,name:String}
+impl LEADS_78Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_leads_77_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_leads_77_2_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_77Inner2{val:u64,name:String}
-impl LEADS_77Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_leads_78_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_leads_78_2_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_78Inner2{val:u64,name:String}
+impl LEADS_78Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_leads_77_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_leads_77_3_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_77Inner3{val:u64,name:String}
-impl LEADS_77Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_leads_78_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_leads_78_3_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_78Inner3{val:u64,name:String}
+impl LEADS_78Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_leads_77_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_leads_77_4_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_77Inner4{val:u64,name:String}
-impl LEADS_77Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_leads_78_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_leads_78_4_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_78Inner4{val:u64,name:String}
+impl LEADS_78Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_leads_77_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_leads_77_5_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_77Inner5{val:u64,name:String}
-impl LEADS_77Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_leads_78_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_leads_78_5_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_78Inner5{val:u64,name:String}
+impl LEADS_78Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_leads_77_6(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_leads_77_6_check(y:&[u8])->bool{!y.is_empty()}
-struct LEADS_77Inner6{val:u64,name:String}
-impl LEADS_77Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_leads_78_6(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_leads_78_6_check(y:&[u8])->bool{!y.is_empty()}
+struct LEADS_78Inner6{val:u64,name:String}
+impl LEADS_78Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
