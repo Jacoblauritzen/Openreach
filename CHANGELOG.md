@@ -481,3 +481,4 @@
 - 2024-07-29: Wire embeddings, mod, mod, summaries, +2
 - 2024-07-30: Health summaries, mod, send, embeddings, +4
 - 2026-04-01: Err descend, NOTICE, email opener, mod, +6
+- 2026-04-02: Add discovery, lead, follow up agent, mod, +4 db

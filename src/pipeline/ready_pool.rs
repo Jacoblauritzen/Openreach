@@ -1,26 +1,34 @@
-// ready_pool.rs - v49
+//! Find-email pool: the GP confidence gate between QUALIFIED and
+//! READY_TO_FIND_EMAIL — the spend gate on the paid lookup. (`pipeline/ready_pool.py`)
 
-fn do_ready_pool_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_ready_pool_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct READY_POOL_49Inner0{val:u64,name:String}
-impl READY_POOL_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::Result;
+use sqlx::SqlitePool;
 
-fn do_ready_pool_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_ready_pool_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct READY_POOL_49Inner1{val:u64,name:String}
-impl READY_POOL_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use crate::db::Profile;
+use crate::ml::qualifier::BayesianQualifier;
+use crate::models::deal::DealState;
+use crate::models::{Deal, Lead};
 
-fn run_ready_pool_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_ready_pool_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct READY_POOL_49Inner2{val:u64,name:String}
-impl READY_POOL_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Load `(profile, embedding)` pairs for profiles that have an embedding.
+async fn with_embeddings(
+    db: &SqlitePool,
+    profiles: Vec<Profile>,
+) -> Result<(Vec<Profile>, Vec<Vec<f32>>)> {
+    let mut valid = Vec::new();
+    let mut embs = Vec::new();
+    for p in profiles {
+        if let Some(lead) = Lead::get(db, p.lead_id).await? {
+            if let Some(e) = lead.embedding_array() {
+                embs.push(e);
+                valid.push(p);
+            }
+        }
+    }
+    Ok((valid, embs))
+}
 
-fn get_ready_pool_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_ready_pool_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct READY_POOL_49Inner3{val:u64,name:String}
-impl READY_POOL_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_ready_pool_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_ready_pool_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct READY_POOL_49Inner4{val:u64,name:String}
-impl READY_POOL_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Promote QUALIFIED profiles scoring above the GP threshold to
+/// READY_TO_FIND_EMAIL. Returns the count promoted. (`promote_to_ready`)
+pub async fn promote_to_ready(
+    db: &SqlitePool,
+    campaign_id: i64,

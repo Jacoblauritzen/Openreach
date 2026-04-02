@@ -14,3 +14,4 @@ setup: build
 
 ## onboard: interactive setup (product/target, LLM, mailbox, finder key, account)
 onboard: build
+	$(BIN) onboard
