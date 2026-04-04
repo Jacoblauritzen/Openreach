@@ -15,4 +15,3 @@ setup: build
 ## onboard: interactive setup (product/target, LLM, mailbox, finder key, account)
 onboard: build
 	$(BIN) onboard
-\n// revival 2026 touch: Makefile\n
