@@ -1,26 +1,20 @@
-// deal.rs - v49
+//! `crm.Deal` plus the `DealState` funnel and `Outcome` enums.
+//! (`openhaze/crm/models/deal.py`)
 
-fn run_deal_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_deal_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_49Inner0{val:u64,name:String}
-impl DEAL_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use chrono::{DateTime, Utc};
+use sqlx::FromRow;
 
-fn run_deal_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_deal_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_49Inner1{val:u64,name:String}
-impl DEAL_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_deal_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_deal_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_49Inner2{val:u64,name:String}
-impl DEAL_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_deal_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_deal_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_49Inner3{val:u64,name:String}
-impl DEAL_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn run_deal_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_deal_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct DEAL_49Inner4{val:u64,name:String}
-impl DEAL_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// The email-only funnel state for a Deal. The stored TEXT values are the
+/// human-readable strings the Django `TextChoices` used (`"Qualified"`, …),
+/// preserved for a faithful schema.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum DealState {
+    Qualified,
+    ReadyToFindEmail,
+    FindingEmail,
+    ReadyToEmail,
+    Emailed,
+    Completed,
+    Failed,
+}
+\n// revival 2026 touch: src/models/deal.rs\n\n// revival 2026 touch: src/models/deal.rs\n
