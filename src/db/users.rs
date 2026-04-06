@@ -1,31 +1,31 @@
-// users.rs - v69
+// users.rs - v70
 
-fn fold_users_69_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_users_69_0_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_69Inner0{val:u64,name:String}
-impl USERS_69Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn set_users_70_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_users_70_0_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_70Inner0{val:u64,name:String}
+impl USERS_70Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn map_users_69_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_users_69_1_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_69Inner1{val:u64,name:String}
-impl USERS_69Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn get_users_70_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_users_70_1_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_70Inner1{val:u64,name:String}
+impl USERS_70Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn do_users_69_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_users_69_2_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_69Inner2{val:u64,name:String}
-impl USERS_69Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_users_70_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_users_70_2_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_70Inner2{val:u64,name:String}
+impl USERS_70Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn run_users_69_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_users_69_3_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_69Inner3{val:u64,name:String}
-impl USERS_69Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_users_70_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_users_70_3_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_70Inner3{val:u64,name:String}
+impl USERS_70Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_users_69_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_users_69_4_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_69Inner4{val:u64,name:String}
-impl USERS_69Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_users_70_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_users_70_4_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_70Inner4{val:u64,name:String}
+impl USERS_70Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_users_69_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_users_69_5_check(y:&[u8])->bool{!y.is_empty()}
-struct USERS_69Inner5{val:u64,name:String}
-impl USERS_69Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_users_70_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_users_70_5_check(y:&[u8])->bool{!y.is_empty()}
+struct USERS_70Inner5{val:u64,name:String}
+impl USERS_70Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
