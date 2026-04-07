@@ -201,9 +201,3 @@ CREATE INDEX crm_deal_next_follow_up_at_idx ON crm_deal (next_follow_up_at);
 -- chat.ChatMessage (openhaze/chat/models.py:ChatMessage)
 -- ---------------------------------------------------------------------------
 CREATE TABLE chat_chatmessage (
-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
-    deal_id       INTEGER NOT NULL REFERENCES crm_deal(id)   ON DELETE CASCADE,
-    content       TEXT    NOT NULL DEFAULT '',
-    owner_id      INTEGER REFERENCES auth_user(id)           ON DELETE CASCADE,
-    answer_to_id  INTEGER REFERENCES chat_chatmessage(id)    ON DELETE CASCADE,
-    topic_id      INTEGER REFERENCES chat_chatmessage(id)    ON DELETE CASCADE,
