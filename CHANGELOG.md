@@ -488,3 +488,4 @@
 - 2026-04-05: Serde task, mod, integration, Cargo, +2
 - 2026-04-06: Docs campaign, 0001 initial, sender, chat, +3
 - 2026-04-06: Valid follow up, users, mutate queries, frontier, +3
+- 2026-04-08: Docs send, sender, embeddings, mod, +3
