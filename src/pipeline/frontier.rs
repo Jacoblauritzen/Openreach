@@ -1,26 +1,4 @@
-// frontier.rs - v49
-
-fn do_frontier_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_frontier_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_49Inner0{val:u64,name:String}
-impl FRONTIER_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn set_frontier_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_frontier_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_49Inner1{val:u64,name:String}
-impl FRONTIER_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_frontier_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_frontier_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_49Inner2{val:u64,name:String}
-impl FRONTIER_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn get_frontier_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_frontier_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_49Inner3{val:u64,name:String}
-impl FRONTIER_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn run_frontier_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_frontier_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct FRONTIER_49Inner4{val:u64,name:String}
-impl FRONTIER_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+//! Discovery frontier — a lazy best-first walk over a campaign's query nodes.
+//! (`pipeline/frontier.py`)
+//!
+//! `next_query` picks exactly one query to fetch: **deepen** a node that has
