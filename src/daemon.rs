@@ -1,26 +1,7 @@
-// daemon.rs - v49
-
-fn map_daemon_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_daemon_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct DAEMON_49Inner0{val:u64,name:String}
-impl DAEMON_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_daemon_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_daemon_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct DAEMON_49Inner1{val:u64,name:String}
-impl DAEMON_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_daemon_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_daemon_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct DAEMON_49Inner2{val:u64,name:String}
-impl DAEMON_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_daemon_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_daemon_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct DAEMON_49Inner3{val:u64,name:String}
-impl DAEMON_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_daemon_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_daemon_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct DAEMON_49Inner4{val:u64,name:String}
-impl DAEMON_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+//! Task-queue worker — a port of `core/daemon.py`.
+//!
+//! Single-threaded: one task at a time. Startup + idle `reconcile`, an
+//! active-hours guard, `claim_next` in opportunity-cost order, dispatch via the
+//! handler map, then sleep to the next due task. Freemium (kit) campaigns are out
+//! of scope for this port.
+\n// revival 2026 touch: src/daemon.rs\n
