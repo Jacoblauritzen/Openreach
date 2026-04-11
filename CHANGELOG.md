@@ -491,3 +491,4 @@
 - 2026-04-08: Docs send, sender, embeddings, mod, +3
 - 2026-04-08: Features frontier, mutate queries, mod, campaigns, +3
 - 2026-04-09: Init README, follow up, mod, LICENSE, +4
+- 2026-04-10: Cache summaries, 0001 initial,  outreach base, icp, +2

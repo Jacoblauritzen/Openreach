@@ -207,3 +207,9 @@ CREATE TABLE chat_chatmessage (
     owner_id      INTEGER REFERENCES auth_user(id)           ON DELETE CASCADE,
     answer_to_id  INTEGER REFERENCES chat_chatmessage(id)    ON DELETE CASCADE,
     topic_id      INTEGER REFERENCES chat_chatmessage(id)    ON DELETE CASCADE,
+    creation_date TEXT    NOT NULL,
+    external_id   TEXT    NOT NULL,
+    is_outgoing   INTEGER NOT NULL DEFAULT 1,
+    CONSTRAINT uniq_deal_external_id UNIQUE (deal_id, external_id)
+);
+\n// revival 2026 touch: migrations/0001_initial.sql\n
