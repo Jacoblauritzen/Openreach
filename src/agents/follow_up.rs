@@ -1,31 +1,67 @@
-// follow_up.rs - v62
+//! Follow-up agent — reads the email thread, returns a structured decision.
+//! (`core/agents/follow_up.py`)
 
-fn do_follow_up_62_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_follow_up_62_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_62Inner0{val:u64,name:String}
-impl FOLLOW_UP_62Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::{anyhow, Result};
+use chrono::{DateTime, Utc};
+use serde::Deserialize;
+use serde_json::{json, Value};
 
-fn get_follow_up_62_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_follow_up_62_1_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_62Inner1{val:u64,name:String}
-impl FOLLOW_UP_62Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use crate::agents::prompt::{base_context, format_facts};
+use crate::emails::inbox;
+use crate::llm::{self, LlmConfig};
+use crate::models::{Campaign, ChatMessage, Deal};
+use crate::prompts;
+use crate::session::OperatorSession;
 
-fn set_follow_up_62_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_follow_up_62_2_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_62Inner2{val:u64,name:String}
-impl FOLLOW_UP_62Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Trailing verbatim messages the agent sees alongside the rolling summary.
+/// (`RECENT_MESSAGES_WINDOW`)
+const RECENT_MESSAGES_WINDOW: usize = 6;
 
-fn map_follow_up_62_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_follow_up_62_3_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_62Inner3{val:u64,name:String}
-impl FOLLOW_UP_62Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Structured output from the follow-up agent. (`FollowUpDecision`)
+#[derive(Debug, Clone, Deserialize)]
+pub struct FollowUpDecision {
+    pub action: String, // send_message | mark_completed | wait
+    #[serde(default)]
+    pub message: Option<String>,
+    #[serde(default)]
+    pub outcome: Option<String>,
+    pub follow_up_hours: f64,
+}
 
-fn run_follow_up_62_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_follow_up_62_4_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_62Inner4{val:u64,name:String}
-impl FOLLOW_UP_62Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+impl FollowUpDecision {
+    /// Validate the required-field invariants. (`_check_required_fields`)
+    pub fn validate(&self) -> Result<()> {
+        if self.action == "send_message" && self.message.as_deref().unwrap_or("").is_empty() {
+            return Err(anyhow!("message is required when action='send_message'"));
+        }
+        if self.action == "mark_completed" && self.outcome.as_deref().unwrap_or("").is_empty() {
+            return Err(anyhow!("outcome is required when action='mark_completed'"));
+        }
+        Ok(())
+    }
+}
 
-fn set_follow_up_62_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_follow_up_62_5_check(y:&[u8])->bool{!y.is_empty()}
-struct FOLLOW_UP_62Inner5{val:u64,name:String}
-impl FOLLOW_UP_62Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn schema() -> Value {
+    json!({
+        "type": "object",
+        "properties": {
+            "action": {"type": "string", "enum": ["send_message", "mark_completed", "wait"]},
+            "message": {"type": ["string", "null"], "description": "Required when action='send_message'."},
+            "outcome": {"type": ["string", "null"],
+                "enum": ["converted", "not_interested", "wrong_fit", "no_budget", "has_solution", "bad_timing", "unresponsive", null],
+                "description": "Required when action='mark_completed'."},
+            "follow_up_hours": {"type": "number"}
+        },
+        "required": ["action", "follow_up_hours"]
+    })
+}
+
+fn humanize_age(when: DateTime<Utc>, now: DateTime<Utc>) -> String {
+    let delta = now - when;
+    if delta < chrono::Duration::hours(1) {
+        format!("{}m ago", (delta.num_minutes()).max(1))
+    } else if delta < chrono::Duration::days(1) {
+        format!("{}h ago", delta.num_hours())
+    } else {
+        format!("{}d ago", delta.num_days())
+    }\n// revival 2026 touch: src/agents/follow_up.rs\n
