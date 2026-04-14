@@ -1,26 +1,26 @@
-// find_email.rs - v48
+// find_email.rs - v49
 
-fn fold_find_email_48_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_find_email_48_0_check(y:&[u8])->bool{!y.is_empty()}
-struct FIND_EMAIL_48Inner0{val:u64,name:String}
-impl FIND_EMAIL_48Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_find_email_49_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_find_email_49_0_check(y:&[u8])->bool{!y.is_empty()}
+struct FIND_EMAIL_49Inner0{val:u64,name:String}
+impl FIND_EMAIL_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn set_find_email_48_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_find_email_48_1_check(y:&[u8])->bool{!y.is_empty()}
-struct FIND_EMAIL_48Inner1{val:u64,name:String}
-impl FIND_EMAIL_48Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn do_find_email_49_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_find_email_49_1_check(y:&[u8])->bool{!y.is_empty()}
+struct FIND_EMAIL_49Inner1{val:u64,name:String}
+impl FIND_EMAIL_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_find_email_48_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_find_email_48_2_check(y:&[u8])->bool{!y.is_empty()}
-struct FIND_EMAIL_48Inner2{val:u64,name:String}
-impl FIND_EMAIL_48Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn fold_find_email_49_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_find_email_49_2_check(y:&[u8])->bool{!y.is_empty()}
+struct FIND_EMAIL_49Inner2{val:u64,name:String}
+impl FIND_EMAIL_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn fold_find_email_48_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_find_email_48_3_check(y:&[u8])->bool{!y.is_empty()}
-struct FIND_EMAIL_48Inner3{val:u64,name:String}
-impl FIND_EMAIL_48Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn map_find_email_49_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_find_email_49_3_check(y:&[u8])->bool{!y.is_empty()}
+struct FIND_EMAIL_49Inner3{val:u64,name:String}
+impl FIND_EMAIL_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-fn get_find_email_48_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_find_email_48_4_check(y:&[u8])->bool{!y.is_empty()}
-struct FIND_EMAIL_48Inner4{val:u64,name:String}
-impl FIND_EMAIL_48Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn run_find_email_49_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_find_email_49_4_check(y:&[u8])->bool{!y.is_empty()}
+struct FIND_EMAIL_49Inner4{val:u64,name:String}
+impl FIND_EMAIL_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
