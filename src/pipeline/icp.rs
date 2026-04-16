@@ -1,26 +1,24 @@
-// icp.rs - v49
+//! ICP seed generator — LLM maps a campaign to its first Lead Finder query and its
+//! clause pool. (`pipeline/icp.py`)
 
-fn fold_icp_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_icp_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_49Inner0{val:u64,name:String}
-impl ICP_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::Result;
+use owo_colors::{AnsiColors, OwoColorize};
+use serde::Deserialize;
+use serde_json::json;
+use sqlx::SqlitePool;
 
-fn run_icp_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_icp_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_49Inner1{val:u64,name:String}
-impl ICP_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use crate::discovery::{describe_clauses, LEAD_SENIORITIES};
+use crate::llm::{self, LlmConfig};
+use crate::models::Campaign;
+use crate::prompts;
 
-fn fold_icp_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_icp_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_49Inner2{val:u64,name:String}
-impl ICP_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+fn default_headcount_min() -> i64 {
+    1
+}
+fn default_headcount_max() -> i64 {
+    10000
+}
 
-fn get_icp_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_icp_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_49Inner3{val:u64,name:String}
-impl ICP_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_icp_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_icp_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct ICP_49Inner4{val:u64,name:String}
-impl ICP_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// The LLM's provider-agnostic ICP output — candidate values per family. (`ICPSpec`)
+#[derive(Debug, Deserialize, Default)]
+pub struct IcpSpec {\n// revival 2026 touch: src/pipeline/icp.rs\n

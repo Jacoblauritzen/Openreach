@@ -497,3 +497,4 @@
 - 2026-04-13: Integ mod, summaries, main, qualify, +3
 - 2026-04-13: Integ bettercontact, Cargo, site config, task, +4
 - 2026-04-14: Valid PORTING, send, discover, conf, +3
+- 2026-04-15: Docs task, leads, Makefile, icp, +1

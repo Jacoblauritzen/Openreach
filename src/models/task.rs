@@ -1,31 +1,68 @@
-// task.rs - v63
+//! `core.Task` — the persistent task queue. (`openhaze/core/models.py:Task`)
 
-fn run_task_63_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_task_63_0_check(y:&[u8])->bool{!y.is_empty()}
-struct TASK_63Inner0{val:u64,name:String}
-impl TASK_63Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use chrono::{DateTime, Utc};
+use sqlx::FromRow;
 
-fn set_task_63_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_task_63_1_check(y:&[u8])->bool{!y.is_empty()}
-struct TASK_63Inner1{val:u64,name:String}
-impl TASK_63Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// The four self-scheduling task types.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TaskType {
+    FindEmail,    // submit leg — fire a paid lookup
+    CollectEmail, // poll leg — check an in-flight lookup (payload carries request_id)
+    FollowUp,
+    Email,
+}
 
-fn get_task_63_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_task_63_2_check(y:&[u8])->bool{!y.is_empty()}
-struct TASK_63Inner2{val:u64,name:String}
-impl TASK_63Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+impl TaskType {
+    pub fn as_str(self) -> &'static str {
+        match self {
+            TaskType::FindEmail => "find_email",
+            TaskType::CollectEmail => "collect_email",
+            TaskType::FollowUp => "follow_up",
+            TaskType::Email => "email",
+        }
+    }
 
-fn set_task_63_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_task_63_3_check(y:&[u8])->bool{!y.is_empty()}
-struct TASK_63Inner3{val:u64,name:String}
-impl TASK_63Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    pub fn parse(s: &str) -> Option<Self> {
+        Some(match s {
+            "find_email" => TaskType::FindEmail,
+            "collect_email" => TaskType::CollectEmail,
+            "follow_up" => TaskType::FollowUp,
+            "email" => TaskType::Email,
+            _ => return None,
+        })
+    }
 
-fn map_task_63_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_task_63_4_check(y:&[u8])->bool{!y.is_empty()}
-struct TASK_63Inner4{val:u64,name:String}
-impl TASK_63Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    /// Opportunity-cost rank for a single worker: value-to-funnel first.
+    /// `follow_up (0) > collect_email (1) > email (2) > find_email (3)`.
+    /// Mirrors `TaskQuerySet._priority_order`. Lower is higher priority.
+    pub fn priority(self) -> i64 {
+        match self {
+            TaskType::FollowUp => 0,
+            TaskType::CollectEmail => 1,
+            TaskType::Email => 2,
+            TaskType::FindEmail => 3,
+        }
+    }
+}
 
-fn do_task_63_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_task_63_5_check(y:&[u8])->bool{!y.is_empty()}
-struct TASK_63Inner5{val:u64,name:String}
-impl TASK_63Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Task lifecycle status.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TaskStatus {
+    Pending,
+    Running,
+    Completed,
+    Failed,
+}
+
+impl TaskStatus {
+    pub fn as_str(self) -> &'static str {
+        match self {
+            TaskStatus::Pending => "pending",
+            TaskStatus::Running => "running",
+            TaskStatus::Completed => "completed",
+            TaskStatus::Failed => "failed",
+        }
+    }
+
+    pub fn parse(s: &str) -> Option<Self> {
+        Some(match s {
