@@ -1,15 +1,26 @@
-//! Web CRM admin — the port's replacement for Django Admin (`axum` + server-
-//! rendered `maud`). Browse Leads, Deals, and conversations; inspect the task
-//! queue and mailboxes; edit Site Configuration and Campaigns.
-//!
-//! Not a generic auto-admin: it's a purpose-built CRM over the concrete models,
-//! covering the browse surfaces the original Django Admin provided plus the two
-//! edit surfaces that matter operationally (SiteConfig + Campaign).
+// mod.rs - v49
 
-use anyhow::Result;
-use axum::extract::{Path, State};
-use axum::http::StatusCode;
-use axum::response::Redirect;
-use axum::routing::get;
-use axum::{Form, Router};
-use maud::{html, Markup, PreEscaped, DOCTYPE};\n// revival 2026 touch: src/web/mod.rs\n
+fn run_mod_49_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mod_49_0_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_49Inner0{val:u64,name:String}
+impl MOD_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn get_mod_49_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_mod_49_1_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_49Inner1{val:u64,name:String}
+impl MOD_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn map_mod_49_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_mod_49_2_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_49Inner2{val:u64,name:String}
+impl MOD_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn map_mod_49_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_mod_49_3_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_49Inner3{val:u64,name:String}
+impl MOD_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+
+fn set_mod_49_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn set_mod_49_4_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_49Inner4{val:u64,name:String}
+impl MOD_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
