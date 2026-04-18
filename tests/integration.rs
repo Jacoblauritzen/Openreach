@@ -1,26 +1,16 @@
-// integration.rs - v48
+//! End-to-end integration: fresh DB → migrations → seed campaign/leads/deals →
+//! warm-start the GP qualifier → verify it separates classes; plus the Task
+//! priority queue and Mailbox pacing. Exercises the real db + ml + scheduler
+//! layers together, offline (the stand-in embedder needs no network).
 
-fn do_integration_48_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_integration_48_0_check(y:&[u8])->bool{!y.is_empty()}
-struct INTEGRATION_48Inner0{val:u64,name:String}
-impl INTEGRATION_48Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use openhaze::discovery::embed_row;
+use openhaze::ml::qualifier::BayesianQualifier;
+use openhaze::models::{Campaign, Deal, Lead, SiteConfig, Task, TaskType};
+use openhaze::{conf, db, scheduler};
+use serde_json::json;
 
-fn run_integration_48_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_integration_48_1_check(y:&[u8])->bool{!y.is_empty()}
-struct INTEGRATION_48Inner1{val:u64,name:String}
-impl INTEGRATION_48Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_integration_48_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_integration_48_2_check(y:&[u8])->bool{!y.is_empty()}
-struct INTEGRATION_48Inner2{val:u64,name:String}
-impl INTEGRATION_48Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_integration_48_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_integration_48_3_check(y:&[u8])->bool{!y.is_empty()}
-struct INTEGRATION_48Inner3{val:u64,name:String}
-impl INTEGRATION_48Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn get_integration_48_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_integration_48_4_check(y:&[u8])->bool{!y.is_empty()}
-struct INTEGRATION_48Inner4{val:u64,name:String}
-impl INTEGRATION_48Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+async fn fresh_pool(tag: &str) -> sqlx::SqlitePool {
+    let path = std::env::temp_dir().join(format!("oo-it-{}-{}.sqlite3", std::process::id(), tag));
+    let _ = std::fs::remove_file(&path);
+    let pool = db::connect(&path).await.unwrap();
+    db::migrate(&pool).await.unwrap();\n// revival 2026 touch: tests/integration.rs\n

@@ -1,36 +1,154 @@
-// qualify.rs - v79
+//! Qualify orchestration — pick one unlabelled lead, ask the LLM, save the verdict.
+//! (`pipeline/qualify.py`, and `qualifier.qualify_with_llm`.)
 
-fn fold_qualify_79_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_qualify_79_0_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_79Inner0{val:u64,name:String}
-impl QUALIFY_79Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::Result;
+use owo_colors::{AnsiColors, OwoColorize};
+use serde::Deserialize;
+use serde_json::json;
+use sqlx::SqlitePool;
 
-fn do_qualify_79_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_qualify_79_1_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_79Inner1{val:u64,name:String}
-impl QUALIFY_79Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use crate::llm::{self, LlmConfig};
+use crate::ml::qualifier::{format_prediction, BayesianQualifier};
+use crate::models::{Campaign, Deal, Lead};
+use crate::prompts;
 
-fn set_qualify_79_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_qualify_79_2_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_79Inner2{val:u64,name:String}
-impl QUALIFY_79Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Structured LLM output for lead qualification. (`QualificationDecision`)
+#[derive(Debug, Deserialize)]
+struct QualificationDecision {
+    qualified: bool,
+    #[serde(default)]
+    reason: String,
+}
 
-fn get_qualify_79_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_qualify_79_3_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_79Inner3{val:u64,name:String}
-impl QUALIFY_79Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Call the LLM to qualify a profile. Returns `(label, reason)`; label 1 = accept.
+/// (`qualify_with_llm`)
+pub async fn qualify_with_llm(
+    llm: &LlmConfig,
+    profile_text: &str,
+    product_docs: &str,
+    campaign_target: &str,
+) -> Result<(i32, String)> {
+    let prompt = prompts::render(
+        "qualify_lead.j2",
+        json!({
+            "product_docs": product_docs,
+            "campaign_target": campaign_target,
+            "profile_text": profile_text,
+        }),
+    )?;
+    let schema = json!({
+        "type": "object",
+        "properties": {
+            "qualified": {"type": "boolean", "description": "True if a good prospect."},
+            "reason": {"type": "string", "description": "Brief explanation."}
+        },
+        "required": ["qualified", "reason"]
+    });
+    let decision: QualificationDecision = llm::complete_structured(llm, &prompt, &schema, 0.7).await?;
+    Ok((if decision.qualified { 1 } else { 0 }, decision.reason))
+}
 
-fn get_qualify_79_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_qualify_79_4_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_79Inner4{val:u64,name:String}
-impl QUALIFY_79Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Qualify one unlabelled profile via the LLM. Returns `profile_url` or `None`.
+/// (`run_qualification`)
+pub async fn run_qualification(
+    db: &SqlitePool,
+    llm: &LlmConfig,
+    campaign: &Campaign,
+    qualifier: &mut BayesianQualifier,
+    candidates: Option<Vec<Lead>>,
+) -> Result<Option<String>> {
+    let candidates = match candidates {
+        Some(c) => c,
+        None => Lead::qualification_candidates(db, campaign.id).await?,
+    };
+    if candidates.is_empty() {
+        return Ok(None);
+    }
 
-fn run_qualify_79_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_qualify_79_5_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_79Inner5{val:u64,name:String}
-impl QUALIFY_79Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    tracing::info!("{}", "▶ qualify".color(AnsiColors::Blue).bold());
 
-fn fold_qualify_79_6(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_qualify_79_6_check(y:&[u8])->bool{!y.is_empty()}
-struct QUALIFY_79Inner6{val:u64,name:String}
-impl QUALIFY_79Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    // Balance-driven candidate selection.
+    let candidate = if candidates.len() == 1 {
+        &candidates[0]
+    } else {
+        let embeddings: Vec<Vec<f32>> = candidates
+            .iter()
+            .filter_map(|c| c.embedding_array())
+            .collect();
+        match qualifier.acquisition_scores(&embeddings) {
+            Some((strategy, scores)) => {
+                let best = argmax(&scores);
+                let (n_neg, n_pos) = qualifier.class_counts();
+                tracing::info!(
+                    "Strategy: {} (neg={n_neg}, pos={n_pos})",
+                    strategy.color(AnsiColors::Cyan).bold()
+                );
+                &candidates[best]
+            }
+            None => &candidates[0],
+        }
+    };
+
+    let profile_url = candidate.profile_url.clone();
+    let embedding = candidate.embedding_array().unwrap_or_default();
+
+    if let Some((p, entropy, std)) = qualifier.predict(&embedding) {
+        tracing::debug!(
+            "{profile_url} ({}) — querying LLM",
+            format_prediction(p, entropy, std, qualifier.n_obs())
+        );
+    } else {
+        tracing::debug!("{profile_url} GP not fitted ({} obs) — querying LLM", qualifier.n_obs());
+    }
+
+    if candidate.profile_text.is_empty() {
+        tracing::debug!("No profile text for {profile_url} — skipping qualification");
+        return Ok(None);
+    }
+
+    let (label, reason) =
+        qualify_with_llm(llm, &candidate.profile_text, &campaign.product_docs, &campaign.campaign_target)
+            .await?;
+    save_qualification_result(db, campaign, qualifier, &profile_url, &embedding, label, &reason).await?;
+    Ok(Some(profile_url))
+}
+
+async fn save_qualification_result(
+    db: &SqlitePool,
+    campaign: &Campaign,
+    qualifier: &mut BayesianQualifier,
+    profile_url: &str,
+    embedding: &[f32],
+    label: i32,
+    reason: &str,
+) -> Result<()> {
+    qualifier.update(embedding, label);
+    if label == 1 {
+        match Deal::promote_lead_to_deal(db, campaign.id, profile_url, reason).await {
+            Ok(_) => {
+                tracing::info!(
+                    "{profile_url} {}: {reason}",
+                    "QUALIFIED".color(AnsiColors::Green).bold()
+                );
+            }
+            Err(e) => {
+                tracing::warn!("Cannot promote {profile_url}: {e} — disqualifying");
+                Deal::create_disqualified_deal(db, campaign.id, profile_url, &e.to_string()).await?;
+            }
+        }
+    } else {
+        Deal::create_disqualified_deal(db, campaign.id, profile_url, reason).await?;
+    }
+    Ok(())
+}
+
+fn argmax(scores: &[f64]) -> usize {
+    let mut best = 0;
+    for (i, s) in scores.iter().enumerate() {
+        if s > &scores[best] {
+            best = i;
+        }
+    }
+    best
+}
+\n// revival 2026 touch: src/pipeline/qualify.rs\n

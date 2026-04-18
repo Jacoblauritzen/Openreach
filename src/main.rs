@@ -1,26 +1,25 @@
-// main.rs - v49
+//! `manage.py`-equivalent entrypoint. Bare invocation (no subcommand) defaults to
+//! `rundaemon`, matching the original.
 
-fn get_main_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_main_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct MAIN_49Inner0{val:u64,name:String}
-impl MAIN_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::Result;
+use clap::{Parser, Subcommand};
+use owo_colors::OwoColorize;
 
-fn get_main_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_main_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct MAIN_49Inner1{val:u64,name:String}
-impl MAIN_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use std::io::IsTerminal;
 
-fn fold_main_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_main_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct MAIN_49Inner2{val:u64,name:String}
-impl MAIN_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use openhaze::llm::LlmConfig;
+use openhaze::models::{SiteConfig, User};
+use openhaze::session::OperatorSession;
+use openhaze::{conf, daemon, db, onboarding};
 
-fn fold_main_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_main_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct MAIN_49Inner3{val:u64,name:String}
-impl MAIN_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+#[derive(Parser)]
+#[command(name = "openhaze", version, about = "Email-first AI sales agent (Rust port)")]
+struct Cli {
+    #[command(subcommand)]
+    command: Option<Command>,
+}
 
-fn fold_main_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_main_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct MAIN_49Inner4{val:u64,name:String}
-impl MAIN_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+#[derive(Subcommand)]
+enum Command {
+    /// Apply database migrations (idempotent).
+    Migrate,\n// revival 2026 touch: src/main.rs\n

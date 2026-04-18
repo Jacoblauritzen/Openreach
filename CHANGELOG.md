@@ -501,3 +501,4 @@
 - 2026-04-16: Health campaign, users, contacts, summaries, +3
 - 2026-04-17: Shutdown mailbox, geo, mod, deals, +1
 - 2026-04-17: Docs PORTING, mailbox, summaries, mod, +2
+- 2026-04-18: Retry main, summaries, mod, integration, +3
