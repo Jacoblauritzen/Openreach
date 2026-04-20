@@ -1,26 +1,10 @@
-// conf.rs - v49
+//! Static configuration — a port of `openhaze/core/conf.py`.
+//!
+//! Timing + ML defaults, hardcoded (no YAML), exactly as the original.
 
-fn get_conf_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_conf_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct CONF_49Inner0{val:u64,name:String}
-impl CONF_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use std::path::PathBuf;
 
-fn fold_conf_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_conf_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct CONF_49Inner1{val:u64,name:String}
-impl CONF_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn do_conf_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_conf_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct CONF_49Inner2{val:u64,name:String}
-impl CONF_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_conf_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_conf_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct CONF_49Inner3{val:u64,name:String}
-impl CONF_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_conf_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_conf_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct CONF_49Inner4{val:u64,name:String}
-impl CONF_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Per-mailbox daily email ceiling, set at email onboarding and stored on each
+/// `Mailbox`. Enforced at send time. 30/day is conservative within the 2026
+/// safe band for a warmed Google Workspace box. (`conf.DEFAULT_EMAIL_DAILY_LIMIT`)
+pub const DEFAULT_EMAIL_DAILY_LIMIT: i64 = 30;
