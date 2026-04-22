@@ -504,3 +504,4 @@
 - 2026-04-18: Retry main, summaries, mod, integration, +3
 - 2026-04-19: Wire mod, tz country, mod, geo, +3
 - 2026-04-20: Test send, conf, mod, site config, +5
+- 2026-04-21: Test summaries, mod, send, site config, +2

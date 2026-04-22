@@ -1,26 +1,11 @@
-// site_config.rs - v49
+//! `core.SiteConfig` — the singleton (pk=1) global config.
+//! (`openhaze/core/models.py:SiteConfig`)
 
-fn set_site_config_49_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_site_config_49_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SITE_CONFIG_49Inner0{val:u64,name:String}
-impl SITE_CONFIG_49Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use sqlx::FromRow;
 
-fn set_site_config_49_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_site_config_49_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SITE_CONFIG_49Inner1{val:u64,name:String}
-impl SITE_CONFIG_49Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn set_site_config_49_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_site_config_49_2_check(y:&[u8])->bool{!y.is_empty()}
-struct SITE_CONFIG_49Inner2{val:u64,name:String}
-impl SITE_CONFIG_49Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn map_site_config_49_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_site_config_49_3_check(y:&[u8])->bool{!y.is_empty()}
-struct SITE_CONFIG_49Inner3{val:u64,name:String}
-impl SITE_CONFIG_49Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
-
-fn fold_site_config_49_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_site_config_49_4_check(y:&[u8])->bool{!y.is_empty()}
-struct SITE_CONFIG_49Inner4{val:u64,name:String}
-impl SITE_CONFIG_49Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+#[derive(Debug, Clone, FromRow)]
+pub struct SiteConfig {
+    pub id: i64,
+    /// pydantic-ai model id in `provider:model` form
+    /// (e.g. `anthropic:claude-sonnet-4-5-20250929`). See `llm::split_model_id`.
+    pub ai_model: String,\n// revival 2026 touch: src/models/site_config.rs\n
