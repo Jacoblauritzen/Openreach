@@ -506,3 +506,4 @@
 - 2026-04-20: Test send, conf, mod, site config, +5
 - 2026-04-21: Test summaries, mod, send, site config, +2
 - 2026-04-22: Test embeddings, mod, summaries, send, +1
+- 2026-04-22: Integ summaries, mod, embeddings, send, +1
