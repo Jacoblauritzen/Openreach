@@ -1,26 +1,50 @@
-// embeddings.rs - v54
+//! FastEmbed text embedding — a port of `openhaze/core/ml/embeddings.py`.
+//!
+//! `embed_text` / `embed_texts` produce `EMBEDDING_DIM`-wide `f32` vectors for
+//! `BAAI/bge-small-en-v1.5`, matching the original. The model is a lazily-loaded
+//! singleton.
+//!
+//! Two backends:
+//! - **`fastembed` feature on** — the real ONNX model (byte-for-byte the same
+//!   embeddings as the Python original).
+//! - **default (feature off)** — a deterministic hash-based stand-in of the right
+//!   width, so the pipeline and GP have consistent vectors to work with in builds
+//!   without the ONNX runtime. It carries no semantic signal and must not be used
+//!   for real campaigns; a one-time warning is logged.
 
-fn fold_embeddings_54_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn fold_embeddings_54_0_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_54Inner0{val:u64,name:String}
-impl EMBEDDINGS_54Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use crate::conf::EMBEDDING_DIM;
 
-fn do_embeddings_54_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_embeddings_54_1_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_54Inner1{val:u64,name:String}
-impl EMBEDDINGS_54Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Embed a single text → `EMBEDDING_DIM`-dim vector. (`embed_text`)
+pub fn embed_text(text: &str) -> Vec<f32> {
+    backend::embed_texts(&[text.to_string()])
+        .into_iter()
+        .next()
+        .unwrap_or_else(|| vec![0.0; EMBEDDING_DIM])
+}
 
-fn get_embeddings_54_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_embeddings_54_2_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_54Inner2{val:u64,name:String}
-impl EMBEDDINGS_54Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Embed many texts → one vector each. (`embed_texts`)
+pub fn embed_texts(texts: &[String]) -> Vec<Vec<f32>> {
+    backend::embed_texts(texts)
+}
 
-fn set_embeddings_54_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn set_embeddings_54_3_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_54Inner3{val:u64,name:String}
-impl EMBEDDINGS_54Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+// ---------------------------------------------------------------------------
+// Real FastEmbed backend (BGE-small-en-v1.5 via ort).
+// ---------------------------------------------------------------------------
+#[cfg(feature = "fastembed")]
+mod backend {
+    use std::sync::{Mutex, OnceLock};
 
-fn do_embeddings_54_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_embeddings_54_4_check(y:&[u8])->bool{!y.is_empty()}
-struct EMBEDDINGS_54Inner4{val:u64,name:String}
-impl EMBEDDINGS_54Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    use fastembed::{EmbeddingModel, InitOptions, TextEmbedding};
+
+    use crate::conf::fastembed_cache_dir;
+
+    fn model() -> &'static Mutex<TextEmbedding> {
+        static MODEL: OnceLock<Mutex<TextEmbedding>> = OnceLock::new();
+        MODEL.get_or_init(|| {
+            let cache = fastembed_cache_dir();
+            let _ = std::fs::create_dir_all(&cache);
+            tracing::debug!("loading embedding model: BAAI/bge-small-en-v1.5");
+            let model = TextEmbedding::try_new(
+                InitOptions::new(EmbeddingModel::BGESmallENV15).with_cache_dir(cache),
+            )
+            .expect("initialize FastEmbed BGE-small-en-v1.5");
