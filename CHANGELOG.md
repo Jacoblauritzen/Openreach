@@ -510,3 +510,4 @@
 - 2026-04-23: Cache mod, mod, summaries, embeddings, +1
 - 2026-04-24: Log send, mod, summaries, mod
 - 2026-04-25: Bench summaries, send, mod
+- 2026-04-25: Pool send, mod, summaries
