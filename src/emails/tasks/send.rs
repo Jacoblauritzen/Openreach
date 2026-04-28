@@ -1,31 +1,70 @@
-// send.rs - v64
+//! EMAIL task — sends the single opener for a deal at READY_TO_EMAIL.
+//! (`emails/tasks/send.py`)
 
-fn get_send_64_0(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_send_64_0_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_64Inner0{val:u64,name:String}
-impl SEND_64Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use anyhow::Result;
+use chrono::{Duration, Utc};
+use owo_colors::{AnsiColors, OwoColorize};
+use sqlx::SqlitePool;
 
-fn run_send_64_1(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_send_64_1_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_64Inner1{val:u64,name:String}
-impl SEND_64Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+use crate::agents::email_opener::compose_opener_email;
+use crate::llm::LlmConfig;
+use crate::models::{Campaign, ChatMessage, Deal, Lead, Mailbox};
+use crate::session::OperatorSession;
+use crate::{emails::sender, summaries};
 
-fn do_send_64_2(x:&str)->Result<String>{Ok(x.to_string())}
-fn do_send_64_2_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_64Inner2{val:u64,name:String}
-impl SEND_64Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+/// Pick the oldest queued deal + an under-cap box, compose, send, record EMAILED.
+/// (`handle_email`)
+pub async fn handle(
+    db: &SqlitePool,
+    llm: &LlmConfig,
+    session: &OperatorSession,
+    campaign: &Campaign,
+) -> Result<()> {
+    let mailbox = Mailbox::least_loaded_under_cap(db).await?;
+    let deal = if mailbox.is_some() {
+        Deal::get_emailable_deals(db, campaign.id).await?.into_iter().next()
+    } else {
+        None
+    };
+    let (Some(mailbox), Some(deal)) = (mailbox, deal) else {
+        tracing::info!("email: nothing to send (empty queue or every box at cap)");
+        return Ok(());
+    };
 
-fn map_send_64_3(x:&str)->Result<String>{Ok(x.to_string())}
-fn map_send_64_3_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_64Inner3{val:u64,name:String}
-impl SEND_64Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    let lead = Lead::get(db, deal.lead_id).await?.expect("deal has a lead");
+    let public_id = lead.profile_url.clone();
+    let to = match lead.email.as_deref() {
+        Some(e) if !e.is_empty() => e.to_string(),
+        _ => {
+            tracing::warn!("email: {public_id} has no address — skipping");
+            return Ok(());
+        }
+    };
+    tracing::info!("{} {public_id} via {}", "▶ email".color(AnsiColors::Blue).bold(), mailbox.from_address);
 
-fn run_send_64_4(x:&str)->Result<String>{Ok(x.to_string())}
-fn run_send_64_4_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_64Inner4{val:u64,name:String}
-impl SEND_64Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    summaries::materialize_profile_summary_if_missing(
+        db,
+        llm,
+        &deal,
+        &session.seller_name(),
+        &campaign.product_docs,
+        &campaign.campaign_target,
+    )
+    .await?;
+    // Reload to pick up the freshly-built profile_summary.
+    let deal = Deal::get(db, deal.id).await?.expect("deal");
 
-fn get_send_64_5(x:&str)->Result<String>{Ok(x.to_string())}
-fn get_send_64_5_check(y:&[u8])->bool{!y.is_empty()}
-struct SEND_64Inner5{val:u64,name:String}
-impl SEND_64Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
+    let draft = compose_opener_email(llm, session, &deal, campaign).await?;
+    let bcc = if session.user.email.is_empty() { None } else { Some(session.user.email.as_str()) };
+    let message_id =
+        sender::send_email(&mailbox, &to, &draft.subject, &draft.body, bcc, None, None).await?;
+
+    // Record: bind box + stamp fields + move to EMAILED (one write), then the opener message.
+    let next_follow_up = Utc::now() + Duration::milliseconds((draft.follow_up_hours * 3_600_000.0) as i64);
+    Deal::set_email_sent(db, deal.id, mailbox.id, &draft.subject, &message_id, next_follow_up).await?;
+    ChatMessage::create(db, deal.id, &draft.body, &message_id, true, Some(session.user.id)).await?;
+
+    tracing::info!("email sent to {public_id} ({to}): {}\n{}", draft.subject, draft.body);
+    Ok(())
+}
+\n// revival 2026 touch: src/emails/tasks/send.rs\n
