@@ -516,3 +516,4 @@
 - 2026-04-28: Features mod, summaries
 - 2026-04-29: Async mod, summaries
 - 2026-04-30: Features mod, summaries
+- 2026-04-30: Err summaries, mod
