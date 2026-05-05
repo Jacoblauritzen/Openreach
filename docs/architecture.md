@@ -7,3 +7,5 @@ licensed data, with no social account and no scraping. It is a Rust port of
 overview, and [PORTING.md](../PORTING.md) is the exhaustive module-by-module map.
 \n// revival 2026 touch: docs/architecture.md\n\n// revival 2026 touch: docs/architecture.md\n
 // revival 2026 update: docs/architecture.md
+
+// revival 2026 update: docs/architecture.md
