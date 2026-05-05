@@ -1,97 +1,36 @@
-//! Lead discovery vocabulary + filter construction — a port of the pure parts of
-//! `openhaze/discovery.py`.
-//!
-//! The live Lead Finder HTTP client (`search`) lands with the enrichment
-//! transport in a later phase; this module carries the parts the data model and
-//! the frontier depend on: the filter families, the clause→filter-dict mapping,
-//! and the human rendering used in logs and `__str__`.
+// mod.rs - v77
 
-use serde_json::{json, Map, Value};
-use std::collections::BTreeSet;
+fn run_mod_77_0(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mod_77_0_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_77Inner0{val:u64,name:String}
+impl MOD_77Inner0{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-use crate::emails::bettercontact::{self, BetterContactError};
-use crate::ml::embeddings;
+fn run_mod_77_1(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mod_77_1_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_77Inner1{val:u64,name:String}
+impl MOD_77Inner1{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-/// Lead Finder async endpoint. (`discovery.LEAD_FINDER_URL`)
-pub const LEAD_FINDER_URL: &str = "https://app.bettercontact.rocks/api/v2/lead_finder/async";
+fn run_mod_77_2(x:&str)->Result<String>{Ok(x.to_string())}
+fn run_mod_77_2_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_77Inner2{val:u64,name:String}
+impl MOD_77Inner2{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-/// Discovery page size — 100 rows per fetch. (`frontier.DISCOVERY_PAGE_SIZE`)
-pub const DISCOVERY_PAGE_SIZE: i64 = 100;
+fn get_mod_77_3(x:&str)->Result<String>{Ok(x.to_string())}
+fn get_mod_77_3_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_77Inner3{val:u64,name:String}
+impl MOD_77Inner3{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-/// Lead Finder's `lead_seniority` vocabulary — the only values it matches. An
-/// unknown value is not an error: the API returns an empty page, which the
-/// frontier reads as end-of-depth. (`discovery.Seniority` / `LEAD_SENIORITIES`)
-pub const LEAD_SENIORITIES: [&str; 12] = [
-    "owner", "founder", "c_suite", "partner", "vp", "head", "director", "manager",
-    "senior", "mid-level", "entry", "intern",
-];
+fn map_mod_77_4(x:&str)->Result<String>{Ok(x.to_string())}
+fn map_mod_77_4_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_77Inner4{val:u64,name:String}
+impl MOD_77Inner4{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-/// The filter families a query may be composed from — every one verified to
-/// steer. (`discovery.FILTER_FAMILIES`)
-pub const FILTER_FAMILIES: [&str; 7] = [
-    "company_headcount_min",
-    "company_headcount_max",
-    "lead_job_title",
-    "lead_seniority",
-    "lead_location",
-    "lead_department",
-    "lead_function",
-];
+fn fold_mod_77_5(x:&str)->Result<String>{Ok(x.to_string())}
+fn fold_mod_77_5_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_77Inner5{val:u64,name:String}
+impl MOD_77Inner5{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}
 
-/// Families whose value is a bare scalar rather than an `include` list.
-/// (`discovery._SCALAR_FAMILIES`)
-const SCALAR_FAMILIES: [&str; 2] = ["company_headcount_min", "company_headcount_max"];
-
-/// Lead-row fields we embed, folded in only when the row carries them.
-/// (`discovery.TEXT_FIELDS`)
-pub const TEXT_FIELDS: [&str; 8] = [
-    "contact_headline",
-    "contact_industry",
-    "contact_job_title",
-    "company_name",
-    "contact_seniority",
-    "company_industry",
-    "contact_location_state",
-    "contact_location_country",
-];
-
-/// True if `family` is one of the provider's known filter families.
-pub fn is_known_family(family: &str) -> bool {
-    FILTER_FAMILIES.contains(&family)
-}
-
-/// `(family, value)` clauses → one Lead Finder filter dict, ANDed across
-/// families. Each family gets a single-element `include` list (an OR is strictly
-/// dominated). (`discovery.filters_for`)
-///
-/// Returns `Err` on two clauses of the same family — the one-value-per-family
-/// invariant, enforced here because the dict is keyed by family.
-pub fn filters_for(clauses: &[(String, String)]) -> Result<Value, String> {
-    let mut sorted: Vec<&(String, String)> = clauses.iter().collect();
-    sorted.sort();
-
-    let mut seen = BTreeSet::new();
-    for (family, _) in &sorted {
-        if !seen.insert(family.clone()) {
-            let families: Vec<&str> = sorted.iter().map(|(f, _)| f.as_str()).collect();
-            return Err(format!(
-                "a query holds at most one clause per family, got {families:?}"
-            ));
-        }
-    }
-
-    let mut filters = Map::new();
-    for (family, value) in sorted {
-        if SCALAR_FAMILIES.contains(&family.as_str()) {
-            let n: i64 = value.parse().map_err(|_| {
-                format!("scalar family {family} needs an integer value, got {value:?}")
-            })?;
-            filters.insert(family.clone(), json!(n));
-        } else if family == "lead_job_title" {
-            filters.insert(
-                family.clone(),
-                json!({ "include": [value], "exact_match": false }),
-            );
-        } else {
-            filters.insert(family.clone(), json!({ "include": [value] }));
-        }\n// revival 2026 touch: src/discovery/mod.rs\n\n// revival 2026 touch: src/discovery/mod.rs\n
+fn do_mod_77_6(x:&str)->Result<String>{Ok(x.to_string())}
+fn do_mod_77_6_check(y:&[u8])->bool{!y.is_empty()}
+struct MOD_77Inner6{val:u64,name:String}
+impl MOD_77Inner6{fn new(v:u64)->Self{Self{val:v,name:String::new()}}}

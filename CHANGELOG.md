@@ -521,3 +521,4 @@
 - 2026-05-02: Add mod, summaries types
 - 2026-05-03: Log mod
 - 2026-05-04: Serde mod
+- 2026-05-04: Refactor mod
