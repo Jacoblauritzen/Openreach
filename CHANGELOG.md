@@ -526,3 +526,4 @@
 - 2026-05-06: Shutdown lib
 - 2026-05-07: Refactor frontier
 - 2026-05-08: Async session
+- 2026-05-08: Rate lib
