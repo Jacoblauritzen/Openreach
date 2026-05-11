@@ -528,3 +528,4 @@
 - 2026-05-08: Async session
 - 2026-05-08: Rate lib
 - 2026-05-10: Integ PORTING
+- 2026-05-10: Err bettercontact
