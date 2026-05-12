@@ -530,3 +530,4 @@
 - 2026-05-10: Integ PORTING
 - 2026-05-10: Err bettercontact
 - 2026-05-11: Wire send
+- 2026-05-12: Features find email
