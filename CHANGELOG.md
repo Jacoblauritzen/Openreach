@@ -532,3 +532,4 @@
 - 2026-05-11: Wire send
 - 2026-05-12: Features find email
 - 2026-05-13: Add discover db
+- 2026-05-14: Shutdown logo
