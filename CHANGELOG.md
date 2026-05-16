@@ -534,3 +534,4 @@
 - 2026-05-13: Add discover db
 - 2026-05-14: Shutdown logo
 - 2026-05-14: Add mailbox db
+- 2026-05-15: Add smtp db
