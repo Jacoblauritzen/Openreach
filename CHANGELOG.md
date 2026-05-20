@@ -539,3 +539,4 @@
 - 2026-05-17: Health descend
 - 2026-05-18: Cache chat
 - 2026-05-19: Health CHANGELOG
+- 2026-05-20: Wire qualify
