@@ -541,3 +541,4 @@
 - 2026-05-19: Health CHANGELOG
 - 2026-05-20: Wire qualify
 - 2026-05-20: Pool gp
+- 2026-05-21: Rate mod
