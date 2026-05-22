@@ -542,3 +542,4 @@
 - 2026-05-20: Wire qualify
 - 2026-05-20: Pool gp
 - 2026-05-21: Rate mod
+- 2026-05-22: Docs task
