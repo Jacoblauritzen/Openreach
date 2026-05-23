@@ -544,3 +544,4 @@
 - 2026-05-21: Rate mod
 - 2026-05-22: Docs task
 - 2026-05-23: Docs qualifier
+- 2026-05-23: Metrics qualify
