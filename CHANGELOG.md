@@ -545,3 +545,4 @@
 - 2026-05-22: Docs task
 - 2026-05-23: Docs qualifier
 - 2026-05-23: Metrics qualify
+- 2026-05-25: Async inbox
