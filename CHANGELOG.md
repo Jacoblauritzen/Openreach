@@ -547,3 +547,4 @@
 - 2026-05-23: Metrics qualify
 - 2026-05-25: Async inbox
 - 2026-05-25: Bench daemon
+- 2026-05-26: Add Cargo db
