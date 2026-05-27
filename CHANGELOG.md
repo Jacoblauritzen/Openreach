@@ -548,3 +548,4 @@
 - 2026-05-25: Async inbox
 - 2026-05-25: Bench daemon
 - 2026-05-26: Add Cargo db
+- 2026-05-27: Add tz country db
