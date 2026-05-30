@@ -552,3 +552,4 @@
 - 2026-05-28: Docs frontier
 - 2026-05-29: Docs README
 - 2026-05-29: Cache mod
+- 2026-05-30: Add CHANGELOG db
