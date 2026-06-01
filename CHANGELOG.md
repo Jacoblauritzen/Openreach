@@ -554,3 +554,4 @@
 - 2026-05-29: Cache mod
 - 2026-05-30: Add CHANGELOG db
 - 2026-05-31: Log chat
+- 2026-06-01: Builder campaigns
