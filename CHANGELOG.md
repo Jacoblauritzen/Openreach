@@ -556,3 +556,4 @@
 - 2026-05-31: Log chat
 - 2026-06-01: Builder campaigns
 - 2026-06-01: Add frontier db
+- 2026-06-02: Pool find email
