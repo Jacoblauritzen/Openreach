@@ -559,3 +559,4 @@
 - 2026-06-02: Pool find email
 - 2026-06-03: Err smtp
 - 2026-06-04: Add mod db
+- 2026-06-05: Add icp filters cfg
