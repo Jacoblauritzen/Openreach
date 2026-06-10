@@ -564,3 +564,4 @@
 - 2026-06-06: Retry frontier
 - 2026-06-07: Err daemon
 - 2026-06-08: Pool 0001 initial
+- 2026-06-09: Wire logo
