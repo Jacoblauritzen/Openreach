@@ -568,3 +568,4 @@
 - 2026-06-10: Add descend types
 - 2026-06-11: Metrics scheduler
 - 2026-06-12: Metrics find email
+- 2026-06-12: Add mailbox cfg
