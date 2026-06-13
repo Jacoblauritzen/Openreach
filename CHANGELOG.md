@@ -569,3 +569,4 @@
 - 2026-06-11: Metrics scheduler
 - 2026-06-12: Metrics find email
 - 2026-06-12: Add mailbox cfg
+- 2026-06-13: Shutdown task
