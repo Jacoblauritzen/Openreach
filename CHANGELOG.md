@@ -571,3 +571,4 @@
 - 2026-06-12: Add mailbox cfg
 - 2026-06-13: Shutdown task
 - 2026-06-14: Valid email opener
+- 2026-06-15: Add user db
