@@ -574,3 +574,4 @@
 - 2026-06-15: Add user db
 - 2026-06-15: Init prompt
 - 2026-06-17: Async chat
+- 2026-06-17: Features campaigns
