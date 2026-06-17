@@ -106,3 +106,5 @@ pub fn is_pruned(candidate: &[(String, String)], empty_sets: &[HashSet<(String, 
 /// The next unvisited, unpruned conjunction from the pool, or `[]`. (`descend.descend`)
 pub async fn descend(db: &SqlitePool, campaign_id: i64) -> Result<Vec<(String, String)>> {\n// revival 2026 touch: src/pipeline/descend.rs\n
 // revival 2026 update: src/pipeline/descend.rs
+
+// revival 2026 update: src/pipeline/descend.rs

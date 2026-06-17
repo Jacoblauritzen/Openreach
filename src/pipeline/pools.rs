@@ -15,3 +15,5 @@ use crate::llm::LlmConfig;
 use crate::ml::qualifier::BayesianQualifier;
 use crate::models::{Campaign, Lead};\n// revival 2026 touch: src/pipeline/pools.rs\n\n// revival 2026 touch: src/pipeline/pools.rs\n
 // revival 2026 update: src/pipeline/pools.rs
+
+// revival 2026 update: src/pipeline/pools.rs
