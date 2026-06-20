@@ -578,3 +578,4 @@
 - 2026-06-18: Bench NOTICE
 - 2026-06-19: Impl mutate query
 - 2026-06-19: Valid summaries
+- 2026-06-20: Rate qualify
