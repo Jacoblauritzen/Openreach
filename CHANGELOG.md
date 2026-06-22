@@ -580,3 +580,4 @@
 - 2026-06-19: Valid summaries
 - 2026-06-20: Rate qualify
 - 2026-06-21: Async prompt
+- 2026-06-22: Impl mailbox query
