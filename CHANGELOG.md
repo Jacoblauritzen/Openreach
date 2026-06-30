@@ -590,3 +590,4 @@
 - 2026-06-28: Add llm types
 - 2026-06-29: Valid mod
 - 2026-06-30: Err architecture
+- 2026-06-30: Builder lead
