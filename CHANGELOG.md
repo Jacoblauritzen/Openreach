@@ -599,3 +599,4 @@
 - 2026-07-05: Async Makefile
 - 2026-07-06: Test deal
 - 2026-07-07: Test onboarding
+- 2026-07-08: Cache logo
