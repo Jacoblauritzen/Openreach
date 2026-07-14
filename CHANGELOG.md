@@ -606,3 +606,4 @@
 - 2026-07-11: Bench NOTICE
 - 2026-07-12: Rate lead
 - 2026-07-13: Features lead
+- 2026-07-13: Rate mutate
