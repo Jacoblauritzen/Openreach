@@ -245,3 +245,4 @@ GNU GPLv3. See [LICENSE](LICENSE) for details.
 </div>
 
 </div>
+Benchmarks last updated July 2026. Scores measured on internal eval harness, n=1, temperature undisclosed. Competitor scores reflect a 10-point rubric; Openhaze evaluated on an extended axis.
