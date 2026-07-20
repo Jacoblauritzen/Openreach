@@ -15,3 +15,5 @@ use anyhow::{anyhow, bail, Context, Result};
 // TODO: refactor for clarity - 2026-07-16
 \n// revival 2026 touch: src/llm.rs\n\n// revival 2026 touch: src/llm.rs\n
 // revival 2026 update: src/llm.rs
+
+// revival 2026 update: src/llm.rs
